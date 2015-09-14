@@ -6,6 +6,9 @@ var globalShortcut = require('global-shortcut');
 var configuration = require('./configuration');
 var ipc = require('ipc');
 
+// Report crashes to our server.
+require('crash-reporter').start();
+
 var mainWindow = null;
 var settingsWindow = null;
 
@@ -29,9 +32,9 @@ app.on('ready', function() {
   });
 
   // jQuery referrence error loading bug fix
-  mainWindow.webContents.on('did-start-loading', function() {
-    mainWindow.webContents.executeJavaScript("var $ = jQuery = require('jquery'), mainWindow = require('remote').getCurrentWindow();");
-  });
+  // mainWindow.webContents.on('did-start-loading', function() {
+  //   mainWindow.webContents.executeJavaScript("var $ = jQuery = require('jquery'), mainWindow = require('remote').getCurrentWindow();");
+  // });
 
   mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
 

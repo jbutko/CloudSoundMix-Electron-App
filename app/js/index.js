@@ -10,6 +10,8 @@ var soundButtons = document.querySelectorAll('.button-sound');
 var closeEl = document.querySelector('.close');
 var settingsEl = document.querySelector('.settings');
 
+window.$ = window.jQuery = require('jquery');
+
 var trayIcon = null;
 var trayMenu = null;
 

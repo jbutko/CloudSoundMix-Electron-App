@@ -1,8 +1,6 @@
 ;(function() {
-  
 
   'use strict';
-
 
   /**
    * Owl slider directive
@@ -23,7 +21,7 @@
    * </myslider>
    *
    * @url http://owlgraphic.com/owlcarousel/index.html#customizing
-   * 
+   *
    */
   angular
     .module('boilerplate')
