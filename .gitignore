@@ -3,3 +3,4 @@ node_modules
 *.log
 /app/app/config.js
 config.js
+bower_components
