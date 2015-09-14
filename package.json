@@ -13,7 +13,9 @@
     "gulp": "^3.9.0"
   },
   "dependencies": {
+    "diskdb": "^0.1.14",
     "jquery": "^2.1.4",
-    "nconf": "^0.7.2"
+    "nconf": "^0.7.2",
+    "node-soundcloud": "git://github.com/jakemmarsh/node-soundcloud.git"
   }
 }

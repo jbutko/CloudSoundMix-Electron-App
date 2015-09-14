@@ -2,15 +2,18 @@
 
 var app = require('app');
 var BrowserWindow = require('browser-window');
-var globalShortcut = require('global-shortcut');
+// var globalShortcut = require('global-shortcut');
 var configuration = require('./configuration');
 var ipc = require('ipc');
+var angular = require('./app/bower_components/ng-electron/ng-bridge.js');
 
 // Report crashes to our server.
 require('crash-reporter').start();
 
-var mainWindow = null;
+var mainOauthWindow = null;
+var mainAuthorizedWindow = null;
 var settingsWindow = null;
+
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
@@ -20,43 +23,71 @@ app.on('window-all-closed', function() {
 });
 
 app.on('ready', function() {
-  if (!configuration.readSettings('shortcutKeys')) {
-    configuration.saveSettings('shortcutKeys', ['ctrl', 'shift']);
-  }
 
-  mainWindow = new BrowserWindow({
+  // if (!configuration.readSettings('shortcutKeys')) {
+  //   configuration.saveSettings('shortcutKeys', ['ctrl', 'shift']);
+  // }
+
+  mainOauthWindow = new BrowserWindow({
     frame: true,
     height: 700,
     resizable: true,
-    width: 368
+    width: 430
   });
 
-  // jQuery referrence error loading bug fix
-  // mainWindow.webContents.on('did-start-loading', function() {
-  //   mainWindow.webContents.executeJavaScript("var $ = jQuery = require('jquery'), mainWindow = require('remote').getCurrentWindow();");
-  // });
-
-  mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
+  mainOauthWindow.loadUrl('file://' + __dirname + '/app/index.html');
 
   // Open the devtool
-  mainWindow.openDevTools();
+  mainOauthWindow.openDevTools();
 
-  setGlobalShortcuts();
+  mainOauthWindow.webContents.on('did-get-redirect-request', function(event, oldUrl, newUrl) {
+    // close auth window
+    mainOauthWindow.close();
+
+    // open new app instance
+    mainAuthorizedWindow = new BrowserWindow({
+      frame: true,
+      height: 700,
+      resizable: true,
+      width: 430
+    });
+
+    var scTokenCode = newUrl.substring(0, newUrl.length - 1).split('code=')[1];
+
+    // store code to get access token
+    configuration.saveSettings('scTokenCode', scTokenCode);
+
+    mainAuthorizedWindow.loadUrl('file://' + __dirname + '/app/index.html');
+
+    // Open the devtool
+    mainAuthorizedWindow.openDevTools();
+
+    angular.send('Authorized', mainAuthorizedWindow);
+  });
+
+
+
+  // mainOauthWindow.loadUrl('https://www.deezer.com/');
+
+  //setGlobalShortcuts();
 });
 
-function setGlobalShortcuts() {
-  globalShortcut.unregisterAll();
 
-  var shortcutKeysSetting = configuration.readSettings('shortcutKeys');
-  var shortcutPrefix = shortcutKeysSetting.length === 0 ? '' : shortcutKeysSetting.join('+') + '+';
 
-  globalShortcut.register(shortcutPrefix + '1', function() {
-    mainWindow.webContents.send('global-shortcut', 0);
-  });
-  globalShortcut.register(shortcutPrefix + '2', function() {
-    mainWindow.webContents.send('global-shortcut', 1);
-  });
-}
+
+// function setGlobalShortcuts() {
+//   globalShortcut.unregisterAll();
+
+//   var shortcutKeysSetting = configuration.readSettings('shortcutKeys');
+//   var shortcutPrefix = shortcutKeysSetting.length === 0 ? '' : shortcutKeysSetting.join('+') + '+';
+
+//   globalShortcut.register(shortcutPrefix + '1', function() {
+//     mainOauthWindow.webContents.send('global-shortcut', 0);
+//   });
+//   globalShortcut.register(shortcutPrefix + '2', function() {
+//     mainOauthWindow.webContents.send('global-shortcut', 1);
+//   });
+// }
 
 ipc.on('close-main-window', function() {
   app.quit();
@@ -87,6 +118,6 @@ ipc.on('close-settings-window', function() {
   }
 });
 
-ipc.on('set-global-shortcuts', function() {
-  setGlobalShortcuts();
-});
+// ipc.on('set-global-shortcuts', function() {
+//   setGlobalShortcuts();
+// });

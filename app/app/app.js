@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * AngularJS Boilerplate
  * @description           Description
  * @author                Jozef Butko // www.jozefbutko.com/resume
@@ -7,7 +7,7 @@
  * @version               1.1.7
  * @date                  March 2015
  * @license               MIT
- * 
+ *
  */
 ;(function() {
 
@@ -17,22 +17,28 @@
    */
   angular
     .module('boilerplate', [
-      'ngRoute'
+      'ngRoute',
+      'ngElectron'
     ])
     .config(config);
 
   // safe dependency injection
   // this prevents minification issues
-  config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider', '$compileProvider'];
+  config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider', '$sceDelegateProvider'];
 
   /**
    * App routing
    *
    * You can leave it here in the config section or take it out
    * into separate file
-   * 
+   *
    */
-  function config($routeProvider, $locationProvider, $httpProvider, $compileProvider) {
+  function config($routeProvider, $locationProvider, $httpProvider, $sceDelegateProvider) {
+
+    $sceDelegateProvider.resourceUrlWhitelist([
+      'self',
+      'https://api.soundcloud.com/**'
+    ]);
 
     $locationProvider.html5Mode(false);
 
@@ -53,6 +59,11 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .when('/callback', {
+        templateUrl: 'views/callback.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -65,7 +76,7 @@
   /**
    * You can intercept any request or response inside authInterceptor
    * or handle what should happend on 40x, 50x errors
-   * 
+   *
    */
   angular
     .module('boilerplate')
@@ -106,8 +117,6 @@
   run.$inject = ['$rootScope', '$location'];
 
   function run($rootScope, $location) {
-
-    // put here everything that you need to run on page load
 
   }
 

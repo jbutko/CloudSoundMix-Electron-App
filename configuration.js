@@ -1,6 +1,6 @@
 'use strict';
 
-var nconf = require('nconf').file({file: getUserHome() + '/sound-machine-config.json'});
+var nconf = require('nconf').file({file: getUserHome() + '/settings.json'});
 
 function saveSettings(settingKey, settingValue) {
     nconf.set(settingKey, settingValue);
@@ -12,11 +12,17 @@ function readSettings(settingKey) {
     return nconf.get(settingKey);
 }
 
+function removeSettings(settingKey) {
+    nconf.remove(settingKey);
+    //return nconf.remove(settingKey);
+}
+
 function getUserHome() {
-    return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
+    return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
 }
 
 module.exports = {
     saveSettings: saveSettings,
-    readSettings: readSettings
+    readSettings: readSettings,
+    removeSettings: removeSettings
 };
