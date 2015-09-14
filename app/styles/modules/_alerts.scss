@@ -1,0 +1,16 @@
+/******************************************************************
+
+Alerts
+
+Based on: Bones - github.com/eddiemachado/bones
+
+******************************************************************/
+
+// alerts and notices
+%alert {
+
+}
+
+.alert-help {
+  @extend %alert;
+}

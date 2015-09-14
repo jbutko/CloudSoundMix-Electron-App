@@ -7,10 +7,13 @@
     "package": "electron-packager ./ SoundMachine --all --out ~/Desktop/SoundMachine --version 0.30.2 --overwrite --icon=./app/img/app-icon.icns"
   },
   "devDependencies": {
+    "electron-connect": "^0.3.3",
     "electron-packager": "^5.0.1",
-    "electron-prebuilt": "^0.30.3"
+    "electron-prebuilt": "^0.30.3",
+    "gulp": "^3.9.0"
   },
   "dependencies": {
+    "jquery": "^2.1.4",
     "nconf": "^0.7.2"
   }
 }
