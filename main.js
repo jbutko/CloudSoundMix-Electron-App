@@ -61,33 +61,8 @@ app.on('ready', function() {
 
     // Open the devtool
     mainAuthorizedWindow.openDevTools();
-
-    angular.send('Authorized', mainAuthorizedWindow);
   });
-
-
-
-  // mainOauthWindow.loadUrl('https://www.deezer.com/');
-
-  //setGlobalShortcuts();
 });
-
-
-
-
-// function setGlobalShortcuts() {
-//   globalShortcut.unregisterAll();
-
-//   var shortcutKeysSetting = configuration.readSettings('shortcutKeys');
-//   var shortcutPrefix = shortcutKeysSetting.length === 0 ? '' : shortcutKeysSetting.join('+') + '+';
-
-//   globalShortcut.register(shortcutPrefix + '1', function() {
-//     mainOauthWindow.webContents.send('global-shortcut', 0);
-//   });
-//   globalShortcut.register(shortcutPrefix + '2', function() {
-//     mainOauthWindow.webContents.send('global-shortcut', 1);
-//   });
-// }
 
 ipc.on('close-main-window', function() {
   app.quit();
@@ -117,6 +92,11 @@ ipc.on('close-settings-window', function() {
     settingsWindow.close();
   }
 });
+
+
+// ipc.on('sc-unauthorized', function() {
+//   console.log('sc user unauthorized');
+// });
 
 // ipc.on('set-global-shortcuts', function() {
 //   setGlobalShortcuts();

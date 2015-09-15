@@ -13,8 +13,8 @@ function readSettings(settingKey) {
 }
 
 function removeSettings(settingKey) {
-    nconf.remove(settingKey);
-    //return nconf.remove(settingKey);
+    nconf.set(settingKey, undefined);
+    nconf.save();
 }
 
 function getUserHome() {
