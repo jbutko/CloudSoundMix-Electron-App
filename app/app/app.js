@@ -11,6 +11,8 @@
  */
 ;(function() {
 
+  'use strict';
+
 
   /**
    * Definition of the main app module and its dependencies

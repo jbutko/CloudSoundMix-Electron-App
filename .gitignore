@@ -4,3 +4,5 @@ node_modules
 /app/app/config.js
 config.js
 bower_components
+scratch
+accessToken

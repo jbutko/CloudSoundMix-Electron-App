@@ -2,32 +2,19 @@
     <h2 class="text-center">CloudSoundMix</h2>
 </section>
 
-<!-- slider directive -->
-<button data-ng-click="main.connect()" data-ng-if="!main.userAuthorized">SoundCloud Authorize</button>
+<!-- soundcloud authoirization -->
+<button data-ng-click="main.connect('sc')" data-ng-if="!main.scUserAuthorized">SoundCloud Authorize</button>
 
-<!-- slider directive -->
-<button data-ng-click="main.scLogoutUser()" data-ng-if="main.userAuthorized">SoundCloud Logout</button>
+<!-- soundcloud authoirization logout -->
+<button data-ng-click="main.logoutUser('sc')" data-ng-if="main.scUserAuthorized">SoundCloud Logout</button>
 
-<h3>Features</h3>
-<div class="container cf">
-    <div>
-        <ul>
-            <li>* SASS support including sourceMaps</li>
-            <li>* Minimal CSS styling of the view</li>
-            <li>* Gulp watch, build and local server tasks</li>
-            <li>* Responsive navigation</li>
-            <li>* Owl slider directive</li>
-            <li>* Responsive navigation</li>
-            <li>* localStorage service for set, get, remove data</li>
-            <li>* queryService $http wrapper to handle calls</li>
-            <li>* clear folder structure</li>
-            <li>* less than 10 request in build version</li>
-            <li>* minified CSS and JS build files</li>
-            <li>* google analytics snippet</li>
-        </ul>
-    </div>
-</div>
+<!-- mixcloud authoirization -->
+<button data-ng-click="main.connect('mc')" data-ng-if="!main.mcUserAuthorized">Mixcloud Authorize</button>
 
-<div class="text-center">
-    <small>Images courtesy of <a target="_blank" href="http://unsplash.com">unsplash.com</a></small>
-</div>
+<!-- mixcloud authoirization logout -->
+<button data-ng-click="main.logoutUser('mc')" data-ng-if="main.mcUserAuthorized">Mixcloud Logout</button>
+
+<ng-include src="'views/user.html'"></ng-include>
+
+
+
