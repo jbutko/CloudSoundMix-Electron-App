@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"$state",
+				"$stateParams"
+			],
+			[
 				"acce",
 				"access_token"
 			],
@@ -416,58 +420,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/home.html",
+			"file": "/C/dodo/projects/development/casino/client/core/routing.js",
 			"settings":
 			{
-				"buffer_size": 1562,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "main.js",
-			"settings":
-			{
-				"buffer_size": 2638,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 4483,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/app/config.js",
-			"settings":
-			{
-				"buffer_size": 1007,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/app/controller.js",
-			"settings":
-			{
-				"buffer_size": 5665,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/components/services/soundCloud.service.js",
-			"settings":
-			{
-				"buffer_size": 1835,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "AngularJS-Boilerplate/components/services/queryService.service.js",
-			"settings":
-			{
-				"buffer_size": 1840,
+				"buffer_size": 7056,
 				"line_ending": "Windows"
 			}
 		}
@@ -479,20 +435,28 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 500.0,
-		"last_filter": "css",
+		"height": 421.0,
+		"last_filter": "remov",
 		"selected_items":
 		[
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packare",
+				"Package Control: Remove Package"
+			],
 			[
 				"css",
 				"Set Syntax: CSS"
 			],
 			[
 				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -534,10 +498,6 @@
 			[
 				"javasc",
 				"Set Syntax: JavaScript"
-			],
-			[
-				"remov",
-				"Package Control: Remove Package"
 			],
 			[
 				"diff",
@@ -608,7 +568,7 @@
 				"Set Syntax: JSON"
 			]
 		],
-		"width": 657.0
+		"width": 922.0
 	},
 	"console":
 	{
@@ -631,6 +591,7 @@
 	[
 		"/C/dodo/projects/- pers/cloudsoundmix",
 		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate",
+		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/app",
 		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/components",
 		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/components/services",
 		"/C/dodo/projects/- pers/cloudsoundmix/app",
@@ -638,85 +599,140 @@
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/js",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/views"
+		"/C/dodo/projects/- pers/cloudsoundmix/app/views",
+		"/C/dodo/projects/development/casino",
+		"/C/dodo/projects/development/casino/client",
+		"/C/dodo/projects/development/casino/client/components",
+		"/C/dodo/projects/development/casino/client/components/game/detail",
+		"/C/dodo/projects/development/casino/client/components/user",
+		"/C/dodo/projects/development/casino/client/core",
+		"/C/dodo/projects/development/casino/client/services",
+		"/C/dodo/projects/development/casino/client/styles",
+		"/C/dodo/projects/development/casino/client/templates",
+		"/C/dodo/projects/development/casino/client/templates/galaxy",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/header",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/balance",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials"
 	],
 	"file_history":
 	[
+		"/C/dodo/projects/development/casino/.git/COMMIT_EDITMSG",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/static.scss",
+		"/C/dodo/projects/development/casino/client/components/user/user.routing.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/header/header.scss",
+		"/C/dodo/projects/development/casino/client/gulpfile.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_variables.scss",
+		"/C/dodo/projects/development/casino/client/services/user.service.js",
+		"/C/dodo/projects/development/casino/client/index.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/index.html",
+		"/C/dodo/projects/development/casino/client/app.js",
+		"/C/dodo/projects/development/casino/client/core/routing.js",
+		"/C/dodo/projects/development/casino/client/directives/bodyStateClass.directive.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/games-block/games-block-template.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/app.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/assets/translations/en.json",
+		"/C/dodo/projects/development/casino/client/components/games-block/gamesBlock.directive.js",
+		"/C/dodo/projects/development/casino/client/components/games/games.controller.js",
+		"/C/dodo/projects/development/casino/client/components/static-pages/staticPages.controller.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/signup/signup.html",
+		"/C/dodo/projects/development/casino/client/components/game/detail/detail.directive.js",
+		"/C/dodo/projects/development/casino/client/components/game/detail/detail.controller.js",
+		"/C/dodo/projects/development/casino/client/services/system.service.js",
+		"/C/dodo/projects/development/casino/client/directives/responsive.tables.directive.js",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/dodo/projects/development/casino/client/services/game.service.js",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/CodeComplice/CodeComplice.sublime-settings",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/CodeComplice.sublime-settings",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/faq.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/balance/balance.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/balance/balance.html",
+		"/C/dodo/projects/development/casino/client/config/config.json",
+		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/app/config.js",
+		"/C/dodo/projects/development/casino/client/core/constants.js",
+		"/C/dodo/projects/development/casino/client/components/header/header.directive.spec.js",
+		"/C/dodo/projects/development/casino/client/services/user.service.spec.js",
+		"/C/dodo/projects/development/casino/client/core/api-endpoints.js",
+		"/C/dodo/projects/development/web/client/app/user/bettinghistory/bettinghistory.controller.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_helpers.scss",
+		"/C/dodo/projects/development/casino/client/_build/sitemap.xml",
+		"/C/dodo/projects/development/casino/client/crawler.js",
+		"/C/dodo/projects/development/casino/client/_build/index.html",
+		"/C/dodo/projects/development/casino/client/_build/js/templates-0.0.11.js",
+		"/C/dodo/projects/development/casino/client/services/authInterceptor.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/main/main.html",
+		"/C/dodo/projects/development/casino/client/directives/preloader.js",
+		"/C/dodo/projects/development/casino/client/components/user/self-exclusion/selfExclusion.controller.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/self-exclusion/self-exclusion.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/modules/_icons.scss",
+		"/C/dodo/projects/development/casino/client/directives/floatingNav.directive.js",
+		"/C/dodo/projects/development/casino/client/directives/floatingNav.directive.spec.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_typography.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_animations.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/collapse.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/history/bonus/bonus-history.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/style.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_sprite.scss",
+		"/C/dodo/projects/development/casino/client/templates/basic/styles/partials/_typography.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/bonus.html",
+		"/C/dodo/projects/development/casino/client/components/header/header.directive.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/modules/_forms.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/contact.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/views/home.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/main.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/index.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/config.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/components/services/queryService.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/soundCloud.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/controller.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/.gitignore",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/app/soundCloud.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/queryService.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/js/index.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/app/app.js",
-		"/C/dodo/projects/development/casino/client/services/user.service.js",
 		"/C/dodo/projects/development/casino/client/components/user/history/bonus/bonus.controller.spec.js",
-		"/C/dodo/projects/development/casino/client/components/header/header.directive.spec.js",
 		"/C/dodo/projects/development/casino/client/components/user/deposit/deposit.controller.spec.js",
-		"/C/dodo/projects/development/casino/client/components/header/header.directive.js",
-		"/C/dodo/projects/development/casino/client/services/user.service.spec.js",
 		"/C/dodo/projects/development/casino/client/mocks/storage.mock.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/static.scss",
-		"/C/dodo/projects/development/casino/client/app.js",
 		"/C/dodo/projects/development/casino/client/components/user/balance/balance.controller.spec.js",
 		"/C/dodo/projects/development/casino/client/components/user/history/bonus/bonus.controller.js",
 		"/C/dodo/projects/development/casino/client/components/user/balance/balance.controller.js",
 		"/C/dodo/projects/development/web/client/app/user/deposit/deposit.controller.spec.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/alert-notification.html",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_sprite.scss",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/collapse.scss",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/history/bonus/bonus-history.scss",
-		"/C/dodo/projects/development/casino/client/components/user/user.routing.js",
-		"/C/dodo/projects/development/casino/client/components/game/detail/detail.directive.js",
 		"/C/dodo/projects/development/casino/client/components/user/deposit/deposit.redirect.controller.js",
 		"/C/dodo/projects/development/casino/client/components/user/profile/profile.controller.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/assets/translations/en.json",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/balance/balance.html",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/alert-notification.scss",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/header/header.scss",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/balance/balance.scss",
-		"/C/dodo/projects/development/casino/client/gulpfile.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/modules/_icons.scss",
 		"/C/Users/Jozef.Butko/AppData/Local/Google/Chrome/User Data/Default/Extensions/jabopobgcpjmedljpbcaablpmlmfcogm/2.0.4_0/wf_chrome.js",
 		"/C/dodo/projects/development/casino/client/directives/collapse.directive.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/style.scss",
 		"/C/dodo/projects/development/casino/client/components/static-pages/navigation/static-navigation.scss",
 		"/C/dodo/projects/development/casino/client/styles/style.css",
-		"/C/dodo/projects/development/casino/client/core/routing.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_variables.scss",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_typography.scss",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/customer-support/customer-support.scss",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/bonus.html",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/user.html",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/static.html",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/customer-support/customer-support-template.html",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/static-navigation.html",
 		"/C/dodo/projects/development/casino/client/components/static-pages/navigation/staticNavigation.directive.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/header/header-template.html",
-		"/C/dodo/projects/development/casino/client/core/api-endpoints.js",
-		"/C/dodo/projects/development/casino/client/components/static-pages/staticPages.controller.js",
 		"/C/dodo/projects/development/casino/client/assets/translations/en.json",
 		"/C/dodo/projects/development/web/client/app/user/changepassword/changepassword.html",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_helpers.scss",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/game/detail/detail.desktop.directive.html",
 		"/C/dodo/projects/development/casino/client/components/user/deposit/deposit.controller.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/modules/_forms.scss",
 		"/C/dodo/projects/development/casino/client/templates/jack/styles/modules/_forms.scss",
 		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/dodo/projects/development/casino/client/components/games-block/gamesBlock.directive.spec.js",
-		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/dodo/projects/development/casino/client/components/game/detail/detail.controller.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/self-exclusion/self-exclusion.html",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/self-exclusion/self-exclusion.scss",
-		"/C/dodo/projects/development/casino/client/components/user/self-exclusion/selfExclusion.controller.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/change-password/change-password.html",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/signup/signup.scss",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/signup/signup.html",
 		"/C/dodo/projects/development/casino/client/components/auth/auth.controller.js",
 		"/C/dodo/projects/development/casino/client/components/user/self-exclusion/selfExclusion.controller.spec.js",
 		"/C/dodo/projects/development/casino/client/components/user/change-password/changepassword.controller.spec.js",
 		"/C/dodo/projects/development/casino/client/components/user/profile/profile.controller.spec.js",
 		"/C/dodo/projects/development/casino/client/components/user/change-password/changepassword.controller.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/welcome-page.scss",
-		"/C/dodo/projects/- pers/cloudsoundmix/main.js",
 		"/C/dodo/projects/development/casino/client/components/user/forgot-password/forgotpassword.controller.js",
 		"/C/dodo/projects/development/web/client/app/user/changepassword/changepassword.controller.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/breakpoints/_base.scss",
@@ -728,48 +744,9 @@
 		"/C/dodo/projects/development/web/gulpfile.js",
 		"/C/dodo/projects/development/web/client/index.html",
 		"/C/dodo/projects/development/web/client/app/user/transactionhistory/transactionhistory.controller.js",
-		"/C/dodo/projects/development/casino/client/services/system.service.js",
 		"/C/dodo/projects/development/casino/client/directives/slidingNav.directive.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/game/detail/detail.scss",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/app.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/game/detail/detail.device.directive.html",
-		"/C/dodo/projects/development/casino/client/components/user/withdrawal/withdrawal.controller.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/welcome-page.html",
-		"/C/dodo/projects/- pers/wezeo/styles/partials/_bootstrap.scss",
-		"/C/dodo/projects/- pers/wezeo/README.md",
-		"/C/dodo/projects/- pers/wezeo/views/home.html",
-		"/C/dodo/projects/- pers/wezeo/views/external-links.html",
-		"/C/dodo/projects/- pers/wezeo/views/external-links.scss",
-		"/C/dodo/projects/- pers/wezeo/app/controller.js",
-		"/C/dodo/projects/- pers/wezeo/index.html",
-		"/C/dodo/projects/- pers/wezeo/gulpfile.js",
-		"/C/dodo/projects/- pers/wezeo/.htaccess",
-		"/C/dodo/projects/- pers/wezeo/app/app.js",
-		"/C/dodo/projects/- pers/wezeo/app/urlService.js",
-		"/C/dodo/projects/- pers/wezeo/styles/breakpoints/_base.scss",
-		"/C/dodo/projects/- pers/wezeo/styles/modules/_forms.scss",
-		"/C/dodo/projects/- pers/wezeo/package.json",
-		"/C/dodo/projects/- pers/wezeo/bower.json",
-		"/C/dodo/projects/- pers/wezeo/components/directives/externalLinks.directive.js",
-		"/C/dodo/projects/- pers/wezeo/components/filters/httpPrefix.filter.js",
-		"/C/dodo/projects/- pers/wezeo/styles/style.scss",
-		"/C/dodo/projects/- pers/wezeo/styles/partials/_mixins.scss",
-		"/C/dodo/projects/- pers/wezeo/components/services/LocalStorage.service.js",
-		"/C/dodo/projects/- pers/wezeo/styles/breakpoints/_481up.scss",
-		"/C/dodo/projects/- pers/wezeo/styles/breakpoints/_1240up.scss",
-		"/C/dodo/projects/- pers/wezeo/styles/breakpoints/_1030up.scss",
-		"/C/dodo/projects/- pers/wezeo/styles/breakpoints/_768up.scss",
-		"/C/dodo/projects/- pers/wezeo/styles/modules/_buttons.scss",
-		"/C/dodo/projects/- pers/wezeo/views/home.scss",
-		"/C/dodo/projects/development/casino/client/components/main/main.controller.js",
-		"/C/dodo/projects/development/web/client/app/main/main.controller.js",
-		"/C/dodo/projects/- pers/wezeo/components/services/queryService.service.js",
-		"/C/dodo/projects/- pers/wezeo/app/config.js",
-		"/C/dodo/projects/development/casino/client/components/customer-support/customerSupport.directive.js",
-		"/C/dodo/projects/development/casino/client/directives/alertNotification.directive.js",
-		"/C/dodo/projects/development/casino/client/bower.json",
-		"/C/dodo/projects/development/casino/client/vendors/angulartics/package.json",
-		"/C/dodo/projects/development/casino/client/vendors/angulartics/.bower.json"
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/game/detail/detail.device.directive.html"
 	],
 	"find":
 	{
@@ -780,6 +757,11 @@
 		"height": 133.0,
 		"where_history":
 		[
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\web",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
 			"C:\\dodo\\projects\\- pers\\cloudsoundmix",
 			"C:\\dodo\\projects\\development\\casino\\client",
 			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
@@ -902,12 +884,7 @@
 			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
 			"C:\\dodo\\projects\\development\\web\\client\\app",
 			"C:\\dodo\\projects\\development\\casino\\client\\",
-			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
-			"C:\\dodo\\projects\\development\\casino\\client\\",
-			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
-			"C:\\dodo\\projects\\development\\casino\\client\\",
-			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
-			"C:\\dodo\\projects\\development\\casino\\client\\"
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy"
 		]
 	},
 	"find_state":
@@ -915,6 +892,79 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h3",
+			"top: 84px;",
+			"84",
+			"< HEAD",
+			"transactions/transactiondetai",
+			"transactions/transactionhi",
+			"games/gameshistory.c",
+			"bonus/bonus.controller",
+			"user.bonusHistory",
+			"user.limits",
+			".static-navigation",
+			"< HEAD",
+			".bonus-page",
+			"index.html",
+			"_blank",
+			"target",
+			"support",
+			"authenticate: false",
+			".js",
+			"translate",
+			"$rootScope",
+			"\"",
+			"category",
+			"Category",
+			"category",
+			"gameCategory",
+			"seo",
+			"Desc",
+			"robots",
+			"deferred",
+			"< HEAD",
+			"$q.all",
+			"getBonusHistory",
+			"setDepositLimit",
+			"< HEAD",
+			"<h4 ",
+			"id=\"\"",
+			"= true\">",
+			"nonInheritedTags",
+			"new S",
+			"sourceFiles",
+			"html",
+			"plato",
+			"html",
+			"requestCount",
+			"status",
+			"platform",
+			"type",
+			".icon-question",
+			"3",
+			"tooltip",
+			"20",
+			"15",
+			"url(",
+			"questi",
+			"progress-wrapper",
+			"anim",
+			"animate-stripes",
+			"progress[",
+			"progress",
+			"collapseFaq12",
+			"collapseFaq26",
+			"collapseFaq22",
+			"collapseFaq19",
+			"collapseFaq13",
+			"collapseFaq12",
+			"collapseFaq9",
+			"collapseFaq7",
+			"collapseFaq5",
+			"collapse-fade-out-class=\"true\"",
+			"collapseFaq1",
+			"            <div class=\"collapse-toggler collapse-toggler-footer\">\n                <a href=\"#\" ng-click=\"static.collapseFaq26 = !static.collapseFaq26\" data-ng-if=\"static.collapseFaq26\" class=\"collapse-link collapse-link-more\" translate>Read More</a>\n                <a href=\"#\" ng-click=\"static.collapseFaq26 = !static.collapseFaq26\" data-ng-if=\"!static.collapseFaq26\" class=\"collapse-link collapse-link-less\" translate>Read Less</a>\n            </div>",
+			"collapse-height=\"50\"",
 			"saveSettings",
 			"accessToken",
 			"scUserAuthorized",
@@ -969,80 +1019,7 @@
 			"open-settings-window",
 			"open",
 			"balance",
-			"mainBalance",
-			"updateBala",
-			"httpBackend",
-			"fetchBalance",
-			"BalanceController",
-			"httpBackend",
-			"fetchBalance",
-			"DepositCtrl.paymentMethod",
-			"updatedAccounts",
-			"Name of the group",
-			"\"",
-			"console",
-			"ngDialog.open",
-			"user",
-			"userService.updateBalance()",
-			"updateBalance",
-			"BALANCE_",
-			"balance",
-			" !important",
-			"default",
-			"width=\"15%\"",
-			"16",
-			"15",
-			"16",
-			"21",
-			"19",
-			"24",
-			"16.6667",
-			"BONUS_TYPE_FIRST_DEPOSIT",
-			"BONUS_FIRST_DEPOSIT",
-			"trans.",
-			"transaction.",
-			"getTransactions",
-			"trans",
-			"response",
-			".balance ",
-			"progress-wrapper",
-			"span",
-			"1280",
-			"balance-bg",
-			".icon-modal-success",
-			"text-c",
-			"icon",
-			"merge",
-			"balance.currentProgress ",
-			"redeemBonus",
-			"ng-repea",
-			"balance.bonuses.",
-			"balance.bonus.",
-			"self.bonuses",
-			"self.bonus",
-			"<h4",
-			".collapse-toggler",
-			"collapseFaq22",
-			"</p>",
-			"</h4>",
-			"collapseFaq21",
-			"collapseFaq19",
-			"collapseFaq12",
-			"collapseFaq16",
-			"collapseFaq15",
-			"collapseFaq12",
-			"collapseFaq9",
-			"collapseFaq8",
-			"collapseFaq5",
-			"collapseFaq3",
-			"collapseFaq1",
-			"collapseFaq2",
-			"collapseFaq3",
-			"collapseFaq1",
-			"collapseFaq2",
-			"collapseFaq1",
-			"Faq1",
-			"1"
+			"mainBalance"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1082,82 +1059,81 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/home.html",
+					"file": "/C/dodo/projects/development/casino/client/core/routing.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1562,
+						"buffer_size": 7056,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								794,
-								794
+								6239,
+								6239
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1165,617 +1141,27 @@
 								"bh_unmatched_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"tabs_extra_last_activated": 1443557780.91,
-							"tabs_extra_last_activated_sheet_index": 0,
-							"tabs_extra_moving":
-							[
-								4,
-								0
-							],
-							"tabs_extra_spawned": true,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2638,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1440,
-								1440
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"expand_region_settings": "{\"stack\": [{\"start\": 1265, \"end\": 1270}, {\"start\": 1260, \"end\": 1270}], \"hash\": \"5df80c68cb3b168cb20422ab9a8f1728\"}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
-							"tabs_extra_last_activated": 1443558194.61,
+							"tabs_extra_last_activated": 1443789495.83,
 							"tabs_extra_last_activated_sheet_index": 1,
-							"tabs_extra_spawned": true,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 826.0,
+						"translation.y": 3066.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4483,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3857,
-								3858
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tabs_extra_last_activated": 1443556025.52,
-							"tabs_extra_last_activated_sheet_index": 2,
-							"tabs_extra_spawned": true,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 425.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/app/config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1007,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								717,
-								705
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"expand_region_settings": "{\"stack\": [{\"start\": 901, \"end\": 904}, {\"start\": 893, \"end\": 932}], \"hash\": \"faf1a721603059af863f7268696fd3fc\"}",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"tabs_extra_last_activated": 1443556860.84,
-							"tabs_extra_last_activated_sheet_index": 3,
-							"tabs_extra_spawned": true,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 4,
-					"file": "app/app/controller.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5665,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3170,
-								3182
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"expand_region_settings": "{\"stack\": [{\"start\": 2835, \"end\": 2845}, {\"start\": 2823, \"end\": 2852}], \"hash\": \"41702b0255a183097a806dbea0a7cc8a\"}",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"tabs_extra_last_activated": 1443557799.76,
-							"tabs_extra_last_activated_sheet_index": 0,
-							"tabs_extra_spawned": true,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1021.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/components/services/soundCloud.service.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1835,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1267,
-								1267
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"tabs_extra_last_activated": 1443557023.67,
-							"tabs_extra_last_activated_sheet_index": 1,
-							"tabs_extra_spawned": true,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 789.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "AngularJS-Boilerplate/components/services/queryService.service.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1840,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1387,
-								1387
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"tabs_extra_last_activated": 1443557019.8,
-							"tabs_extra_last_activated_sheet_index": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 510.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1807,7 +1193,7 @@
 		"cols":
 		[
 			0.0,
-			0.400646203554,
+			0.46785578781,
 			1.0
 		],
 		"rows":
@@ -1842,6 +1228,250 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"galaxvari",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_variables.scss"
+			],
+			[
+				"heades",
+				"casino\\client\\templates\\galaxy\\components\\header\\header.scss"
+			],
+			[
+				"casigulp",
+				"casino\\client\\gulpfile.js"
+			],
+			[
+				"casininde",
+				"casino\\client\\index.html"
+			],
+			[
+				"galaxinde",
+				"casino\\client\\templates\\galaxy\\index.html"
+			],
+			[
+				"indexhtm",
+				"casino\\client\\index.html"
+			],
+			[
+				"userrou",
+				"casino\\client\\components\\user\\user.routing.js"
+			],
+			[
+				"routin",
+				"casino\\client\\core\\routing.js"
+			],
+			[
+				"userser",
+				"casino\\client\\services\\user.service.js"
+			],
+			[
+				"appjs",
+				"casino\\client\\app.js"
+			],
+			[
+				"galaindexhtm",
+				"casino\\client\\templates\\galaxy\\index.html"
+			],
+			[
+				"galainde",
+				"casino\\client\\templates\\galaxy\\index.html"
+			],
+			[
+				"gaenjs",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"userjs",
+				"casino\\client\\components\\user\\user.routing.js"
+			],
+			[
+				"galaxsignup",
+				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
+			],
+			[
+				"galaxsignu",
+				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
+			],
+			[
+				"users",
+				"casino\\client\\services\\user.service.js"
+			],
+			[
+				"staticcont",
+				"casino\\client\\components\\static-pages\\staticPages.controller.js"
+			],
+			[
+				"gamedetailjs",
+				"casino\\client\\components\\game\\detail\\detail.controller.js"
+			],
+			[
+				"galaenjs",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"gamesblockhtml",
+				"casino\\client\\templates\\galaxy\\components\\games-block\\games-block-template.html"
+			],
+			[
+				"gameser",
+				"casino\\client\\services\\game.service.js"
+			],
+			[
+				"gamescon",
+				"casino\\client\\components\\games\\games.controller.js"
+			],
+			[
+				"galaapp",
+				"casino\\client\\templates\\galaxy\\app.js"
+			],
+			[
+				"casiuserrou",
+				"casino\\client\\components\\user\\user.routing.js"
+			],
+			[
+				"casiconfig",
+				"casino\\client\\config\\config.json"
+			],
+			[
+				"galaconfig",
+				"cloudsoundmix\\AngularJS-Boilerplate\\app\\config.js"
+			],
+			[
+				"casiconsta",
+				"casino\\client\\core\\constants.js"
+			],
+			[
+				"casicongf",
+				"casino\\client\\config\\config.json"
+			],
+			[
+				"userse",
+				"casino\\client\\services\\user.service.js"
+			],
+			[
+				"header",
+				"casino\\client\\components\\header\\header.directive.spec.js"
+			],
+			[
+				"casiconfi",
+				"casino\\client\\config\\config.json"
+			],
+			[
+				"faqhtm",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\faq.html"
+			],
+			[
+				"galahelp",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_helpers.scss"
+			],
+			[
+				"galaxenjs",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"balanceht",
+				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.html"
+			],
+			[
+				"gulpfil",
+				"casino\\client\\gulpfile.js"
+			],
+			[
+				"casiinter",
+				"casino\\client\\services\\authInterceptor.js"
+			],
+			[
+				"mainhtm",
+				"casino\\client\\templates\\galaxy\\components\\main\\main.html"
+			],
+			[
+				"casiapp",
+				"casino\\client\\app.js"
+			],
+			[
+				"casigulpf",
+				"casino\\client\\gulpfile.js"
+			],
+			[
+				"casiselfcon",
+				"casino\\client\\components\\user\\self-exclusion\\selfExclusion.controller.js"
+			],
+			[
+				"casiindex",
+				"casino\\client\\index.html"
+			],
+			[
+				"galaenjso",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"galself",
+				"casino\\client\\templates\\galaxy\\components\\user\\self-exclusion\\self-exclusion.html"
+			],
+			[
+				"galaicon",
+				"casino\\client\\templates\\galaxy\\styles\\modules\\_icons.scss"
+			],
+			[
+				"galaxtypo",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_typography.scss"
+			],
+			[
+				"varib",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_variables.scss"
+			],
+			[
+				"galaxst",
+				"casino\\client\\templates\\galaxy\\styles\\style.scss"
+			],
+			[
+				"casitypo",
+				"casino\\client\\templates\\basic\\styles\\partials\\_typography.scss"
+			],
+			[
+				"galaxsprite",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_sprite.scss"
+			],
+			[
+				"bonushis",
+				"casino\\client\\templates\\galaxy\\components\\user\\history\\bonus\\bonus-history.html"
+			],
+			[
+				"headerdire",
+				"casino\\client\\components\\header\\header.directive.js"
+			],
+			[
+				"galaxforms",
+				"casino\\client\\templates\\galaxy\\styles\\modules\\_forms.scss"
+			],
+			[
+				"galaanim",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_animations.scss"
+			],
+			[
+				"galabalanc",
+				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.html"
+			],
+			[
+				"collapscs",
+				"casino\\client\\templates\\galaxy\\directives\\collapse.scss"
+			],
+			[
+				"bonus",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\bonus.html"
+			],
+			[
+				"contact",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\contact.html"
+			],
+			[
+				"staticss",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\static.scss"
+			],
+			[
+				"faq",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\faq.html"
+			],
 			[
 				"quer",
 				"AngularJS-Boilerplate\\components\\services\\queryService.service.js"
@@ -1883,10 +1513,6 @@
 				"casino\\client\\mocks\\storage.mock.js"
 			],
 			[
-				"header",
-				"casino\\client\\components\\header\\header.directive.js"
-			],
-			[
 				"bonuspe",
 				"casino\\client\\components\\user\\history\\bonus\\bonus.controller.spec.js"
 			],
@@ -1919,10 +1545,6 @@
 				"casino\\client\\components\\user\\balance\\balance.controller.js"
 			],
 			[
-				"userrou",
-				"casino\\client\\components\\user\\user.routing.js"
-			],
-			[
 				"galaxenjso",
 				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
 			],
@@ -1951,20 +1573,8 @@
 				"casino\\client\\templates\\galaxy\\styles\\modules\\_icons.scss"
 			],
 			[
-				"galaxsprite",
-				"casino\\client\\templates\\galaxy\\styles\\partials\\_sprite.scss"
-			],
-			[
 				"casinogulp",
 				"casino\\client\\gulpfile.js"
-			],
-			[
-				"gulpfil",
-				"casino\\client\\gulpfile.js"
-			],
-			[
-				"appjs",
-				"casino\\client\\app.js"
 			],
 			[
 				"balanccon",
@@ -1973,10 +1583,6 @@
 			[
 				"balancehtm",
 				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.html"
-			],
-			[
-				"userser",
-				"casino\\client\\services\\user.service.js"
 			],
 			[
 				"bonuscont",
@@ -2001,14 +1607,6 @@
 			[
 				"staticscss",
 				"casino\\client\\templates\\galaxy\\components\\static-pages\\static.scss"
-			],
-			[
-				"bonus",
-				"casino\\client\\templates\\galaxy\\components\\static-pages\\bonus.html"
-			],
-			[
-				"faq",
-				"casino\\client\\templates\\galaxy\\components\\static-pages\\faq.html"
 			],
 			[
 				"routing",
@@ -2055,10 +1653,6 @@
 				"casino\\client\\templates\\galaxy\\components\\static-pages\\static.html"
 			],
 			[
-				"galaenjs",
-				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
-			],
-			[
 				"enjson",
 				"casino\\client\\assets\\translations\\en.json"
 			],
@@ -2091,10 +1685,6 @@
 				"casino\\client\\templates\\galaxy\\components\\header\\header-template.html"
 			],
 			[
-				"galaxvari",
-				"casino\\client\\templates\\galaxy\\styles\\partials\\_variables.scss"
-			],
-			[
 				"tytpo",
 				"casino\\client\\templates\\galaxy\\styles\\partials\\_typography.scss"
 			],
@@ -2113,14 +1703,6 @@
 			[
 				"gameblospe",
 				"casino\\client\\components\\games-block\\gamesBlock.directive.spec.js"
-			],
-			[
-				"headerdire",
-				"casino\\client\\components\\header\\header.directive.js"
-			],
-			[
-				"galaxenjs",
-				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
 			],
 			[
 				"galxchange",
@@ -2157,202 +1739,6 @@
 			[
 				"changecpnt",
 				"casino\\client\\components\\user\\change-password\\changepassword.controller.js"
-			],
-			[
-				"changepascontr",
-				"web\\client\\app\\user\\changepassword\\changepassword.controller.js"
-			],
-			[
-				"casinoselfcontro",
-				"casino\\client\\components\\user\\self-exclusion\\selfExclusion.controller.js"
-			],
-			[
-				"notifi",
-				"casino\\client\\templates\\galaxy\\directives\\alert-notification.html"
-			],
-			[
-				"changecontro",
-				"casino\\client\\components\\user\\change-password\\changepassword.controller.js"
-			],
-			[
-				"galaxbase",
-				"casino\\client\\templates\\galaxy\\styles\\breakpoints\\_base.scss"
-			],
-			[
-				"galaxtypo",
-				"casino\\client\\templates\\galaxy\\styles\\partials\\_typography.scss"
-			],
-			[
-				"galaxforms",
-				"casino\\client\\templates\\galaxy\\styles\\modules\\_forms.scss"
-			],
-			[
-				"galaxstyles",
-				"casino\\client\\templates\\galaxy\\styles\\style.scss"
-			],
-			[
-				"galaxsttyle",
-				"casino\\client\\templates\\galaxy\\styles\\style.ie.scss"
-			],
-			[
-				"webselfexchtml",
-				"web\\client\\app\\user\\selfexclusion\\self-exclusion.html"
-			],
-			[
-				"casiostylescs",
-				"casino\\client\\templates\\galaxy\\styles\\style.scss"
-			],
-			[
-				"enjso",
-				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
-			],
-			[
-				"galaman",
-				"casino\\client\\templates\\galaxy\\components\\main\\main.scss"
-			],
-			[
-				"galaxhead",
-				"casino\\client\\templates\\galaxy\\components\\header\\header.scss"
-			],
-			[
-				"transacti",
-				"web\\client\\app\\user\\transactionhistory\\transactionhistory.controller.js"
-			],
-			[
-				"headerditre",
-				"casino\\client\\components\\header\\header.directive.js"
-			],
-			[
-				"userhtm",
-				"casino\\client\\templates\\galaxy\\components\\user\\user.html"
-			],
-			[
-				"hraderhtml",
-				"casino\\client\\templates\\galaxy\\components\\header\\header-template.html"
-			],
-			[
-				"head",
-				"casino\\client\\components\\header\\header.directive.js"
-			],
-			[
-				"galaxappjs",
-				"casino\\client\\templates\\galaxy\\app.js"
-			],
-			[
-				"casinrou",
-				"casino\\client\\core\\routing.js"
-			],
-			[
-				"detailcon",
-				"casino\\client\\components\\game\\detail\\detail.controller.js"
-			],
-			[
-				"slidingna",
-				"casino\\client\\directives\\slidingNav.directive.js"
-			],
-			[
-				"headerdi",
-				"casino\\client\\components\\header\\header.directive.js"
-			],
-			[
-				"headerte",
-				"casino\\client\\templates\\galaxy\\components\\header\\header-template.html"
-			],
-			[
-				"userrout",
-				"casino\\client\\components\\user\\user.routing.js"
-			],
-			[
-				"welcome",
-				"casino\\client\\templates\\galaxy\\components\\static-pages\\welcome-page.html"
-			],
-			[
-				"forms",
-				"wezeo\\styles\\modules\\_forms.scss"
-			],
-			[
-				"base",
-				"wezeo\\styles\\breakpoints\\_base.scss"
-			],
-			[
-				"urls",
-				"wezeo\\app\\urlService.js"
-			],
-			[
-				"wezeinde",
-				"wezeo\\index.html"
-			],
-			[
-				"wezfo",
-				"wezeo\\styles\\modules\\_forms.scss"
-			],
-			[
-				"maincon",
-				"casino\\client\\components\\main\\main.controller.js"
-			],
-			[
-				"loclas",
-				"wezeo\\components\\services\\LocalStorage.service.js"
-			],
-			[
-				"casisignuphtml",
-				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
-			],
-			[
-				"staticdire",
-				"casino\\client\\components\\static-pages\\navigation\\staticNavigation.directive.js"
-			],
-			[
-				"casinoroutin",
-				"casino\\client\\core\\routing.js"
-			],
-			[
-				"customerhtml",
-				"casino\\client\\templates\\galaxy\\components\\customer-support\\customer-support-template.html"
-			],
-			[
-				"custome",
-				"casino\\client\\templates\\galaxy\\components\\customer-support\\customer-support.scss"
-			],
-			[
-				"casibower",
-				"casino\\client\\bower.json"
-			],
-			[
-				"casin",
-				"casino\\client\\index.html"
-			],
-			[
-				"gamesblock",
-				"casino\\client\\components\\games-block\\gamesBlock.directive.spec.js"
-			],
-			[
-				"signupcon",
-				"casino\\client\\components\\signup\\signup.controller.js"
-			],
-			[
-				"langua",
-				"casino\\client\\templates\\galaxy\\directives\\language-switcher.html"
-			],
-			[
-				"languag",
-				"casino\\client\\directives\\language-switcher.directive.js"
-			],
-			[
-				"karmac",
-				"casino\\client\\karma.conf.js"
-			],
-			[
-				"withdrcont",
-				"casino\\client\\components\\user\\withdrawal\\withdrawal.controller.js"
-			],
-			[
-				"galaxchangepas",
-				"casino\\client\\templates\\galaxy\\components\\user\\change-password\\change-password.html"
-			],
-			[
-				"profile",
-				"casino\\client\\templates\\galaxy\\components\\user\\profile\\profile.html"
 			]
 		],
 		"width": 0.0
@@ -2375,7 +1761,7 @@
 		],
 		"width": 527.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -2383,7 +1769,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 63.0,
+	"side_bar_width": 358.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

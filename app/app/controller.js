@@ -15,11 +15,11 @@
     .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService', 'CONSTANTS', 'electron',
-  '$window', '$http', 'fetchAPI', '$q'];
+  '$window', '$http', 'fetchAPI', '$q', '$sce'];
 
 
   function MainController(LocalStorage, QueryService, CONSTANTS, electron,
-    $window, $http, fetchAPI, $q) {
+    $window, $http, fetchAPI, $q, $sce) {
 
     // 'controller as' syntax
     var self = this;
@@ -191,21 +191,35 @@
       //  });
     }
 
-    self.fetchUserDashboard = function fetchUserDashboard() {
+    self.fetchUserDashboard = function() {
 
       var promises = {
-        sc: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
-        mc: fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {})
+        scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        mcMe: fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {}),
+        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {})
         //sc: $http.get('http://api.soundcloud.com/me/activities/tracks/affiliated?client_id=aade84c56054d6945c32b616bb7bce0b')
       };
 
       $q.all(promises).then(function(data) {
-        console.log(data);
-        self.scUserDashboard = data.sc.data.collection;
-        self.mcUser = data.mc.data;
+        self.scUserDashboard = data.scDashboard.data.collection;
+        self.mcUser = data.mcMe.data;
+        console.log(data.mcHome);
       });
     };
     self.fetchUserDashboard();
+
+
+    /**
+     * Generate safe URL for iframe's src attribute
+     *
+     * @param  {object} trackObj Sound object
+     * @return {string}          Safe track URL
+     */
+    self.generateIframeUrl = function (trackObj) {
+      return $sce.trustAsResourceUrl('https://w.soundcloud.com/player/?url=' + trackObj.origin.uri + '&amp;show_artwork=true&amp;show_comments=false&amp;v=1');
+    };
+
+
   }
 
 

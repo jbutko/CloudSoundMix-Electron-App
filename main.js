@@ -33,10 +33,9 @@
 
     mainWindow = new BrowserWindow({
       frame: true,
+      width: 700,
       height: 700,
-      resizable: true,
-      width: 800,
-      center: true
+      resizable: true
     });
 
     mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
