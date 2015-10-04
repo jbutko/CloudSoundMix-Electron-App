@@ -44,14 +44,11 @@
     self.scAccessToken = config.readSettings('scAccessToken');
     self.mcAccessToken = config.readSettings('mcAccessToken');
 
-
     if (self.scAccessToken) {
-      // $http.defaults.headers.common.Authorization = 'Oauth ' + self.scAccessToken;
       self.scUserAuthorized = true;
     }
 
     if (self.mcAccessToken) {
-      // $http.defaults.headers.common.Authorization = 'Oauth ' + self.mcAccessToken;
       self.mcUserAuthorized = true;
     }
 
@@ -73,7 +70,6 @@
       var mixcloudAuthURI = 'https://www.mixcloud.com/oauth/authorize?client_id=' + CONSTANTS.MC.clientID + '&redirect_uri=' + CONSTANTS.MC.redirectUri;
       var url = service === 'sc' ? SC.getConnectUrl() : mixcloudAuthURI;
 
-      console.log(url);
       ipc.send('open-authorization-window', {scUrl: url});
     };
 
@@ -154,7 +150,6 @@
      * if accessToken is set in config user is authenticated
      */
     var scUserAuhorized = typeof scCodeToken !== 'undefined' && self.scAccessToken !== undefined;
-    console.log(scUserAuhorized);
     if (scUserAuhorized) {
       self.scUserAuthorized = true;
       SC.setToken(self.scAccessToken);
@@ -172,10 +167,6 @@
          //  console.log(data);
       });
 
-
-      // $http.get('https://api.soundcloud.com/me', {
-      //   headers: {'oauth_token': self.scAccessToken}
-      // })
       // fetchAPI.query('GET', 'me', {'oauth_token': self.scAccessToken, client_id: CONSTANTS.clientID}, {})
       //  .then(function(data) {
       //    console.log(data);
@@ -183,40 +174,75 @@
       //    console.log(error);
       //  });
 
-      // $http.get('https://api.soundcloud.com/users/doddiblog', {'oauth_token': self.scAccessToken, client_id: CONSTANTS.clientID})
-      //  .then(function(data) {
-      //    console.log(data);
-      //  }, function(error) {
-      //    console.log(error);
-      //  });
     }
 
+    /**
+     * Fetch user's feed or latests tracks
+     */
     self.fetchUserDashboard = function() {
 
       var promises = {
-        scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        scReposted: fetchAPI.query('GET', 'https://api-v2.soundcloud.com/profile/soundcloud:users:41691970?limit=50&offset=0', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        // scReposted1: fetchAPI.query('GET', 'https://api-v2.soundcloud.com', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         mcMe: fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {}),
-        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {})
+        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: 3}, {}, {})
         //sc: $http.get('http://api.soundcloud.com/me/activities/tracks/affiliated?client_id=aade84c56054d6945c32b616bb7bce0b')
       };
 
+      self.mainFeed = [];
+
       $q.all(promises).then(function(data) {
-        self.scUserDashboard = data.scDashboard.data.collection;
+        var scUserDashboard = data.scDashboard.data.collection;
+        var mcFeed = data.mcFeed.data.data;
+        scUserDashboard.platform = 'sc';
+
+        self.mainFeed = scUserDashboard.concat(mcFeed);
         self.mcUser = data.mcMe.data;
-        console.log(data.mcHome);
+        // console.log(self.mainFeed);
       });
     };
+
     self.fetchUserDashboard();
+
+
+    /**
+     * Search tracks
+     */
+    self.searchTracks = function(keyword, searchType, platform, params, duration) {
+
+      fetchAPI.searchTracks(keyword, searchType, platform, params, duration).then(function(results) {
+        var scSearchResults = results.scSearch.data;
+        var mcSearchResults = results.mcSearch.data.data;
+        scSearchResults.platform = 'sc';
+
+        self.mainFeed = scSearchResults.concat(mcSearchResults);
+        console.log(self.mainFeed);
+      }).catch(function (err) {
+        console.log(err);
+      });
+    };
+
+    // self.searchTracks('LTJ Bukem', '', '', '');
 
 
     /**
      * Generate safe URL for iframe's src attribute
      *
-     * @param  {object} trackObj Sound object
+     * @param  {object} trackUrl Sound object
      * @return {string}          Safe track URL
      */
-    self.generateIframeUrl = function (trackObj) {
-      return $sce.trustAsResourceUrl('https://w.soundcloud.com/player/?url=' + trackObj.origin.uri + '&amp;show_artwork=true&amp;show_comments=false&amp;v=1');
+    self.generateIframeUrl = function (trackUrl, type) {
+      var url = trackUrl && trackUrl.cloudcasts ? trackUrl.cloudcasts[0].url : trackUrl.url,
+          mc,
+          sc;
+
+      if (type === 'mc') {
+        mc = $sce.trustAsResourceUrl('https://www.mixcloud.com/widget/iframe/?feed=' + encodeURIComponent(url) + '&amp;hide_cover=1&amp;hide_tracklist=0&amp;mini=0&amp;replace=0');
+      } else {
+        sc = $sce.trustAsResourceUrl('https://w.soundcloud.com/player/?url=' + trackUrl + '&amp;show_artwork=true&amp;show_playcount=false&amp;liking=false&amp;sharing=true&amp;buying=true&amp;show_bpm=false&amp;show_comments=true');
+      }
+      return type === 'sc' ? sc : mc;
     };
 
 

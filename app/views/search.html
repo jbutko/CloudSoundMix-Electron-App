@@ -1,0 +1,33 @@
+<!-- search form -->
+<div class="search-wrapper">
+	<form class="form row"
+		  name="main.searchForm"
+		  novalidate
+		  data-ng-submit="main.searchTracks(main.searchKeyword, '', '', '', main.duration)">
+
+		  <input type="search"
+		  		 data-ng-model="main.searchKeyword">
+
+		  <select id="duration"
+		  		  name="duration"
+		  		  class="form-control"
+		          data-ng-model="main.duration"
+		          data-ng-change="main.searchTracks(main.searchKeyword, '', '', '', main.duration)"
+		          data-ng-disabled="!main.searchKeyword">
+		          <option value="10" />
+		          <option value="20" />
+		          <option value="30" />
+		          <option value="40" />
+		          <option value="50" />
+		          <option value="60" />
+		          <option value="70" />
+		          <option value="80" />
+		          <option value="90" />
+		          <option value="100" />
+		  </select>
+
+		  <button class="btn btn-submit"
+		   		  type="submit">Search
+		  </button>
+	</form>
+</div>

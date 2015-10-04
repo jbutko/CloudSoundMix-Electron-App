@@ -42,7 +42,7 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: $font;
-  background-color: $gray;
+  background-color: #fff;
   @include transition(background-color 0.24s ease-in-out);
 
   // a focused input (or hovered on)

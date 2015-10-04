@@ -15,7 +15,7 @@
  * 6. minify and copy all JS files
  * 7. copy fonts
  * 8. show build folder size
- * 
+ *
  */
 var gulp            = require('gulp'),
     browserSync     = require('browser-sync'),
@@ -245,6 +245,21 @@ gulp.task('default', ['browser-sync', 'sass', 'minify-css'], function() {
 });
 
 
+// default task to be run with `gulp` command
+// this default task will run BrowserSync & then use Gulp to watch files.
+// when a file is changed, an event is emitted to BrowserSync with the filepath.
+gulp.task('watch', ['sass', 'minify-css'], function() {
+  gulp.watch('styles/*.css', function(file) {
+    if (file.type === "changed") {
+      reload(file.path);
+    }
+  });
+  gulp.watch(['*.html', 'views/*.html'], ['bs-reload']);
+  gulp.watch(['app/*.js', 'components/**/*.js', 'js/*.js'], ['bs-reload']);
+  gulp.watch('styles/**/*.scss', ['sass', 'minify-css']);
+});
+
+
 /**
  * build task:
  * 1. clean /_build folder
@@ -255,7 +270,7 @@ gulp.task('default', ['browser-sync', 'sass', 'minify-css'], function() {
  * 6. minify and copy all JS files
  * 7. copy fonts
  * 8. show build folder size
- * 
+ *
  */
 gulp.task('build', function(callback) {
   runSequence(

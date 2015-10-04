@@ -44,6 +44,8 @@
 
     $locationProvider.html5Mode(false);
 
+    $httpProvider.interceptors.push('httpInterceptor');
+
     // routes
     $routeProvider
       .when('/', {
