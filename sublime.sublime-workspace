@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"scU",
+				"scUserDashboard"
+			],
+			[
+				"prope",
+				"propertyToRename"
+			],
+			[
+				"sou",
+				"sourceData"
+			],
+			[
+				"mcSe",
+				"mcSearchType"
+			],
+			[
+				"sea",
+				"searchType"
+			],
+			[
 				"sitemap",
 				"sitemap.xml"
 			],
@@ -30,10 +50,6 @@
 			[
 				"cli",
 				"clientID"
-			],
-			[
-				"sou",
-				"soundCloud.service.js"
 			],
 			[
 				"sound",
@@ -424,14 +440,6 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/home.html",
-			"settings":
-			{
-				"buffer_size": 777,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/views/user.html",
 			"settings":
 			{
@@ -440,18 +448,42 @@
 			}
 		},
 		{
-			"file": "app/views/stream.html",
+			"file": "app/views/search.html",
 			"settings":
 			{
-				"buffer_size": 237,
+				"buffer_size": 990,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/components/filters/trustThisUrl.filter.js",
+			"file": "app/views/home.html",
 			"settings":
 			{
-				"buffer_size": 589,
+				"buffer_size": 830,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/stream.html",
+			"settings":
+			{
+				"buffer_size": 539,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app/controller.js",
+			"settings":
+			{
+				"buffer_size": 7846,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/dodo/projects/development/casino/client/templates/galaxy/components/signup/signup.html",
+			"settings":
+			{
+				"buffer_size": 48150,
 				"line_ending": "Windows"
 			}
 		},
@@ -467,15 +499,31 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 4479,
+				"buffer_size": 4666,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/app/controller.js",
+			"file": "app/components/directives/player.directive.js",
 			"settings":
 			{
-				"buffer_size": 6739,
+				"buffer_size": 1166,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/services/fetchAPI.service.js",
+			"settings":
+			{
+				"buffer_size": 3388,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/services/httpInterceptor.factory.js",
+			"settings":
+			{
+				"buffer_size": 3638,
 				"line_ending": "Windows"
 			}
 		}
@@ -642,25 +690,56 @@
 	"expanded_folders":
 	[
 		"/C/dodo/projects/- pers/cloudsoundmix",
-		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/app",
-		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/components",
-		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/components/services",
 		"/C/dodo/projects/- pers/cloudsoundmix/app",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/app",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/directives",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/components/filters",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/styles",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/styles/modules",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/views",
+		"/C/dodo/projects/development/casino",
 		"/C/dodo/projects/development/casino/client",
+		"/C/dodo/projects/development/casino/client/components",
 		"/C/dodo/projects/development/casino/client/components/user",
-		"/C/dodo/projects/development/casino/client/core",
+		"/C/dodo/projects/development/casino/client/components/user/deposit",
+		"/C/dodo/projects/development/casino/client/services",
 		"/C/dodo/projects/development/casino/client/templates",
 		"/C/dodo/projects/development/casino/client/templates/galaxy",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials"
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/signup",
+		"/C/dodo/projects/development/web",
+		"/C/dodo/projects/development/web/client",
+		"/C/dodo/projects/development/web/client/app",
+		"/C/dodo/projects/development/web/client/app/account",
+		"/C/dodo/projects/development/web/client/app/account/signup",
+		"/C/dodo/projects/development/web/client/components",
+		"/C/dodo/projects/development/web/client/components/betslip",
+		"/C/dodo/projects/development/web/client/components/betslip/betslip-service",
+		"/C/dodo/projects/development/web/client/components/betslip/play-bet",
+		"/C/dodo/projects/development/web/client/components/offer"
 	],
 	"file_history":
 	[
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/app.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/styles/modules/_forms.scss",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/gulpfile.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/styles/modules/_forms.scss",
+		"/C/dodo/projects/development/web/client/app/account/signup/signup.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/config.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/filters/trustThisUrl.filter.js",
+		"/C/dodo/projects/development/web/client/components/betslip/betslip-service/betslip.service.js",
+		"/C/dodo/projects/development/casino/client/services/authInterceptor.js",
+		"/C/dodo/projects/development/casino/client/app.js",
+		"/C/dodo/projects/development/web/client/app/app.js",
+		"/C/dodo/projects/- pers/stickyNavbar/jquery.stickyNavbar.js",
+		"/C/dodo/projects/- pers/stickyNavbar/jquery.stickyNavbar.min.js",
+		"/C/dodo/projects/- pers/stickyNavbar/package.json",
+		"/C/dodo/projects/- pers/stickyNavbar/README.md",
+		"/C/dodo/projects/- pers/stickyNavbar/bower.json",
+		"/C/dodo/projects/- pers/stickyNavbar/stickyNavbar.js.jquery.json",
+		"/C/dodo/projects/- pers/cloudsoundmix/node_modules/node-soundcloud/lib/soundcloud.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/node_modules/node-soundcloud/index.js",
 		"/C/dodo/projects/development/casino/client/index.html",
 		"/C/dodo/projects/development/casino/client/gulpfile.js",
 		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -668,7 +747,6 @@
 		"/C/dodo/projects/development/casino/client/_build/casino_build.zip",
 		"/C/dodo/projects/development/casino/client/_build/sitemap.xml",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/app.js",
-		"/C/dodo/projects/development/casino/client/app.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/index.html",
 		"/C/dodo/projects/development/casino/client/sitemap.xml",
 		"/C/dodo/projects/development/casino/client/components/user/user.routing.js",
@@ -708,7 +786,6 @@
 		"/C/dodo/projects/development/casino/client/crawler.js",
 		"/C/dodo/projects/development/casino/client/_build/index.html",
 		"/C/dodo/projects/development/casino/client/_build/js/templates-0.0.11.js",
-		"/C/dodo/projects/development/casino/client/services/authInterceptor.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/main/main.html",
 		"/C/dodo/projects/development/casino/client/directives/preloader.js",
 		"/C/dodo/projects/development/casino/client/components/user/self-exclusion/selfExclusion.controller.js",
@@ -730,7 +807,6 @@
 		"/C/dodo/projects/- pers/cloudsoundmix/app/views/home.html",
 		"/C/dodo/projects/- pers/cloudsoundmix/main.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/index.html",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/app/config.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/components/services/queryService.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/soundCloud.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/app/controller.js",
@@ -738,7 +814,6 @@
 		"/C/dodo/projects/- pers/cloudsoundmix/app/app/soundCloud.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/queryService.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/js/index.js",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/app/app.js",
 		"/C/dodo/projects/development/casino/client/components/user/history/bonus/bonus.controller.spec.js",
 		"/C/dodo/projects/development/casino/client/components/user/deposit/deposit.controller.spec.js",
 		"/C/dodo/projects/development/casino/client/mocks/storage.mock.js",
@@ -773,22 +848,7 @@
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/change-password/change-password.html",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/signup/signup.scss",
 		"/C/dodo/projects/development/casino/client/components/auth/auth.controller.js",
-		"/C/dodo/projects/development/casino/client/components/user/self-exclusion/selfExclusion.controller.spec.js",
-		"/C/dodo/projects/development/casino/client/components/user/change-password/changepassword.controller.spec.js",
-		"/C/dodo/projects/development/casino/client/components/user/profile/profile.controller.spec.js",
-		"/C/dodo/projects/development/casino/client/components/user/change-password/changepassword.controller.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/welcome-page.scss",
-		"/C/dodo/projects/development/casino/client/components/user/forgot-password/forgotpassword.controller.js",
-		"/C/dodo/projects/development/web/client/app/user/changepassword/changepassword.controller.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/breakpoints/_base.scss",
-		"/C/dodo/projects/development/web/client/app/user/selfexclusion/self-exclusion.html",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/style.ie.scss",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/main/main.scss",
-		"/C/dodo/projects/development/web/client/components/auth/auth.service.js",
-		"/C/dodo/projects/development/casino/.git/info/exclude",
-		"/C/dodo/projects/development/web/gulpfile.js",
-		"/C/dodo/projects/development/web/client/index.html",
-		"/C/dodo/projects/development/web/client/app/user/transactionhistory/transactionhistory.controller.js"
+		"/C/dodo/projects/development/casino/client/components/user/self-exclusion/selfExclusion.controller.spec.js"
 	],
 	"find":
 	{
@@ -799,6 +859,9 @@
 		"height": 133.0,
 		"where_history":
 		[
+			"C:\\dodo\\projects\\development\\web",
+			"C:\\dodo\\projects\\- pers\\cloudsoundmix",
+			"C:\\dodo\\projects\\- pers\\stickyNavbar",
 			"C:\\dodo\\projects\\- pers\\cloudsoundmix",
 			"C:\\dodo\\projects\\development\\casino\\client",
 			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
@@ -923,10 +986,7 @@
 			"C:\\dodo\\projects\\development\\casino\\client\\",
 			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
 			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy\\",
-			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy\\components\\signup",
-			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
-			"C:\\dodo\\projects\\development\\web\\client\\app",
-			"C:\\dodo\\projects\\development\\casino\\client\\"
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy\\components\\signup"
 		]
 	},
 	"find_state":
@@ -934,6 +994,46 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"duration",
+			"search",
+			"main.search",
+			"selected",
+			"hidden ",
+			" ",
+			"\n				",
+			"data",
+			"console.lo",
+			"limit: 1",
+			"1",
+			", limit: 1",
+			"origin",
+			"_changePropertyName",
+			"self.scUserDashboard = ",
+			"background-color",
+			"#f7f8fa",
+			"response",
+			"request",
+			"authInterceptor",
+			"interceptor",
+			" trustThisUrl",
+			" substring",
+			" c.substring(0, 7))",
+			"if (\"http\" === c.substring(0, 4) || \"mailto:\" === c.substring(0, 7)) return !0;",
+			"1.3.1",
+			"MC",
+			"fetchAPI",
+			"query",
+			"{client_id: CONSTANTS.SC.clientID, limit: 1}",
+			"scAPIurl",
+			"fetchAPI.query(",
+			"sound",
+			"self.",
+			"responsiveNav",
+			"sdk2",
+			"&",
+			"[0]",
+			"var",
+			"mc",
 			"directive",
 			"responsiveNav",
 			"339",
@@ -1021,47 +1121,7 @@
 			"collapseFaq1",
 			"            <div class=\"collapse-toggler collapse-toggler-footer\">\n                <a href=\"#\" ng-click=\"static.collapseFaq26 = !static.collapseFaq26\" data-ng-if=\"static.collapseFaq26\" class=\"collapse-link collapse-link-more\" translate>Read More</a>\n                <a href=\"#\" ng-click=\"static.collapseFaq26 = !static.collapseFaq26\" data-ng-if=\"!static.collapseFaq26\" class=\"collapse-link collapse-link-less\" translate>Read Less</a>\n            </div>",
 			"collapse-height=\"50\"",
-			"saveSettings",
-			"accessToken",
-			"scUserAuthorized",
-			"saveSettings",
-			"mcAuthObj",
-			"sc",
-			"onfig.",
-			"client_id",
-			"\n          ",
-			"quer",
-			"self.authorize",
-			"mcAccessToken",
-			"scAccessToken",
-			"UserAuthorized",
-			"mcUserAuthorized",
-			"Config.",
-			"config.",
-			"saveSettings",
-			"scUserAuthorized",
-			"sc-unauthorized",
-			"sc",
-			"self.accessToken",
-			"accessToken",
-			"AccessToken",
-			"'accessToken'",
-			"accessTok",
-			"accesst",
-			"accessToken",
-			"Config.",
-			"config.",
-			"scLogoutUser",
-			"logoutUser",
-			"scLogoutUser",
-			"scTokenCode",
-			"data.scUrl",
-			"CONSTANTS",
-			"userAuthorized",
-			"open-authorization-window",
-			"soundcloud",
-			"SoundCloud",
-			"QueryService"
+			"saveSettings"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1069,6 +1129,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"1.3.2",
 			"'urlApp'",
 			"min-width: 970px",
 			"max-width: 969px",
@@ -1101,105 +1162,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 777,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								512,
-								512
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tabs_extra_last_activated": 1443815127.25,
-							"tabs_extra_last_activated_sheet_index": 0,
-							"tabs_extra_spawned": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/user.html",
 					"semi_transient": false,
 					"settings":
@@ -1220,21 +1187,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1245,11 +1197,36 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -1260,29 +1237,314 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"history_list_is_closing": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tabs_extra_is_closed": true,
+							"tabs_extra_last_activated": 1443970091.43,
+							"tabs_extra_last_activated_sheet_index": 0,
+							"tabs_extra_spawned": true,
+							"tabs_extra_view_info":
+							[
+								1,
+								-1
+							],
+							"tabs_extra_window_info": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/search.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 990,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								894,
+								894
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"tabs_extra_last_activated": 1443988295.24,
+							"tabs_extra_last_activated_sheet_index": 1,
+							"tabs_extra_spawned": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								773,
+								773
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tabs_extra_last_activated": 1443814347.26,
-							"tabs_extra_last_activated_sheet_index": 1,
+							"tabs_extra_last_activated": 1443975677.81,
+							"tabs_extra_last_activated_sheet_index": 2,
+							"tabs_extra_spawned": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/stream.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 539,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								520,
+								520
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"expand_region_settings": "{\"stack\": [{\"start\": 164, \"end\": 169}, {\"start\": 164, \"end\": 187}], \"hash\": \"e846b19e309b379b46be566b96087ce4\"}",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"tabs_extra_last_activated": 1443986844.18,
+							"tabs_extra_last_activated_sheet_index": 3,
 							"tabs_extra_spawned": true
 						},
 						"translation.x": 0.0,
@@ -1291,22 +1553,28 @@
 					},
 					"stack_index": 4,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
 				{
-					"buffer": 2,
-					"file": "app/views/stream.html",
+					"buffer": 4,
+					"file": "app/app/controller.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 237,
+						"buffer_size": 7846,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								237,
-								237
+								6950,
+								6951
 							]
 						],
 						"settings":
@@ -1314,21 +1582,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1339,11 +1592,36 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -1354,55 +1632,51 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"expand_region_settings": "{\"stack\": [{\"end\": 230, \"start\": 225}, {\"end\": 297, \"start\": 186}], \"hash\": \"3ffd345dc243d1aca51487d5599639e9\"}",
+							"expand_region_settings": "{\"stack\": [{\"start\": 7468, \"end\": 7476}, {\"start\": 7468, \"end\": 7494}], \"hash\": \"0ba5f624717831071f06ef22558bd17b\"}",
 							"incomplete_sync": null,
-							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tabs_extra_last_activated": 1443815671.97,
-							"tabs_extra_last_activated_sheet_index": 2,
-							"tabs_extra_spawned": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1443988394.43,
+							"tabs_extra_last_activated_sheet_index": 0,
+							"tabs_extra_moving":
+							[
+								2,
+								1
+							],
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3129.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/components/filters/trustThisUrl.filter.js",
+					"buffer": 5,
+					"file": "/C/dodo/projects/development/casino/client/templates/galaxy/components/signup/signup.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 589,
+						"buffer_size": 48150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								357,
-								357
+								16341,
+								15680
 							]
 						],
 						"settings":
@@ -1410,21 +1684,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1435,11 +1694,36 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -1450,49 +1734,31 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
 							"incomplete_sync": null,
-							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
-							"tabs_extra_last_activated": 1443814472.85,
-							"tabs_extra_last_activated_sheet_index": 3,
-							"tabs_extra_spawned": true,
+							"tabs_extra_last_activated": 1443987039.91,
+							"tabs_extra_last_activated_sheet_index": 1,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3699.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 2,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "main.js",
 					"semi_transient": false,
 					"settings":
@@ -1504,8 +1770,8 @@
 						"selection":
 						[
 							[
-								621,
-								621
+								1156,
+								1156
 							]
 						],
 						"settings":
@@ -1513,21 +1779,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1538,11 +1789,36 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -1553,21 +1829,11 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
 							"incomplete_sync": null,
@@ -1575,33 +1841,225 @@
 							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
-							"tabs_extra_last_activated": 1443814318.63,
-							"tabs_extra_last_activated_sheet_index": 0,
+							"tabs_extra_last_activated": 1443976701.18,
+							"tabs_extra_last_activated_sheet_index": 2,
 							"tabs_extra_spawned": true,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 878.0,
+						"translation.y": 426.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4657,
+								4657
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"expand_region_settings": "{\"stack\": [{\"start\": 3439, \"end\": 3447}, {\"start\": 3428, \"end\": 3467}], \"hash\": \"632de944807570af0593c005ed151ca2\"}",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tabs_extra_last_activated": 1443981964.5,
+							"tabs_extra_last_activated_sheet_index": 3,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1064.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/components/directives/player.directive.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1166,
+								1166
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1443983860.01,
+							"tabs_extra_last_activated_sheet_index": 4,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/index.html",
+					"buffer": 9,
+					"file": "app/components/services/fetchAPI.service.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4479,
+						"buffer_size": 3388,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3544,
-								3544
+								3388,
+								3388
 							]
 						],
 						"settings":
@@ -1609,21 +2067,16 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1644,65 +2097,6 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tabs_extra_last_activated": 1443814213.71,
-							"tabs_extra_last_activated_sheet_index": 1,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1122.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/app/controller.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6739,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6336,
-								6336
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -1713,68 +2107,141 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"expand_region_settings": "{\"stack\": [{\"start\": 2352, \"end\": 2358}, {\"start\": 2311, \"end\": 2369}], \"hash\": \"37f920e7aa630a7053f19cf0c9fd3133\"}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
-							"tabs_extra_last_activated": 1443818323.42,
-							"tabs_extra_last_activated_sheet_index": 2,
+							"tabs_extra_last_activated": 1444026257.69,
+							"tabs_extra_last_activated_sheet_index": 5,
+							"tabs_extra_moving":
+							[
+								2,
+								1
+							],
 							"tabs_extra_spawned": true,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3102.0,
+						"translation.y": 1506.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/components/services/httpInterceptor.factory.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2609,
+								2609
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1443983005.68,
+							"tabs_extra_last_activated_sheet_index": 6,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 568.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1808,7 +2275,7 @@
 		"cols":
 		[
 			0.0,
-			0.422423083748,
+			0.357089292676,
 			1.0
 		],
 		"rows":
@@ -1834,7 +2301,7 @@
 	"project": "sublime.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 90.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1843,6 +2310,42 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"casinosignup",
+				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
+			],
+			[
+				"galaxsigunp",
+				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
+			],
+			[
+				"cloudform",
+				"cloudsoundmix\\AngularJS-Boilerplate\\styles\\modules\\_forms.scss"
+			],
+			[
+				"casisignup",
+				"web\\client\\app\\account\\signup\\signup.html"
+			],
+			[
+				"webbetser",
+				"web\\client\\components\\betslip\\betslip-service\\betslip.service.js"
+			],
+			[
+				"casiaut",
+				"casino\\client\\services\\authInterceptor.js"
+			],
+			[
+				"cloudsappjs",
+				"cloudsoundmix\\app\\app\\app.js"
+			],
+			[
+				"asiappjs",
+				"casino\\client\\app.js"
+			],
+			[
+				"confi",
+				"cloudsoundmix\\app\\app\\config.js"
+			],
 			[
 				"cloudinde",
 				"cloudsoundmix\\app\\index.html"
@@ -2318,42 +2821,6 @@
 			[
 				"galaal",
 				"casino\\client\\templates\\galaxy\\directives\\alert-notification.html"
-			],
-			[
-				"depositcon",
-				"casino\\client\\components\\user\\deposit\\deposit.controller.js"
-			],
-			[
-				"api",
-				"casino\\client\\core\\api-endpoints.js"
-			],
-			[
-				"headetem",
-				"casino\\client\\templates\\galaxy\\components\\header\\header-template.html"
-			],
-			[
-				"tytpo",
-				"casino\\client\\templates\\galaxy\\styles\\partials\\_typography.scss"
-			],
-			[
-				"galaxhelp",
-				"casino\\client\\templates\\galaxy\\styles\\partials\\_helpers.scss"
-			],
-			[
-				"deposicont",
-				"casino\\client\\components\\user\\deposit\\deposit.controller.js"
-			],
-			[
-				"balancecontro",
-				"casino\\client\\components\\user\\balance\\balance.controller.js"
-			],
-			[
-				"gameblospe",
-				"casino\\client\\components\\games-block\\gamesBlock.directive.spec.js"
-			],
-			[
-				"galxchange",
-				"casino\\client\\templates\\galaxy\\components\\user\\change-password\\change-password.html"
 			]
 		],
 		"width": 0.0
@@ -2384,7 +2851,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 82.0,
+	"side_bar_width": 121.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

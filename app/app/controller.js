@@ -199,7 +199,7 @@
 
         self.mainFeed = scUserDashboard.concat(mcFeed);
         self.mcUser = data.mcMe.data;
-        // console.log(self.mainFeed);
+        console.log(self.mainFeed);
       });
     };
 
@@ -233,16 +233,34 @@
      * @return {string}          Safe track URL
      */
     self.generateIframeUrl = function (trackUrl, type) {
-      var url = trackUrl && trackUrl.cloudcasts ? trackUrl.cloudcasts[0].url : trackUrl.url,
+      var urlMc = trackUrl && trackUrl.cloudcasts ? trackUrl.cloudcasts[0].url : trackUrl.url,
+          urlSc = trackUrl && trackUrl.cloudcasts ? trackUrl.cloudcasts[0].url : trackUrl.url,
           mc,
           sc;
 
       if (type === 'mc') {
-        mc = $sce.trustAsResourceUrl('https://www.mixcloud.com/widget/iframe/?feed=' + encodeURIComponent(url) + '&amp;hide_cover=1&amp;hide_tracklist=0&amp;mini=0&amp;replace=0');
+        mc = $sce.trustAsResourceUrl('https://www.mixcloud.com/widget/iframe/?feed=' + encodeURIComponent(urlMc) + '&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=0&amp;replace=0&amp;autoplay=1');
       } else {
-        sc = $sce.trustAsResourceUrl('https://w.soundcloud.com/player/?url=' + trackUrl + '&amp;show_artwork=true&amp;show_playcount=false&amp;liking=false&amp;sharing=true&amp;buying=true&amp;show_bpm=false&amp;show_comments=true');
+        sc = $sce.trustAsResourceUrl('https://w.soundcloud.com/player/?url=' + trackUrl.origin.permalink_url + '&amp;show_artwork=true&amp;show_playcount=false&amp;liking=false&amp;sharing=true&amp;buying=true&amp;show_bpm=false&amp;show_comments=true');
       }
       return type === 'sc' ? sc : mc;
+    };
+
+
+    /**
+     * Play sound
+     */
+    self.playSound = function (sound, type) {
+      self.playSC = false;
+      if (type === 'sc') {
+        self.playSC = true;
+        self.playMC = false;
+        self.playSCurl = sound;
+      } else if(type === 'mc') {
+        self.playSC = false;
+        self.playMC = true;
+        self.playMCurl = self.generateIframeUrl(sound, type);
+      }
     };
 
 

@@ -34,15 +34,6 @@ ul {
 }
 
 /*********************
-LAYOUT & GRID STYLES
-*********************/
-
-.wrap {
-	width: 96%;
-	margin: 0 auto;
-}
-
-/*********************
 LINK STYLES
 *********************/
 
@@ -174,13 +165,17 @@ NAVIGATION STYLES
 RESPONSIVE NAV
 *********************/
 
+.search-wrapper {
+
+}
+
 .hamburger {
 
 	&:hover,
 	&:focus {
 		text-decoration: none;
 	}
-	
+
 	&:before {
 		content:'\2261';
 		font-size: 24px;
@@ -203,24 +198,20 @@ RESPONSIVE NAV
 	}
 }
 
+
 /*********************
-MAIN PAGE
+USER
 *********************/
+.user {
 
-#content {
-	margin-top: 1.5em;
-}
+	p {
+		display: inline-block;
+	}
 
-// slider
-.slider {
-	margin-bottom: 30px;
-}
-
-.image-slider {
-	max-height: 400px;
-
-	img {
-		width: 100%;
+	.avatar {
+		display: inline-block;
+		width: 50px;
+		height: auto;
 	}
 }
 

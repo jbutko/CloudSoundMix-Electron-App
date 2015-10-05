@@ -32,7 +32,7 @@
     // }
 
     mainWindow = new BrowserWindow({
-      frame: true,
+      frame: false,
       width: 700,
       height: 700,
       resizable: true

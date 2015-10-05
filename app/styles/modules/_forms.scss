@@ -28,21 +28,20 @@ input[type="color"],
 select,
 textarea,
 .field {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: none;
+  color: $text-color;
   display: block;
+  font-family: $font;
+  font-size: 1em;
   height: 40px;
   line-height: 40px;
-  padding: 0 12px;
   margin-bottom: 14px;
-  font-size: 1em;
-  color: $text-color;
-  border-radius: 3px;
+  padding: 0 12px;
   vertical-align: middle;
-  box-shadow: none;
-  border: 0;
   width: 100%;
-  max-width: 400px;
-  font-family: $font;
-  background-color: #fff;
   @include transition(background-color 0.24s ease-in-out);
 
   // a focused input (or hovered on)

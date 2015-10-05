@@ -1,17 +1,36 @@
+<!-- soundcloud mixes -->
+<player player-source="main.playSCurl" data-ng-if="main.playSC"></player>
+
+<!-- mixcloud mixes -->
+<div data-ng-if="main.playMC">
+    <iframe id="mc-widget"
+            width="100%"
+            height="133"
+            scrolling="no"
+            frameborder="no"
+            ng-src="{{main.playMCurl}}">
+    </iframe>
+</div>
+
 <!-- main stream -->
 <div class="player-container" ng-repeat="sound in main.mainFeed | orderBy:'created_time':true">
 
-    <!-- soundcloud mixes -->
-    <player player-source="sound" data-ng-if="!sound.hasOwnProperty('key')"></player>
-
-    <!-- mixcloud mixes -->
-    <div data-ng-if="sound.hasOwnProperty('key')">
-        <iframe id="mc-widget"
-        		width="100%"
-        		height="133"
-        		scrolling="no"
-        		frameborder="no"
-        		ng-src="{{main.generateIframeUrl(sound, 'mc')}}">
-        </iframe>
+    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="main.playSound(sound, 'sc')">{{sound.origin.user.username}}: {{sound.origin.title}}</a>
+        </div>
     </div>
+
+    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="main.playSound(sound, 'mc')">{{sound.from.username}} - {{sound.cloudcasts[0].name}}</a>
+        </div>
+    </div>
+
 </div>

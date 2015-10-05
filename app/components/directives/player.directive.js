@@ -28,15 +28,31 @@
       },
       link: function(scope, elem) {
 
-        var trackUrl = scope.playerSource && scope.playerSource.origin ? scope.playerSource.origin.permalink_url : scope.playerSource.permalink_url;
+        scope.$watch('playerSource', function (value) {
+          var trackUrl = value && value.origin ? value.origin.permalink_url : value.permalink_url;
+          scope.playSound(value);
+        });
 
-        SC.oEmbed(trackUrl, {
-          auto_play: false,
-          maxheight: 166
-        }).then(function(oEmbed){
-          // var playerContainer = document.querySelector('.player');
-          // playerContainer.innerHTML = oEmbed.html;
-          elem.html(oEmbed.html);
+
+        scope.playSound = function(sound) {
+          var trackUrl = sound && sound.origin ? sound.origin.permalink_url : sound.permalink_url;
+
+          SC.oEmbed(trackUrl, {
+            auto_play: true,
+            maxheight: 166
+          }).then(function(oEmbed){
+            elem.html(oEmbed.html);
+            SC.stream(trackUrl, function(sound) {
+              console.log(sound);
+              sound.play();
+            });
+          });
+        };
+
+        scope.playSound(scope.playerSource);
+
+        scope.$on('$destroy', function () {
+          elem.html('');
         });
 
         // repost url
