@@ -15,11 +15,11 @@
     .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService', 'CONSTANTS', 'electron',
-  '$window', '$http', 'fetchAPI', '$q', '$sce'];
+  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location'];
 
 
   function MainController(LocalStorage, QueryService, CONSTANTS, electron,
-    $window, $http, fetchAPI, $q, $sce) {
+    $window, $http, fetchAPI, $q, $sce, $location) {
 
     // 'controller as' syntax
     var self = this;
@@ -209,15 +209,15 @@
     /**
      * Search tracks
      */
-    self.searchTracks = function(keyword, searchType, platform, params, duration) {
+    self.trackSearched = false;
+    self.searchTracks = function(keyword, searchType, platform, params, duration, limit) {
 
-      fetchAPI.searchTracks(keyword, searchType, platform, params, duration).then(function(results) {
-        var scSearchResults = results.scSearch.data;
+      fetchAPI.searchTracks(keyword, searchType, platform, params, duration, limit).then(function(results) {
         var mcSearchResults = results.mcSearch.data.data;
-        scSearchResults.platform = 'sc';
+        var scSearchResults = results.scSearch.data;
+        self.trackSearched = true;
 
         self.mainFeed = scSearchResults.concat(mcSearchResults);
-        console.log(self.mainFeed);
       }).catch(function (err) {
         console.log(err);
       });
@@ -238,8 +238,11 @@
           mc,
           sc;
 
+          console.log(urlMc);
+
       if (type === 'mc') {
         mc = $sce.trustAsResourceUrl('https://www.mixcloud.com/widget/iframe/?feed=' + encodeURIComponent(urlMc) + '&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=0&amp;replace=0&amp;autoplay=1');
+        console.log('https://www.mixcloud.com/widget/iframe/?feed=' + encodeURIComponent(urlMc) + '&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=0&amp;replace=0&amp;autoplay=1');
       } else {
         sc = $sce.trustAsResourceUrl('https://w.soundcloud.com/player/?url=' + trackUrl.origin.permalink_url + '&amp;show_artwork=true&amp;show_playcount=false&amp;liking=false&amp;sharing=true&amp;buying=true&amp;show_bpm=false&amp;show_comments=true');
       }
@@ -260,6 +263,7 @@
         self.playSC = false;
         self.playMC = true;
         self.playMCurl = self.generateIframeUrl(sound, type);
+        console.log(self.playMCurl);
       }
     };
 

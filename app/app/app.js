@@ -58,8 +58,8 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/setup', {
-        templateUrl: 'views/setup.html',
+      .when('/search', {
+        templateUrl: 'views/search-results.html',
         controller: 'MainController',
         controllerAs: 'main'
       })

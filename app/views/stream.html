@@ -8,13 +8,12 @@
             height="133"
             scrolling="no"
             frameborder="no"
-            ng-src="{{main.playMCurl}}">
+            src="{{main.playMCurl}}">
     </iframe>
 </div>
 
 <!-- main stream -->
-<div class="player-container" ng-repeat="sound in main.mainFeed | orderBy:'created_time':true">
-
+<div class="player-container" ng-repeat="sound in main.mainFeed | orderBy:'created_time':true" data-ng-if="!main.trackSearched">
     <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
         <div class="col-sm-1">
             {{$index + 1 }}
@@ -32,5 +31,7 @@
             <a href="" data-ng-click="main.playSound(sound, 'mc')">{{sound.from.username}} - {{sound.cloudcasts[0].name}}</a>
         </div>
     </div>
-
 </div>
+
+<!-- search results -->
+<ng-include src="'views/search-results.html'" data-ng-if="main.trackSearched"></ng-include>

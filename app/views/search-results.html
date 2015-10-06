@@ -1,0 +1,21 @@
+<!-- main stream -->
+<div class="player-container" ng-repeat="sound in main.mainFeed | orderBy:'created_time':true">
+
+    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="main.playSound(sound, 'sc')">{{sound.user.username}}: {{sound.title}}</a>
+        </div>
+    </div>
+
+    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="main.playSound(sound, 'mc')">{{sound.user.username}} - {{sound.name}}</a>
+        </div>
+    </div>
+</div>
