@@ -6,13 +6,13 @@ var electron = require('electron-connect').server.create();
 gulp.task('serve', function () {
 
   // Start browser process
-  electron.start();
+  electron.start('');
 
   // // // Add an argument
-  // // electron.start('Hoge!');
+  // electron.start('.');
 
   // // Add list of arguments
-  // electron.start(['Hoge', 'foo']);
+  // electron.start(['--ppapi-flash-path=plugins\pepflashplayer.dll', '--ppapi-flash-version=19.0.0.185']);
 
   // // Callback
   // electron.start(function () {

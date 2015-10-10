@@ -1,6 +1,5 @@
 ;(function () {
 
-
   'use strict';
 
   var app = require('app');
@@ -25,6 +24,15 @@
     }
   });
 
+  // Specify flash path.
+  // On Windows, it might be /path/to/pepflashplayer.dll
+  // On Mac, /path/to/PepperFlashPlayer.plugin
+  // On Linux, /path/to/libpepflashplayer.so
+  app.commandLine.appendSwitch('ppapi-flash-path', '/plugins/pepflashplayer.dll');
+
+  // Specify flash version, for example, v17.0.0.169
+  app.commandLine.appendSwitch('ppapi-flash-version', '19.0.0.185');
+
   app.on('ready', function() {
 
     // if (!configuration.readSettings('shortcutKeys')) {
@@ -35,8 +43,14 @@
       frame: true,
       width: 700,
       height: 700,
-      resizable: true
+      resizable: true,
+      'node-integration': true,
+      'plugin':true,
+      'web-preferences': {
+        'plugins': true
+      }
     });
+
 
     mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
 

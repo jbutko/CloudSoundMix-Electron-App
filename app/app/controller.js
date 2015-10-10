@@ -179,28 +179,54 @@
     /**
      * Fetch user's feed or latests tracks
      */
-    self.fetchUserDashboard = function() {
+    var counter = 0,
+        offsetVal = 0;
+    self.mainFeed = [];
+    self.fetchUserDashboard = function(loadMore, limit, offset) {
+
+      if (loadMore === true) {
+        ++counter;
+        offset = counter * offset;
+      }
 
       var promises = {
         scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
-        scReposted: fetchAPI.query('GET', 'https://api-v2.soundcloud.com/profile/soundcloud:users:41691970?limit=50&offset=0', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        scReposted: fetchAPI.query('GET', 'https://api-v2.soundcloud.com/profile/soundcloud:users:41691970', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         // scReposted1: fetchAPI.query('GET', 'https://api-v2.soundcloud.com', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         mcMe: fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {}),
-        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: 3}, {}, {})
+        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: 3, offset: offset || offsetVal}, {}, {})
         //sc: $http.get('http://api.soundcloud.com/me/activities/tracks/affiliated?client_id=aade84c56054d6945c32b616bb7bce0b')
       };
 
-      self.mainFeed = [];
+      if (typeof loadMore === 'undefined') {
+        $q.all(promises).then(function(data) {
+          var scUserDashboard = data.scDashboard.data.collection;
+          var mcFeed = data.mcFeed.data.data;
+          scUserDashboard.platform = 'sc';
 
-      $q.all(promises).then(function(data) {
-        var scUserDashboard = data.scDashboard.data.collection;
-        var mcFeed = data.mcFeed.data.data;
-        scUserDashboard.platform = 'sc';
+          self.mainFeed = scUserDashboard.concat(mcFeed);
+          self.mcUser = data.mcMe.data;
+        });
+      } else {
+        console.log(offset);
 
-        self.mainFeed = scUserDashboard.concat(mcFeed);
-        self.mcUser = data.mcMe.data;
-        console.log(self.mainFeed);
-      });
+        $q.all(promises).then(function(data) {
+          console.log(data);
+          var scUserDashboard = data.scDashboard.data.collection;
+          var mcFeed = data.mcFeed.data.data;
+          var mixedFeed = scUserDashboard.concat(mcFeed);
+          // console.log(mixedFeed);
+          console.log(mcFeed[0]);
+          scUserDashboard.platform = 'sc';
+
+          // push newly loaded data into main tracks array
+          self.mainFeed.concat(mixedFeed);
+          console.log(self.mainFeed);
+          self.mcUser = data.mcMe.data;
+        });
+      }
+
+
     };
 
     self.fetchUserDashboard();
@@ -235,14 +261,10 @@
     self.generateIframeUrl = function (trackUrl, type) {
       var urlMc = trackUrl && trackUrl.cloudcasts ? trackUrl.cloudcasts[0].url : trackUrl.url,
           urlSc = trackUrl && trackUrl.cloudcasts ? trackUrl.cloudcasts[0].url : trackUrl.url,
-          mc,
-          sc;
-
-          console.log(urlMc);
+          mc, sc;
 
       if (type === 'mc') {
         mc = $sce.trustAsResourceUrl('https://www.mixcloud.com/widget/iframe/?feed=' + encodeURIComponent(urlMc) + '&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=0&amp;replace=0&amp;autoplay=1');
-        console.log('https://www.mixcloud.com/widget/iframe/?feed=' + encodeURIComponent(urlMc) + '&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=0&amp;replace=0&amp;autoplay=1');
       } else {
         sc = $sce.trustAsResourceUrl('https://w.soundcloud.com/player/?url=' + trackUrl.origin.permalink_url + '&amp;show_artwork=true&amp;show_playcount=false&amp;liking=false&amp;sharing=true&amp;buying=true&amp;show_bpm=false&amp;show_comments=true');
       }
@@ -263,7 +285,6 @@
         self.playSC = false;
         self.playMC = true;
         self.playMCurl = self.generateIframeUrl(sound, type);
-        console.log(self.playMCurl);
       }
     };
 

@@ -6,9 +6,8 @@
     <iframe id="mc-widget"
             width="100%"
             height="133"
-            scrolling="no"
-            frameborder="no"
-            src="{{main.playMCurl}}">
+            frameborder="0"
+            ng-src="{{main.playMCurl}}">
     </iframe>
 </div>
 
@@ -35,3 +34,5 @@
 
 <!-- search results -->
 <ng-include src="'views/search-results.html'" data-ng-if="main.trackSearched"></ng-include>
+
+<button data-ng-click="main.fetchUserDashboard(true, 5, 6)">Load more tracks...</button>
