@@ -1,6 +1,6 @@
 {
-  "name": "sound_machine",
-  "version": "0.1.0",
+  "name": "cloudSoundMix",
+  "version": "1.0.0",
   "main": "./main.js",
   "scripts": {
     "start": "electron .",

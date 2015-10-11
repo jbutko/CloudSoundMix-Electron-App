@@ -18,7 +18,6 @@
 
   function trustThisUrl($sce) {
     return function(val) {
-      console.log(val);
       return $sce.trustAsResourceUrl(val);
     };
   }

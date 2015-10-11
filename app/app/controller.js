@@ -15,11 +15,11 @@
     .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService', 'CONSTANTS', 'electron',
-  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location'];
+  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location', '$scope'];
 
 
   function MainController(LocalStorage, QueryService, CONSTANTS, electron,
-    $window, $http, fetchAPI, $q, $sce, $location) {
+    $window, $http, fetchAPI, $q, $sce, $location, $scope) {
 
     // 'controller as' syntax
     var self = this;
@@ -190,7 +190,7 @@
       }
 
       var promises = {
-        scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         scReposted: fetchAPI.query('GET', 'https://api-v2.soundcloud.com/profile/soundcloud:users:41691970', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         // scReposted1: fetchAPI.query('GET', 'https://api-v2.soundcloud.com', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         mcMe: fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {}),
@@ -209,20 +209,20 @@
         });
       } else {
         console.log(offset);
-
         $q.all(promises).then(function(data) {
-          console.log(data);
           var scUserDashboard = data.scDashboard.data.collection;
           var mcFeed = data.mcFeed.data.data;
           var mixedFeed = scUserDashboard.concat(mcFeed);
-          // console.log(mixedFeed);
-          console.log(mcFeed[0]);
+
           scUserDashboard.platform = 'sc';
 
           // push newly loaded data into main tracks array
-          self.mainFeed.concat(mixedFeed);
+          mixedFeed.map(function (array) {
+            self.mainFeed.push(array);
+          });
+
           console.log(self.mainFeed);
-          self.mcUser = data.mcMe.data;
+
         });
       }
 
@@ -273,7 +273,7 @@
 
 
     /**
-     * Play sound
+     * Play mixcloud/soundcloud track
      */
     self.playSound = function (sound, type) {
       self.playSC = false;
@@ -288,6 +288,46 @@
       }
     };
 
+
+    /**
+     * Open audio file
+     *
+     * @desc Open and play local audio file
+     */
+    self.openAudioFile = function() {
+      var remote = require('remote'),
+          dialog = remote.require('dialog');
+
+      // 'Open file' system dialog
+      dialog.showOpenDialog(function(fileNames) {
+        if (fileNames === undefined) {
+          return false;
+        }
+
+        self.audioFileName = fileNames[0];
+        console.log(_readAudioMetadata(self.audioFileName));
+        $scope.$apply();
+        // _readAudioMetadata(self.audioFileName).then(function(data) {
+        //     console.log(data);
+        //     // self.audioTitle =
+        //     console.log(self.audioTitle);
+        // });
+      });
+    };
+
+    function _readAudioMetadata(filename) {
+      var id3 = require('id3js');
+
+      id3({ file: filename, type: id3.OPEN_LOCAL }, function(err, tags) {
+        if (tags.title && tags.artist) {
+          console.log(tags);
+          return tags;
+        } else {
+          // return filename.replace(/_/g, ' ');
+          return filename;
+        }
+      });
+    }
 
   }
 

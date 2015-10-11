@@ -11,8 +11,14 @@
     </iframe>
 </div>
 
+<!-- local files audio player -->
+<audio ng-src="{{main.audioFileName | trustThisUrl}}"
+       audioplayer
+       controls
+       data-ng-if="main.audioFileName"></audio>
+
 <!-- main stream -->
-<div class="player-container" ng-repeat="sound in main.mainFeed | orderBy:'created_time':true" data-ng-if="!main.trackSearched">
+<div class="player-container" ng-repeat="sound in main.mainFeed" data-ng-if="!main.trackSearched">
     <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
         <div class="col-sm-1">
             {{$index + 1 }}
@@ -36,3 +42,4 @@
 <ng-include src="'views/search-results.html'" data-ng-if="main.trackSearched"></ng-include>
 
 <button data-ng-click="main.fetchUserDashboard(true, 5, 6)">Load more tracks...</button>
+<button data-ng-click="main.openAudioFile()">Add audio file</button>
