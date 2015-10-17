@@ -15,6 +15,7 @@
 <audio ng-src="{{main.audioFileName | trustThisUrl}}"
        audioplayer
        controls
+       autoplay
        data-ng-if="main.audioFileName"></audio>
 
 <!-- main stream -->
@@ -42,4 +43,14 @@
 <ng-include src="'views/search-results.html'" data-ng-if="main.trackSearched"></ng-include>
 
 <button data-ng-click="main.fetchUserDashboard(true, 5, 6)">Load more tracks...</button>
-<button data-ng-click="main.openAudioFile()">Add audio file</button>
+<button data-ng-click="main.loadLocalAudioFile()">Add audio file</button>
+<button data-ng-click="main.streamAudioInput = !main.streamAudioInput">Add audio file</button>
+
+<!-- stream audio form -->
+<form name="main.streamAudioForm"
+      novalidate
+      data-ng-submit="main.streamAudioFile(main.streamAudioUrl)"
+      data-ng-if="main.streamAudioInput">
+      <input type="text" data-ng-model="main.streamAudioUrl">
+      <input type="submit">
+</form>

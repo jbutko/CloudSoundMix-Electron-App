@@ -4,14 +4,12 @@
 
   angular
     .module('boilerplate')
-    .factory('httpInterceptor', [
-      '$window', '$rootScope', httpInerceptorService
-    ]);
+    .factory('httpInterceptor', httpInerceptorService);
 
-  httpInerceptorService.$inject = ['$q'];
+  httpInerceptorService.$inject = ['$q', 'LocalStorage'];
 
 
-  function httpInerceptorService($q) {
+  function httpInerceptorService($q, LocalStorage) {
 
     var service = {
       request: request,
@@ -28,6 +26,13 @@
      */
     function request(config) {
       config.headers = config.headers || {};
+
+      // set authorization header for every SC API call
+      var scAuthorized = LocalStorage.get('scAccessToken');
+      if (scAuthorized) {
+        config.headers['Authorization'] = LocalStorage.get('scAccessToken');
+      }
+
       return config;
     }
 

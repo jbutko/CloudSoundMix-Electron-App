@@ -46,6 +46,11 @@
 
     if (self.scAccessToken) {
       self.scUserAuthorized = true;
+
+      var scAccessTokenStored = LocalStorage.get('scAccessToken');
+      if (!scAccessTokenStored) {
+        LocalStorage.set('scAccessToken', 'OAuth ' + self.scAccessToken);
+      }
     }
 
     if (self.mcAccessToken) {
@@ -294,7 +299,7 @@
      *
      * @desc Open and play local audio file
      */
-    self.openAudioFile = function() {
+    self.loadLocalAudioFile = function() {
       var remote = require('remote'),
           dialog = remote.require('dialog');
 
@@ -313,6 +318,17 @@
         //     console.log(self.audioTitle);
         // });
       });
+    };
+
+
+    /**
+     * Stream network audio file
+     *
+     * @desc Open and play local audio file
+     */
+    self.streamAudioFile = function(url) {
+      self.audioFileName = url;
+      self.streamAudioInput = false;
     };
 
     function _readAudioMetadata(filename) {
