@@ -15,11 +15,11 @@
     .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService', 'CONSTANTS', 'electron',
-  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location', '$scope'];
+  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location', '$scope', 'playlist'];
 
 
   function MainController(LocalStorage, QueryService, CONSTANTS, electron,
-    $window, $http, fetchAPI, $q, $sce, $location, $scope) {
+    $window, $http, fetchAPI, $q, $sce, $location, $scope, playlist) {
 
     // 'controller as' syntax
     var self = this;
@@ -34,6 +34,32 @@
 
 
     ////////////  function definitions
+
+    playlist.addTrack('three', {
+      test: 'fdgdg'
+    }).then(function(data) {
+        console.log(data);
+    });
+
+    playlist.getAllTracks().then(function(data) {
+      console.log(data);
+    });
+
+    playlist.getPlaylistTracks('two').then(function(data) {
+      console.log(data);
+    });
+
+    playlist.getPlaylistNames().then(function(data) {
+      console.log(data);
+    });
+
+    // playlist.removeTrack(1).then(function(data) {
+    //   console.log(data);
+    // });
+
+    // playlist.getAllTracks('playlists').then(function(data) {
+    //   console.log(data);
+    // });
 
 
     // get scCodeToken on page load from config file if exists

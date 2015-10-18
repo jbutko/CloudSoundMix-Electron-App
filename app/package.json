@@ -57,5 +57,6 @@
   "bugs": {
     "url": "https://github.com/jbutko/AngularJS-Boilerplate/issues"
   },
-  "homepage": "https://github.com/jbutko/AngularJS-Boilerplate"
+  "homepage": "https://github.com/jbutko/AngularJS-Boilerplate",
+  "dependencies": {}
 }
