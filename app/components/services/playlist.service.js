@@ -9,52 +9,40 @@
    *
    * @category  factory
    * @author    Jozef Butko
-   * @example   Inject playlist as the dependency and then use it this way:
    *
-   * playlist.add(soundObj);
+   * @example   Inject playlist as the dependency and then use it this way:
+   * playlist.add(trackname, soundObj);
+   * playlist.remove(trackId);
+   * playlist.getAllTracks();
+   * playlist.getPlaylistTracks(playlistName);
+   * playlist.getPlaylistNames();
    *
    */
-
-
   angular
     .module('boilerplate')
     .factory('playlist', playlistService);
 
-  playlistService.$inject = ['$indexedDB', '$q'];
-
+  playlistService.$inject = ['$q'];
 
 
   //////////////// factory
 
 
-  // indexedDb initialization
-  var IDBStore = require('./node_modules/idb-wrapper/idbstore.min.js');
+  function playlistService($q) {
 
-  // indexedDb definition
-  var playlists = new IDBStore({
-    dbVersion: 2,
-    storeName: 'playlists-index',
-    keyPath: 'id',
-    autoIncrement: true,
-    onStoreReady: function() { console.log('The Store is ready now'); },
-    indexes: [
-      {name: 'playlistName', keyPath: 'playlistNameIdx', unique: false, multiEntry: false},
-      {name: 'createdAt', keyPath: 'createdAtIdx', unique: false, multiEntry: false},
-      {name: 'trackData', keyPath: 'trackDataIdx', unique: false, multiEntry: true}
-    ]
-  });
+    /**
+     * Storage
+     */
+    var storedb = window.storedb;
 
-  function playlistService($indexedDB, $q) {
-
-
+    /**
+     * Public functions
+     */
     var service = {
       addTrack: addTrack,
       removeTrack: removeTrack,
       getAllTracks: getAllTracks,
       getPlaylistTracks: getPlaylistTracks,
-      openConnection: openConnection,
-      getDb: getDb,
-      getAllKeys: getAllKeys,
       getPlaylistNames: getPlaylistNames
     };
 
@@ -63,112 +51,77 @@
 
     //////////////// definitions
 
-    function openConnection(objectStore) {
-      objectStore = objectStore || 'playlists';
-      return $indexedDB.openStore(objectStore);
-    }
 
+    /**
+     * Add track to playlist
+     * @param {string} playlistTitle Playlist name
+     * @param {object} soundObj      Promise
+     */
     function addTrack(playlistTitle, soundObj) {
       var deferred = $q.defer();
-      var _errorCallback = function(err) {
-        console.log(err);
-        deferred.reject(err);
-      };
 
-      var _successCallback = function(data) {
-        console.log(data);
-        deferred.resolve(data);
-      };
-
-      console.log(storedb);
-
-      playlists.onStoreReady = function() {
-          var now = new Date();
-          return playlists.put({
-            'playlistName': playlistTitle,
-            'createdAt': now,
-            'trackData': soundObj
-          }, _successCallback, _errorCallback);
-      };
+      storedb('playlists').insert({
+        'playlistName': playlistTitle,
+        'createdAt': Date.now(),
+        'trackData': soundObj
+      }, function(err, result) {
+        if (!err) {
+          return deferred.resolve(result);
+        } else {
+          return deferred.reject(err);
+        }
+      });
 
       return deferred.promise;
     }
 
-    function removeTrack(id) {
-      playlists.onStoreReady = function() {
-        return playlists.remove(id, _successCallback, _errorCallback);
-      };
-
-      return deferred.promise;
-    }
-
-    function getDb(dbName) {
-      return $indexedDB.objectStore(dbName);
-    }
-
-    function getAllKeys(objectStore) {
-      objectStore = objectStore || 'playlists';
-      return $indexedDB.openStore(objectStore, function(store) {
-        return store.getAllKeys().then(function(data) {
-          return data;
-        });
+    /**
+     * Remove track from playlist
+     * @param  {number} createdAt Date of track creation in epoch date format
+     * @return {boolean}          True/false
+     */
+    function removeTrack(createdAt) {
+      return storedb('playlists').remove({
+        'createdAt': createdAt
       });
     }
 
-    function getAllTracks() {
-      var deferred = $q.defer();
-      var _errorCallback = function(err) {
-        console.log(err);
-        deferred.reject(err);
-      };
-
-      var _successCallback = function(data) {
-        console.log(data);
-        deferred.resolve(data);
-      };
-
-      playlists.onStoreReady = function() {
-        return playlists.getAll(_successCallback, _errorCallback);
-      };
-
-      return deferred.promise;
+    /**
+     * Get all saved tracks
+     * @param  {string} dbName DB name
+     * @return {array}         Tracks array
+     */
+    function getAllTracks(dbName) {
+      return storedb(dbName).find();
     }
 
-    function getPlaylistNames(objectStore) {
-      objectStore = objectStore || 'playlists';
-      return $indexedDB.openStore(objectStore, function(store) {
-        return store.getAll().then(function(tracks) {
-          var titles = [];
-          tracks.map(function (value) {
-            titles.push(value.playlistNameIdx);
-          });
-          return titles;
-        });
+    /**
+     * Get playlists name
+     * @param  {string} dbName DB name
+     * @return {array}         Array with playlists name
+     */
+    function getPlaylistNames(dbName) {
+      var allTracks = storedb(dbName).find();
+      var playlistNames = [];
+
+      allTracks.map(function (value) {
+        if (playlistNames.indexOf(value.playlistName) === -1) {
+          playlistNames.push(value.playlistName);
+        }
       });
+
+      return playlistNames.sort();
     }
 
+    /**
+     * Get all track of playlist
+     * @param  {string} playlistName Playlist name
+     * @return {arra}                Array with track of playlist
+     */
     function getPlaylistTracks(playlistName) {
-      // var onItem = function (item) {
-      //   console.log('got item:', item);
-      //   // deferred.resolve(item);
-      // };
-      // var onEnd = function (item) {
-      //   console.log('All done.', item);
-      // };
-
-      // playlists.onStoreReady = function() {
-        // var keyRange = playlists.makeKeyRange({
-        //   only: playlistName
-        // });
-
-        // return playlists.iterate(onItem, {
-        //   index: 'playlistName',
-        //   keyRange: keyRange,
-        //   onEnd: _successCallback
-        // });
-      // };
-
-      // return deferred.promise;
+      return storedb('playlists').find({
+        'playlistName': playlistName
+      });
     }
 
   }

@@ -1,13 +1,13 @@
 <!-- soundcloud mixes -->
-<player player-source="main.playSCurl" data-ng-if="main.playSC"></player>
+<player player-source="$root.playSCurl" data-ng-if="$root.playSC"></player>
 
 <!-- mixcloud mixes -->
-<div data-ng-if="main.playMC">
+<div data-ng-if="$root.playMC">
     <iframe id="mc-widget"
             width="100%"
             height="133"
             frameborder="0"
-            ng-src="{{main.playMCurl}}">
+            ng-src="{{$root.playMCurl}}">
     </iframe>
 </div>
 
@@ -19,25 +19,7 @@
        data-ng-if="main.audioFileName"></audio>
 
 <!-- main stream -->
-<div class="player-container" ng-repeat="sound in main.mainFeed" data-ng-if="!main.trackSearched">
-    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
-        <div class="col-sm-1">
-            {{$index + 1 }}
-        </div>
-        <div class="col-sm-23">
-            <a href="" data-ng-click="main.playSound(sound, 'sc')">{{sound.origin.user.username}}: {{sound.origin.title}}</a>
-        </div>
-    </div>
-
-    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
-        <div class="col-sm-1">
-            {{$index + 1 }}
-        </div>
-        <div class="col-sm-23">
-            <a href="" data-ng-click="main.playSound(sound, 'mc')">{{sound.from.username}} - {{sound.cloudcasts[0].name}}</a>
-        </div>
-    </div>
-</div>
+<playlist playlist-source="main.mainFeed" track-searched="main.trackSearched"></playlist>
 
 <!-- search results -->
 <ng-include src="'views/search-results.html'" data-ng-if="main.trackSearched"></ng-include>
