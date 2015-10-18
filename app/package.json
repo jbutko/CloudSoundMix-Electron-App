@@ -58,5 +58,7 @@
     "url": "https://github.com/jbutko/AngularJS-Boilerplate/issues"
   },
   "homepage": "https://github.com/jbutko/AngularJS-Boilerplate",
-  "dependencies": {}
+  "dependencies": {
+    "idb-wrapper": "^1.6.0"
+  }
 }

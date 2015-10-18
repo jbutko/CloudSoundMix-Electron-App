@@ -20,15 +20,31 @@
     .module('boilerplate')
     .factory('playlist', playlistService);
 
-  playlistService.$inject = ['$indexedDB'];
+  playlistService.$inject = ['$indexedDB', '$q'];
 
 
 
   //////////////// factory
 
 
+  // indexedDb initialization
+  var IDBStore = require('./node_modules/idb-wrapper/idbstore.min.js');
 
-  function playlistService($indexedDB) {
+  // indexedDb definition
+  var playlists = new IDBStore({
+    dbVersion: 2,
+    storeName: 'playlists-index',
+    keyPath: 'id',
+    autoIncrement: true,
+    onStoreReady: function() { console.log('The Store is ready now'); },
+    indexes: [
+      {name: 'playlistName', keyPath: 'playlistNameIdx', unique: false, multiEntry: false},
+      {name: 'createdAt', keyPath: 'createdAtIdx', unique: false, multiEntry: false},
+      {name: 'trackData', keyPath: 'trackDataIdx', unique: false, multiEntry: true}
+    ]
+  });
+
+  function playlistService($indexedDB, $q) {
 
 
     var service = {
@@ -52,24 +68,38 @@
       return $indexedDB.openStore(objectStore);
     }
 
-    function addTrack(playlistTitle, soundObj, objectStore) {
-      objectStore = objectStore || 'playlists';
-      return $indexedDB.openStore(objectStore, function(store) {
-        console.log(store);
-        var now = new Date();
-        return store.insert({
-          playlistName: playlistTitle
-        });
-      });
+    function addTrack(playlistTitle, soundObj) {
+      var deferred = $q.defer();
+      var _errorCallback = function(err) {
+        console.log(err);
+        deferred.reject(err);
+      };
+
+      var _successCallback = function(data) {
+        console.log(data);
+        deferred.resolve(data);
+      };
+
+      console.log(storedb);
+
+      playlists.onStoreReady = function() {
+          var now = new Date();
+          return playlists.put({
+            'playlistName': playlistTitle,
+            'createdAt': now,
+            'trackData': soundObj
+          }, _successCallback, _errorCallback);
+      };
+
+      return deferred.promise;
     }
 
-    function removeTrack(id, objectStore) {
-      objectStore = objectStore || 'playlists';
-      return $indexedDB.openStore(objectStore, function(store) {
-        return store.delete(id).then(function(data) {
-          return data;
-        });
-      });
+    function removeTrack(id) {
+      playlists.onStoreReady = function() {
+        return playlists.remove(id, _successCallback, _errorCallback);
+      };
+
+      return deferred.promise;
     }
 
     function getDb(dbName) {
@@ -85,14 +115,23 @@
       });
     }
 
-    function getAllTracks(objectStore) {
-      objectStore = objectStore || 'playlists';
-      return $indexedDB.openStore(objectStore, function(store) {
-        return store.getAll().then(function(tracks) {
-          console.log(tracks);
-          return tracks;
-        });
-      });
+    function getAllTracks() {
+      var deferred = $q.defer();
+      var _errorCallback = function(err) {
+        console.log(err);
+        deferred.reject(err);
+      };
+
+      var _successCallback = function(data) {
+        console.log(data);
+        deferred.resolve(data);
+      };
+
+      playlists.onStoreReady = function() {
+        return playlists.getAll(_successCallback, _errorCallback);
+      };
+
+      return deferred.promise;
     }
 
     function getPlaylistNames(objectStore) {
@@ -108,14 +147,28 @@
       });
     }
 
-    function getPlaylistTracks(playlistName, objectStore) {
-      objectStore = objectStore || 'playlists';
-      return $indexedDB.openStore(objectStore, function(store) {
-        // console.log(store);
-        return store.findWhere(store.query().$index('playlistNameIdx').$eq(playlistName)).then(function(tracks) {
-          return tracks;
-        });
-      });
+    function getPlaylistTracks(playlistName) {
+      // var onItem = function (item) {
+      //   console.log('got item:', item);
+      //   // deferred.resolve(item);
+      // };
+      // var onEnd = function (item) {
+      //   console.log('All done.', item);
+      // };
+
+      // playlists.onStoreReady = function() {
+        // var keyRange = playlists.makeKeyRange({
+        //   only: playlistName
+        // });
+
+        // return playlists.iterate(onItem, {
+        //   index: 'playlistName',
+        //   keyRange: keyRange,
+        //   onEnd: _successCallback
+        // });
+      // };
+
+      // return deferred.promise;
     }
 
   }

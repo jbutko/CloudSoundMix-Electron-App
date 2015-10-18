@@ -24,6 +24,8 @@
     "angular-route": "~1.3.13",
     "angular-sanitize": "~1.3.13",
     "OwlCarousel": "https://github.com/OwlFonk/OwlCarousel.git#~1.3.2",
-    "angular-indexedDB": "https://github.com/bramski/angular-indexedDB.git#~1.1.3"
+    "angular-indexedDB": "https://github.com/bramski/angular-indexedDB.git#~1.1.3",
+    "idbwrapper": "~1.6.0",
+    "storedb": "~0.1.2"
   }
 }

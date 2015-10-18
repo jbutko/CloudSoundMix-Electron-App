@@ -35,23 +35,33 @@
 
     ////////////  function definitions
 
-    playlist.addTrack('three', {
+    // var initCallback = function(){
+    //     getItems();
+    // };
+
+    // var dataStore = new IDBStore('todos', initCallback);
+    // console.log(dataStore);
+
+    playlist.addTrack('two', {
       test: 'fdgdg'
     }).then(function(data) {
-        console.log(data);
-    });
-
-    playlist.getAllTracks().then(function(data) {
       console.log(data);
     });
 
-    playlist.getPlaylistTracks('two').then(function(data) {
-      console.log(data);
-    });
 
-    playlist.getPlaylistNames().then(function(data) {
-      console.log(data);
-    });
+    // playlist.getAllTracks().then(function(data) {
+    //   console.log(data);
+    // });
+
+    // playlist.getPlaylistTracks('three').then(function(data) {
+    //   console.log(data);
+    // });
+
+    playlist.getPlaylistTracks('three');
+
+    // playlist.getPlaylistNames().then(function(data) {
+    //   console.log(data);
+    // });
 
     // playlist.removeTrack(1).then(function(data) {
     //   console.log(data);

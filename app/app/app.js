@@ -77,24 +77,24 @@
 
     $httpProvider.interceptors.push('authInterceptor');
 
-    $indexedDBProvider
-      .connection('leaDB')
-      .upgradeDatabase('1', function(event, db) {
-        var objStore = db.createObjectStore('playlists', {
-          keyPath: 'id',
-          autoIncrement: true,
-          unique: true
-        });
-        objStore.createIndex('playlistNameIdx', 'playlistName', {
-          unique: false
-        });
-        // objStore.createIndex('createdAtIdx', 'created', {
-        //   unique: false
-        // });
-        // objStore.createIndex('trackDataIdx', 'trackData', {
-        //   unique: false
-        // });
-      });
+    // $indexedDBProvider
+    //   .connection('leaDB')
+    //   .upgradeDatabase('1', function(event, db) {
+    //     var objStore = db.createObjectStore('playlists', {
+    //       keyPath: 'id',
+    //       autoIncrement: true,
+    //       unique: true
+    //     });
+    //     objStore.createIndex('playlistNameIdx', 'playlistName', {
+    //       unique: false
+    //     });
+    //     // objStore.createIndex('createdAtIdx', 'created', {
+    //     //   unique: false
+    //     // });
+    //     // objStore.createIndex('trackDataIdx', 'trackData', {
+    //     //   unique: false
+    //     // });
+    //   });
 
   }
 
