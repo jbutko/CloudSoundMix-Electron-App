@@ -1,11 +1,12 @@
-<!-- playlist -->
-<div class="player-container" ng-repeat="sound in playlistSource" data-ng-if="!trackSearched">
+<!-- main stream -->
+<div class="player-container" ng-repeat="sound in playlistSource | orderBy:'created_time':true" data-ng-if="trackSearched">
+
     <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
         <div class="col-sm-1">
             {{$index + 1 }}
         </div>
         <div class="col-sm-23">
-            <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.origin.user.username}}: {{sound.origin.title}}</a>
+            <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.user.username}}: {{sound.title}}</a>
         </div>
     </div>
 
@@ -14,7 +15,7 @@
             {{$index + 1 }}
         </div>
         <div class="col-sm-23">
-            <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.from.username}} - {{sound.cloudcasts[0].name}}</a>
+            <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.user.username}} - {{sound.name}}</a>
         </div>
     </div>
 </div>

@@ -61,9 +61,8 @@
         controllerAs: 'main'
       })
       .when('/search', {
-        templateUrl: 'views/search-results.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'components/playlist/playlist.html',
+        controller: 'PlaylistController'
       })
       .when('/callback', {
         templateUrl: 'views/callback.html',

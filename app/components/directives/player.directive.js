@@ -13,10 +13,10 @@
   angular.module('boilerplate')
     .directive('player', player);
 
-  player.$inject = ['CONSTANTS'];
+  player.$inject = [];
 
 
-  function player(CONSTANTS) {
+  function player() {
 
     // Definition of directive
     var directiveDefinitionObject = {

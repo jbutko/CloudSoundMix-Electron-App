@@ -264,8 +264,6 @@
       });
     };
 
-    // self.searchTracks('LTJ Bukem', '', '', '');
-
 
     /**
      * Open audio file
