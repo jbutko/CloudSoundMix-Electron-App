@@ -29,8 +29,9 @@
 
       // set authorization header for every SC API call
       var scAuthorized = LocalStorage.get('scAccessToken');
+      console.log(scAuthorized);
       if (scAuthorized) {
-        config.headers['Authorization'] = LocalStorage.get('scAccessToken');
+        config.headers['Authorization'] = scAuthorized;
       }
 
       return config;

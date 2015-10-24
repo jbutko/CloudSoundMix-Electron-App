@@ -1,0 +1,2347 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"scA",
+				"scAccessTokenStored"
+			],
+			[
+				"main",
+				"mainFeed"
+			],
+			[
+				"map",
+				"map"
+			],
+			[
+				"pla",
+				"playSound"
+			],
+			[
+				"scU",
+				"scUserDashboard"
+			],
+			[
+				"prope",
+				"propertyToRename"
+			],
+			[
+				"sou",
+				"sourceData"
+			],
+			[
+				"mcSe",
+				"mcSearchType"
+			],
+			[
+				"sea",
+				"searchType"
+			],
+			[
+				"sitemap",
+				"sitemap.xml"
+			],
+			[
+				"$state",
+				"$stateParams"
+			],
+			[
+				"acce",
+				"access_token"
+			],
+			[
+				"cl",
+				"cl	console.log"
+			],
+			[
+				"service",
+				"serviceType"
+			],
+			[
+				"inde",
+				"indexOf(${0:searchValue})	String"
+			],
+			[
+				"cli",
+				"clientID"
+			],
+			[
+				"sound",
+				"soundCloudAPI"
+			],
+			[
+				"cur",
+				"cur:a	cursor:auto"
+			],
+			[
+				"static",
+				"static-navigation.html"
+			],
+			[
+				"da",
+				"data-ng-if=〔attribute〕"
+			],
+			[
+				"user",
+				"userService"
+			],
+			[
+				"data",
+				"data-ng-class=〔attribute〕"
+			],
+			[
+				"device",
+				"deviceDetector"
+			],
+			[
+				"data-",
+				"data-ng-disabled=〔attribute〕"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"theme",
+				"themeSettings"
+			],
+			[
+				"getElem",
+				"getElementById(${0:id})	Element"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"client",
+				"client_id"
+			],
+			[
+				"new",
+				"newUrl"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"inner",
+				"innerWidth	Window"
+			],
+			[
+				"getEL",
+				"getElementsByTagName(${0:name})	Element"
+			],
+			[
+				"mi",
+				"minHeight	Style CSS"
+			],
+			[
+				"respon",
+				"responsive-tables.scss"
+			],
+			[
+				"add",
+				"addEventListener('click"
+			],
+			[
+				"forEach",
+				"forEach(${0:callback})	Array"
+			],
+			[
+				"q",
+				"querySelector(${0:selectors})	Element"
+			],
+			[
+				"dire",
+				"verbose_directive	AngularJS"
+			],
+			[
+				"dir",
+				"directiveDefinitionObject"
+			],
+			[
+				"get",
+				"getElementsByTagName〔function〕"
+			],
+			[
+				"stick",
+				"stickyHeader"
+			],
+			[
+				"forgo",
+				"forgot-password.html"
+			],
+			[
+				"tal",
+				"tal:l	text-align-last:left"
+			],
+			[
+				"tt",
+				"tt:c	text-transform:capitalize"
+			],
+			[
+				"data-ng",
+				"data-ng-if=〔attribute〕"
+			],
+			[
+				"c-",
+				"c-multi	Multiple Comment with TODO"
+			],
+			[
+				"c",
+				"c-section	Section Comment"
+			],
+			[
+				"backgroun",
+				"background-color: 〔property〕"
+			],
+			[
+				"close",
+				"closePromise"
+			],
+			[
+				"return",
+				"returnValue(100"
+			],
+			[
+				"bdr",
+				"bdra	border-radius"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"mw",
+				"miw	min-width"
+			],
+			[
+				"brows",
+				"browserSync"
+			],
+			[
+				"td",
+				"td:u	text-decoration:underline"
+			],
+			[
+				"veri",
+				"verificationToken"
+			],
+			[
+				"sto",
+				"storage"
+			],
+			[
+				"valid",
+				"validity"
+			],
+			[
+				"old",
+				"oldPassword"
+			],
+			[
+				"caree",
+				"careerYears"
+			],
+			[
+				"psswo",
+				"password123"
+			],
+			[
+				"pass",
+				"password123"
+			],
+			[
+				"verif",
+				"verifying"
+			],
+			[
+				"funct",
+				"function"
+			],
+			[
+				"ta",
+				"ta:l	text-align:left"
+			],
+			[
+				"call",
+				"callThrough"
+			],
+			[
+				"sys",
+				"systemData"
+			],
+			[
+				"syst",
+				"systemService"
+			],
+			[
+				"curre",
+				"currentUserName"
+			],
+			[
+				"session",
+				"sessionFactory"
+			],
+			[
+				"a",
+				"assets/"
+			],
+			[
+				"contro",
+				"controller"
+			],
+			[
+				"direc",
+				"verbose_directive	AngularJS"
+			],
+			[
+				"f",
+				"fn	Function"
+			],
+			[
+				"fo",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"bg",
+				"bgz:cv	background-size:cover"
+			],
+			[
+				"has",
+				"hasClass〔function〕"
+			],
+			[
+				"$loc",
+				"$location	AngularJS"
+			],
+			[
+				"cu",
+				"cur:p	cursor:pointer"
+			],
+			[
+				"num",
+				"numberOfBets"
+			],
+			[
+				"ngi",
+				"ng-include	AngularJS"
+			],
+			[
+				"ti",
+				"ti:-	text-indent:-9999px"
+			],
+			[
+				"loggedIn",
+				"loggedInUser"
+			],
+			[
+				"self",
+				"selfExclude"
+			],
+			[
+				"stakeCombine",
+				"getStakeCombineLength"
+			],
+			[
+				"$",
+				"$broadcast	AngularJS"
+			],
+			[
+				"$roo",
+				"$rootScope	AngularJS"
+			],
+			[
+				"direct",
+				"verbose_directive	AngularJS"
+			],
+			[
+				"clear",
+				"clearInterval〔function〕"
+			],
+			[
+				"sessio",
+				"sessionValue"
+			],
+			[
+				"$in",
+				"$interval	AngularJS"
+			],
+			[
+				"w",
+				"withdrawCtrl"
+			],
+			[
+				"th",
+				"thbc	toHaveBeenCalled"
+			],
+			[
+				"fruit",
+				"fruitArray"
+			],
+			[
+				"frui",
+				"fruitArray"
+			],
+			[
+				"ngcl",
+				"ng-click	AngularJS"
+			],
+			[
+				"ngre",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"show",
+				"showSuccessMsg"
+			],
+			[
+				"PE",
+				"PersonalDetailsCtrl"
+			],
+			[
+				"ca",
+				"callThrough"
+			],
+			[
+				"t",
+				"tbd	toBeDefined"
+			],
+			[
+				"le",
+				"legalAge"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"minify",
+				"minifyCSS"
+			],
+			[
+				"tot",
+				"totalItems"
+			],
+			[
+				"swit",
+				"swiftCode"
+			],
+			[
+				"block",
+				"blockquote	Tag"
+			],
+			[
+				"Withdr",
+				"Withdrawals"
+			],
+			[
+				"control",
+				"controller	AngularJS"
+			],
+			[
+				"al",
+				"alt	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/user.html",
+			"settings":
+			{
+				"buffer_size": 179,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/search.html",
+			"settings":
+			{
+				"buffer_size": 1229,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/home.html",
+			"settings":
+			{
+				"buffer_size": 830,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/playlist/playlist.html",
+			"settings":
+			{
+				"buffer_size": 1516,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 3453,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app/app.js",
+			"settings":
+			{
+				"buffer_size": 2794,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 500.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packare",
+				"Package Control: Remove Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"reposi",
+				"Package Control: Add Repository"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"diff",
+				"Git (SideBarGit): Difftool: between last local commit and remote (..origin/master)"
+			],
+			[
+				"lin",
+				"Line Ending: Unix"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htmlan",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"sav",
+				"Session Manager: Save Session"
+			],
+			[
+				"pro",
+				"Project Manager"
+			],
+			[
+				"load",
+				"Session Manager: Load Session"
+			],
+			[
+				"save",
+				"Session Manager: Save Session"
+			],
+			[
+				"session",
+				"Session Manager: Load Session"
+			],
+			[
+				"saves",
+				"Session Manager: Save Session"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"jasmin",
+				"Set Syntax: Jasmine"
+			],
+			[
+				"gitg",
+				"GitGutter: Show Comparing Against"
+			],
+			[
+				"jasmi",
+				"Set Syntax: Jasmine"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 568.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/dodo/projects/- pers/cloudsoundmix",
+		"/C/dodo/projects/- pers/cloudsoundmix/app",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/directives",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/playlist",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/views",
+		"/C/dodo/projects/development/casino",
+		"/C/dodo/projects/development/casino/client",
+		"/C/dodo/projects/development/casino/client/components",
+		"/C/dodo/projects/development/casino/client/components/user",
+		"/C/dodo/projects/development/casino/client/components/user/deposit",
+		"/C/dodo/projects/development/casino/client/services",
+		"/C/dodo/projects/development/casino/client/templates",
+		"/C/dodo/projects/development/casino/client/templates/galaxy",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/signup",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials",
+		"/C/dodo/projects/development/web",
+		"/C/dodo/projects/development/web/client",
+		"/C/dodo/projects/development/web/client/app",
+		"/C/dodo/projects/development/web/client/app/account",
+		"/C/dodo/projects/development/web/client/app/account/signup",
+		"/C/dodo/projects/development/web/client/assets",
+		"/C/dodo/projects/development/web/client/assets/externals",
+		"/C/dodo/projects/development/web/client/components",
+		"/C/dodo/projects/development/web/client/components/betslip",
+		"/C/dodo/projects/development/web/client/components/betslip/betslip-service",
+		"/C/dodo/projects/development/web/client/components/betslip/play-bet",
+		"/C/dodo/projects/development/web/client/components/offer"
+	],
+	"file_history":
+	[
+		"/C/dodo/projects/- pers/cloudsoundmix/app/views/stream.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/controller.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/playlist/playlist.controller.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/playlist/playlist.directive.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/directives/player.directive.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/playlist/search-results.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/playlist.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/index.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/app.js",
+		"/C/dodo/projects/development/web/client/app/account/signup/signup.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/bower.json",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/bower_components/angular-indexedDB/angular-indexed-db.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/package.json",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/httpInterceptor.factory.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/package.json",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/bower_components/angular-db/angular-db.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/assets/playlists.json",
+		"/C/dodo/projects/development/web/client/assets/externals/news.json",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/fetchAPI.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/LocalStorage.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/gulpfile.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/signup/signup.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/filters/trustThisUrl.filter.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/styles/breakpoints/_base.scss",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/directives/main-nav.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/gulpfile.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/styles/breakpoints/_481up.scss",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/styles/partials/_grid.scss",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/styles/modules/_forms.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_grid.scss",
+		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/styles/modules/_forms.scss",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/config.js",
+		"/C/dodo/projects/development/web/client/components/betslip/betslip-service/betslip.service.js",
+		"/C/dodo/projects/development/casino/client/services/authInterceptor.js",
+		"/C/dodo/projects/development/casino/client/app.js",
+		"/C/dodo/projects/development/web/client/app/app.js",
+		"/C/dodo/projects/- pers/stickyNavbar/jquery.stickyNavbar.js",
+		"/C/dodo/projects/- pers/stickyNavbar/jquery.stickyNavbar.min.js",
+		"/C/dodo/projects/- pers/stickyNavbar/package.json",
+		"/C/dodo/projects/- pers/stickyNavbar/README.md",
+		"/C/dodo/projects/- pers/stickyNavbar/bower.json",
+		"/C/dodo/projects/- pers/stickyNavbar/stickyNavbar.js.jquery.json",
+		"/C/dodo/projects/- pers/cloudsoundmix/node_modules/node-soundcloud/lib/soundcloud.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/node_modules/node-soundcloud/index.js",
+		"/C/dodo/projects/development/casino/client/index.html",
+		"/C/dodo/projects/development/casino/client/gulpfile.js",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/dodo/projects/development/casino/client/sitemap.js",
+		"/C/dodo/projects/development/casino/client/_build/casino_build.zip",
+		"/C/dodo/projects/development/casino/client/_build/sitemap.xml",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/app.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/index.html",
+		"/C/dodo/projects/development/casino/client/sitemap.xml",
+		"/C/dodo/projects/development/casino/client/components/user/user.routing.js",
+		"/C/dodo/projects/development/casino/client/core/routing.js",
+		"/C/dodo/projects/development/casino/.git/COMMIT_EDITMSG",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/static.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/header/header.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_variables.scss",
+		"/C/dodo/projects/development/casino/client/services/user.service.js",
+		"/C/dodo/projects/development/casino/client/directives/bodyStateClass.directive.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/games-block/games-block-template.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/assets/translations/en.json",
+		"/C/dodo/projects/development/casino/client/components/games-block/gamesBlock.directive.js",
+		"/C/dodo/projects/development/casino/client/components/games/games.controller.js",
+		"/C/dodo/projects/development/casino/client/components/static-pages/staticPages.controller.js",
+		"/C/dodo/projects/development/casino/client/components/game/detail/detail.directive.js",
+		"/C/dodo/projects/development/casino/client/components/game/detail/detail.controller.js",
+		"/C/dodo/projects/development/casino/client/services/system.service.js",
+		"/C/dodo/projects/development/casino/client/directives/responsive.tables.directive.js",
+		"/C/dodo/projects/development/casino/client/services/game.service.js",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/CodeComplice/CodeComplice.sublime-settings",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/CodeComplice.sublime-settings",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Jozef.Butko/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/faq.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/balance/balance.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/balance/balance.html",
+		"/C/dodo/projects/development/casino/client/config/config.json",
+		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/app/config.js",
+		"/C/dodo/projects/development/casino/client/core/constants.js",
+		"/C/dodo/projects/development/casino/client/components/header/header.directive.spec.js",
+		"/C/dodo/projects/development/casino/client/services/user.service.spec.js",
+		"/C/dodo/projects/development/casino/client/core/api-endpoints.js",
+		"/C/dodo/projects/development/web/client/app/user/bettinghistory/bettinghistory.controller.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_helpers.scss",
+		"/C/dodo/projects/development/casino/client/crawler.js",
+		"/C/dodo/projects/development/casino/client/_build/index.html",
+		"/C/dodo/projects/development/casino/client/_build/js/templates-0.0.11.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/main/main.html",
+		"/C/dodo/projects/development/casino/client/directives/preloader.js",
+		"/C/dodo/projects/development/casino/client/components/user/self-exclusion/selfExclusion.controller.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/self-exclusion/self-exclusion.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/modules/_icons.scss",
+		"/C/dodo/projects/development/casino/client/directives/floatingNav.directive.js",
+		"/C/dodo/projects/development/casino/client/directives/floatingNav.directive.spec.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_typography.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_animations.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/collapse.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/history/bonus/bonus-history.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/style.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_sprite.scss",
+		"/C/dodo/projects/development/casino/client/templates/basic/styles/partials/_typography.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/bonus.html",
+		"/C/dodo/projects/development/casino/client/components/header/header.directive.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/modules/_forms.scss",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/static-pages/contact.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/views/home.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/main.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/components/services/queryService.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/soundCloud.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/.gitignore",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/soundCloud.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/queryService.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/js/index.js",
+		"/C/dodo/projects/development/casino/client/components/user/history/bonus/bonus.controller.spec.js",
+		"/C/dodo/projects/development/casino/client/components/user/deposit/deposit.controller.spec.js",
+		"/C/dodo/projects/development/casino/client/mocks/storage.mock.js",
+		"/C/dodo/projects/development/casino/client/components/user/balance/balance.controller.spec.js",
+		"/C/dodo/projects/development/casino/client/components/user/history/bonus/bonus.controller.js",
+		"/C/dodo/projects/development/casino/client/components/user/balance/balance.controller.js",
+		"/C/dodo/projects/development/web/client/app/user/deposit/deposit.controller.spec.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/alert-notification.html",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/history/bonus/bonus-history.scss",
+		"/C/dodo/projects/development/casino/client/components/user/deposit/deposit.redirect.controller.js",
+		"/C/dodo/projects/development/casino/client/components/user/profile/profile.controller.js",
+		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/alert-notification.scss",
+		"/C/Users/Jozef.Butko/AppData/Local/Google/Chrome/User Data/Default/Extensions/jabopobgcpjmedljpbcaablpmlmfcogm/2.0.4_0/wf_chrome.js"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 133.0,
+		"where_history":
+		[
+			"C:\\dodo\\projects\\- pers\\cloudsoundmix\\app",
+			"C:\\dodo\\projects\\- pers\\cloudsoundmix",
+			"C:\\dodo\\projects\\development\\web",
+			"C:\\dodo\\projects\\- pers\\cloudsoundmix",
+			"C:\\dodo\\projects\\- pers\\stickyNavbar",
+			"C:\\dodo\\projects\\- pers\\cloudsoundmix",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\web",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\- pers\\cloudsoundmix",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\- pers\\wezeo",
+			"C:\\dodo\\projects\\- pers\\wezeo\\styles",
+			"C:\\dodo\\projects\\- pers\\wezeo",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy\\components\\user\\deposit",
+			"C:\\dodo\\projects\\development\\web\\client",
+			"C:\\dodo\\projects\\development\\web\\client\\app\\user\\deposit",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\- pers\\cloudsoundmix",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\directives",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack\\components\\game\\detail",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy-pig",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\jack",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\directives",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\casino\\client\\directives",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\casino\\client\\directives",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\casino\\client\\directives",
+			"C:\\dodo\\projects\\development\\casino\\client,*.js",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\services",
+			"C:\\dodo\\projects\\development\\casino\\client\\directives",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\casino,*spec*",
+			"C:\\dodo\\projects\\development\\casino,*.spec.js",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\directives",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy\\components\\customer-support",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy\\components\\static-pages",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\components\\user\\profile",
+			"C:\\dodo\\projects\\development\\casino\\client",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy\\components",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy",
+			"C:\\dodo\\projects\\development\\casino\\client\\",
+			"C:\\dodo\\projects\\development\\casino\\client\\templates\\galaxy"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"trackSearched",
+			"$watch",
+			"$location",
+			"searchTracks",
+			"Main",
+			"search-results",
+			"trackSearched",
+			"playSCurl",
+			"scope",
+			"generateIframeUrl",
+			"playSC",
+			"self",
+			"\"",
+			"'Doe'",
+			"ObjectStore.eachWher",
+			"$get.ObjectStore.eachWher",
+			"insert",
+			"byTrackData",
+			"byPlaylistName",
+			"          getPlaylistTracks",
+			"          unique: false,\n          multiEntry: true",
+			"\"",
+			"getAll",
+			"list",
+			"var ",
+			"\"",
+			"console",
+			"playlist",
+			"\"",
+			"\\",
+			"dbProvider",
+			"\\",
+			"Playlist",
+			"listPlaylistTracks",
+			"openAudioFile",
+			" ",
+			"};\n",
+			"closed",
+			"offsetVal",
+			"self.mainFeed",
+			"cloudcasts",
+			" + offset",
+			"\\",
+			"\"",
+			"console.lo",
+			"/",
+			"});\n",
+			"17.0.0.169",
+			"==",
+			"scope.playerSource",
+			"lg",
+			"3",
+			" /",
+			"md",
+			"lg",
+			"480",
+			"duration",
+			"search",
+			"main.search",
+			"selected",
+			"hidden ",
+			" ",
+			"\n				",
+			"data",
+			"console.lo",
+			"limit: 1",
+			"1",
+			", limit: 1",
+			"origin",
+			"_changePropertyName",
+			"self.scUserDashboard = ",
+			"background-color",
+			"#f7f8fa",
+			"response",
+			"request",
+			"authInterceptor",
+			"interceptor",
+			" trustThisUrl",
+			" substring",
+			" c.substring(0, 7))",
+			"if (\"http\" === c.substring(0, 4) || \"mailto:\" === c.substring(0, 7)) return !0;",
+			"1.3.1",
+			"MC",
+			"fetchAPI",
+			"query",
+			"{client_id: CONSTANTS.SC.clientID, limit: 1}",
+			"scAPIurl",
+			"fetchAPI.query(",
+			"sound",
+			"self.",
+			"responsiveNav",
+			"sdk2",
+			"&",
+			"[0]",
+			"var",
+			"mc",
+			"directive",
+			"responsiveNav",
+			"339",
+			"width",
+			"'dev-assets'",
+			"sitemap",
+			"copy",
+			"0.5",
+			"1",
+			"0.5",
+			"                    lastmod:    '2012-03-06'  // (optional)",
+			"url: '/",
+			"Url: '",
+			"url: '",
+			"h3",
+			"top: 84px;",
+			"84",
+			"< HEAD",
+			"transactions/transactiondetai",
+			"transactions/transactionhi",
+			"games/gameshistory.c",
+			"bonus/bonus.controller",
+			"user.bonusHistory",
+			"user.limits",
+			".static-navigation",
+			"< HEAD",
+			".bonus-page",
+			"index.html",
+			"_blank",
+			"target",
+			"support",
+			"authenticate: false"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"1.3.2",
+			"'urlApp'",
+			"min-width: 970px",
+			"max-width: 969px",
+			"min-width: 970px",
+			"max-width: 969px",
+			"min-device-width: 1025px",
+			"max-device-width : 1024px",
+			"min-width: 1025px",
+			"max-width: 1024px",
+			"forgotPassword",
+			"passwordValidation",
+			"src=\"assets/images/",
+			"userService",
+			"angular.module('jozefButko",
+			"phoneNumber",
+			"storage",
+			"",
+			"\"/assets/images/",
+			"",
+			"USERTAB_SELFRESTRICTIONLIMITS",
+			"SelfRestrictionLimits",
+			"/"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"history_list_is_closing": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tabs_extra_is_closed": true,
+							"tabs_extra_last_activated": 1445236501.84,
+							"tabs_extra_last_activated_sheet_index": 0,
+							"tabs_extra_spawned": true,
+							"tabs_extra_view_info":
+							[
+								1,
+								-1
+							],
+							"tabs_extra_window_info": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/search.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								337,
+								337
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"tabs_extra_last_activated": 1444513779.77,
+							"tabs_extra_last_activated_sheet_index": 1,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tabs_extra_last_activated": 1445236581.93,
+							"tabs_extra_last_activated_sheet_index": 2,
+							"tabs_extra_spawned": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "app/components/playlist/playlist.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1073,
+								1073
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"expand_region_settings": "{\"stack\": [{\"start\": 803, \"end\": 809}, {\"start\": 796, \"end\": 823}], \"hash\": \"efddc9c7cf5d4235ce0dc648c6d9e247\"}",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"tabs_extra_last_activated": 1445237477.03,
+							"tabs_extra_last_activated_sheet_index": 0,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1542,
+								1542
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"expand_region_settings": "{\"stack\": [{\"start\": 1406, \"end\": 1407}, {\"start\": 1401, \"end\": 1411}], \"hash\": \"cd2bfbcca129b15c4510b69a75f8193f\"}",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445237582.15,
+							"tabs_extra_last_activated_sheet_index": 1,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 612.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/app/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1492,
+								1492
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445236873.48,
+							"tabs_extra_last_activated_sheet_index": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.518333100443,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 299.0
+	},
+	"output.find_results":
+	{
+		"height": 297.0
+	},
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"appapp",
+				"cloudsoundmix\\app\\app\\app.js"
+			],
+			[
+				"html",
+				"cloudsoundmix\\app\\index.html"
+			],
+			[
+				"apppack",
+				"cloudsoundmix\\app\\package.json"
+			],
+			[
+				"pca",
+				"cloudsoundmix\\package.json"
+			],
+			[
+				"cloapp",
+				"cloudsoundmix\\app\\app\\app.js"
+			],
+			[
+				"cloinde",
+				"cloudsoundmix\\app\\index.html"
+			],
+			[
+				"json",
+				"web\\client\\assets\\externals\\news.json"
+			],
+			[
+				"ignup",
+				"web\\client\\app\\account\\signup\\signup.html"
+			],
+			[
+				"localsto",
+				"cloudsoundmix\\app\\components\\services\\LocalStorage.service.js"
+			],
+			[
+				"cloudgulp",
+				"cloudsoundmix\\gulpfile.js"
+			],
+			[
+				"clodmain",
+				"cloudsoundmix\\app\\components\\directives\\main-nav.html"
+			],
+			[
+				"cloudin",
+				"cloudsoundmix\\app\\index.html"
+			],
+			[
+				"base",
+				"cloudsoundmix\\app\\styles\\breakpoints\\_base.scss"
+			],
+			[
+				"cloforms",
+				"cloudsoundmix\\app\\styles\\modules\\_forms.scss"
+			],
+			[
+				"grid",
+				"cloudsoundmix\\app\\styles\\partials\\_grid.scss"
+			],
+			[
+				"casinosignup",
+				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
+			],
+			[
+				"galaxsigunp",
+				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
+			],
+			[
+				"cloudform",
+				"cloudsoundmix\\AngularJS-Boilerplate\\styles\\modules\\_forms.scss"
+			],
+			[
+				"casisignup",
+				"web\\client\\app\\account\\signup\\signup.html"
+			],
+			[
+				"webbetser",
+				"web\\client\\components\\betslip\\betslip-service\\betslip.service.js"
+			],
+			[
+				"casiaut",
+				"casino\\client\\services\\authInterceptor.js"
+			],
+			[
+				"cloudsappjs",
+				"cloudsoundmix\\app\\app\\app.js"
+			],
+			[
+				"asiappjs",
+				"casino\\client\\app.js"
+			],
+			[
+				"confi",
+				"cloudsoundmix\\app\\app\\config.js"
+			],
+			[
+				"cloudinde",
+				"cloudsoundmix\\app\\index.html"
+			],
+			[
+				"casinde",
+				"casino\\client\\index.html"
+			],
+			[
+				"casigulp",
+				"casino\\client\\gulpfile.js"
+			],
+			[
+				"sitempa",
+				"casino\\client\\sitemap.js"
+			],
+			[
+				"galaxappjs",
+				"casino\\client\\templates\\galaxy\\app.js"
+			],
+			[
+				"gulpfile",
+				"casino\\client\\gulpfile.js"
+			],
+			[
+				"appjs",
+				"casino\\client\\app.js"
+			],
+			[
+				"userrou",
+				"casino\\client\\components\\user\\user.routing.js"
+			],
+			[
+				"casirout",
+				"casino\\client\\core\\routing.js"
+			],
+			[
+				"casiinde",
+				"casino\\client\\index.html"
+			],
+			[
+				"galax",
+				"casino\\client\\templates\\galaxy\\index.html"
+			],
+			[
+				"galaxvari",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_variables.scss"
+			],
+			[
+				"heades",
+				"casino\\client\\templates\\galaxy\\components\\header\\header.scss"
+			],
+			[
+				"casininde",
+				"casino\\client\\index.html"
+			],
+			[
+				"galaxinde",
+				"casino\\client\\templates\\galaxy\\index.html"
+			],
+			[
+				"indexhtm",
+				"casino\\client\\index.html"
+			],
+			[
+				"routin",
+				"casino\\client\\core\\routing.js"
+			],
+			[
+				"userser",
+				"casino\\client\\services\\user.service.js"
+			],
+			[
+				"galaindexhtm",
+				"casino\\client\\templates\\galaxy\\index.html"
+			],
+			[
+				"galainde",
+				"casino\\client\\templates\\galaxy\\index.html"
+			],
+			[
+				"gaenjs",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"userjs",
+				"casino\\client\\components\\user\\user.routing.js"
+			],
+			[
+				"galaxsignup",
+				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
+			],
+			[
+				"galaxsignu",
+				"casino\\client\\templates\\galaxy\\components\\signup\\signup.html"
+			],
+			[
+				"users",
+				"casino\\client\\services\\user.service.js"
+			],
+			[
+				"staticcont",
+				"casino\\client\\components\\static-pages\\staticPages.controller.js"
+			],
+			[
+				"gamedetailjs",
+				"casino\\client\\components\\game\\detail\\detail.controller.js"
+			],
+			[
+				"galaenjs",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"gamesblockhtml",
+				"casino\\client\\templates\\galaxy\\components\\games-block\\games-block-template.html"
+			],
+			[
+				"gameser",
+				"casino\\client\\services\\game.service.js"
+			],
+			[
+				"gamescon",
+				"casino\\client\\components\\games\\games.controller.js"
+			],
+			[
+				"galaapp",
+				"casino\\client\\templates\\galaxy\\app.js"
+			],
+			[
+				"casiuserrou",
+				"casino\\client\\components\\user\\user.routing.js"
+			],
+			[
+				"casiconfig",
+				"casino\\client\\config\\config.json"
+			],
+			[
+				"galaconfig",
+				"cloudsoundmix\\AngularJS-Boilerplate\\app\\config.js"
+			],
+			[
+				"casiconsta",
+				"casino\\client\\core\\constants.js"
+			],
+			[
+				"casicongf",
+				"casino\\client\\config\\config.json"
+			],
+			[
+				"userse",
+				"casino\\client\\services\\user.service.js"
+			],
+			[
+				"header",
+				"casino\\client\\components\\header\\header.directive.spec.js"
+			],
+			[
+				"casiconfi",
+				"casino\\client\\config\\config.json"
+			],
+			[
+				"faqhtm",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\faq.html"
+			],
+			[
+				"galahelp",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_helpers.scss"
+			],
+			[
+				"galaxenjs",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"balanceht",
+				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.html"
+			],
+			[
+				"gulpfil",
+				"casino\\client\\gulpfile.js"
+			],
+			[
+				"casiinter",
+				"casino\\client\\services\\authInterceptor.js"
+			],
+			[
+				"mainhtm",
+				"casino\\client\\templates\\galaxy\\components\\main\\main.html"
+			],
+			[
+				"casiapp",
+				"casino\\client\\app.js"
+			],
+			[
+				"casigulpf",
+				"casino\\client\\gulpfile.js"
+			],
+			[
+				"casiselfcon",
+				"casino\\client\\components\\user\\self-exclusion\\selfExclusion.controller.js"
+			],
+			[
+				"casiindex",
+				"casino\\client\\index.html"
+			],
+			[
+				"galaenjso",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"galself",
+				"casino\\client\\templates\\galaxy\\components\\user\\self-exclusion\\self-exclusion.html"
+			],
+			[
+				"galaicon",
+				"casino\\client\\templates\\galaxy\\styles\\modules\\_icons.scss"
+			],
+			[
+				"galaxtypo",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_typography.scss"
+			],
+			[
+				"varib",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_variables.scss"
+			],
+			[
+				"galaxst",
+				"casino\\client\\templates\\galaxy\\styles\\style.scss"
+			],
+			[
+				"casitypo",
+				"casino\\client\\templates\\basic\\styles\\partials\\_typography.scss"
+			],
+			[
+				"galaxsprite",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_sprite.scss"
+			],
+			[
+				"bonushis",
+				"casino\\client\\templates\\galaxy\\components\\user\\history\\bonus\\bonus-history.html"
+			],
+			[
+				"headerdire",
+				"casino\\client\\components\\header\\header.directive.js"
+			],
+			[
+				"galaxforms",
+				"casino\\client\\templates\\galaxy\\styles\\modules\\_forms.scss"
+			],
+			[
+				"galaanim",
+				"casino\\client\\templates\\galaxy\\styles\\partials\\_animations.scss"
+			],
+			[
+				"galabalanc",
+				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.html"
+			],
+			[
+				"collapscs",
+				"casino\\client\\templates\\galaxy\\directives\\collapse.scss"
+			],
+			[
+				"bonus",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\bonus.html"
+			],
+			[
+				"contact",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\contact.html"
+			],
+			[
+				"staticss",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\static.scss"
+			],
+			[
+				"faq",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\faq.html"
+			],
+			[
+				"quer",
+				"AngularJS-Boilerplate\\components\\services\\queryService.service.js"
+			],
+			[
+				"index",
+				"app\\index.html"
+			],
+			[
+				"appconfig",
+				"app\\app\\config.js"
+			],
+			[
+				"controlle",
+				"app\\app\\controller.js"
+			],
+			[
+				"suppo",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\support.html"
+			],
+			[
+				"balancecont",
+				"casino\\client\\components\\user\\balance\\balance.controller.js"
+			],
+			[
+				"userservspe",
+				"casino\\client\\services\\user.service.spec.js"
+			],
+			[
+				"deposicontspe",
+				"casino\\client\\components\\user\\deposit\\deposit.controller.spec.js"
+			],
+			[
+				"userserv",
+				"casino\\client\\services\\user.service.js"
+			],
+			[
+				"casinomock",
+				"casino\\client\\mocks\\storage.mock.js"
+			],
+			[
+				"bonuspe",
+				"casino\\client\\components\\user\\history\\bonus\\bonus.controller.spec.js"
+			],
+			[
+				"balcnsp",
+				"casino\\client\\components\\user\\balance\\balance.controller.spec.js"
+			],
+			[
+				"blancspe",
+				"casino\\client\\components\\user\\balance\\balance.controller.spec.js"
+			],
+			[
+				"casideposconsp",
+				"casino\\client\\components\\user\\deposit\\deposit.controller.spec.js"
+			],
+			[
+				"depospec",
+				"web\\client\\app\\user\\deposit\\deposit.controller.spec.js"
+			],
+			[
+				"deposicontrsp",
+				"web\\client\\app\\user\\deposit\\deposit.controller.spec.js"
+			],
+			[
+				"galaxbalanc",
+				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.html"
+			],
+			[
+				"bala",
+				"casino\\client\\components\\user\\balance\\balance.controller.js"
+			],
+			[
+				"galaxenjso",
+				"casino\\client\\templates\\galaxy\\assets\\translations\\en.json"
+			],
+			[
+				"bonush",
+				"casino\\client\\templates\\galaxy\\components\\user\\history\\bonus\\bonus-history.html"
+			],
+			[
+				"bonucon",
+				"casino\\client\\components\\user\\history\\bonus\\bonus.controller.js"
+			],
+			[
+				"headscs",
+				"casino\\client\\templates\\galaxy\\components\\header\\header.scss"
+			],
+			[
+				"alerthtml",
+				"casino\\client\\templates\\galaxy\\directives\\alert-notification.html"
+			],
+			[
+				"balancscss",
+				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.scss"
+			],
+			[
+				"galaxicon",
+				"casino\\client\\templates\\galaxy\\styles\\modules\\_icons.scss"
+			],
+			[
+				"casinogulp",
+				"casino\\client\\gulpfile.js"
+			],
+			[
+				"balanccon",
+				"casino\\client\\components\\user\\balance\\balance.controller.js"
+			],
+			[
+				"balancehtm",
+				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.html"
+			],
+			[
+				"bonuscont",
+				"casino\\client\\components\\user\\history\\bonus\\bonus.controller.js"
+			],
+			[
+				"collapse",
+				"casino\\client\\templates\\galaxy\\directives\\collapse.scss"
+			],
+			[
+				"collaps",
+				"casino\\client\\directives\\collapse.directive.js"
+			],
+			[
+				"stylescss",
+				"casino\\client\\templates\\galaxy\\styles\\style.scss"
+			],
+			[
+				"style",
+				"casino\\client\\styles\\style.css"
+			],
+			[
+				"staticscss",
+				"casino\\client\\templates\\galaxy\\components\\static-pages\\static.scss"
+			],
+			[
+				"routing",
+				"casino\\client\\core\\routing.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 527.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 283.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

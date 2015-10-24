@@ -13,10 +13,10 @@
   angular.module('boilerplate')
     .directive('player', player);
 
-  player.$inject = [];
+  player.$inject = ['CONSTANTS'];
 
 
-  function player() {
+  function player(CONSTANTS) {
 
     // Definition of directive
     var directiveDefinitionObject = {
@@ -29,13 +29,14 @@
       link: function(scope, elem) {
 
         scope.$watch('playerSource', function (value) {
-          var trackUrl = value && value.origin ? value.origin.permalink_url : value.permalink_url;
+          var trackUrl = value && value.origin ? value.origin.uri + '&client_id=' + CONSTANTS.SC.clientID : value.permalink_url;
           scope.playSound(value);
         });
 
 
         scope.playSound = function(sound) {
-          var trackUrl = sound && sound.origin ? sound.origin.permalink_url : sound.permalink_url;
+          console.log(sound);
+          var trackUrl = sound && sound.origin ? sound.origin.uri + '&client_id=' + CONSTANTS.SC.clientID : sound.permalink_url;
 
           SC.oEmbed(trackUrl, {
             auto_play: true,

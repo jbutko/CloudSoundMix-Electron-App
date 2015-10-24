@@ -48,6 +48,7 @@
 
     $httpProvider.interceptors.push('httpInterceptor');
 
+
     // routes
     $routeProvider
       .when('/', {
@@ -72,42 +73,6 @@
       .otherwise({
         redirectTo: '/'
       });
-
-    $httpProvider.interceptors.push('authInterceptor');
-  }
-
-
-  /**
-   * You can intercept any request or response inside authInterceptor
-   * or handle what should happend on 40x, 50x errors
-   *
-   */
-  angular
-    .module('boilerplate')
-    .factory('authInterceptor', authInterceptor);
-
-  authInterceptor.$inject = ['$rootScope', '$q', 'LocalStorage', '$location'];
-
-  function authInterceptor($rootScope, $q, LocalStorage, $location) {
-
-    return {
-
-      // intercept every request
-      request: function(config) {
-        config.headers = config.headers || {};
-        return config;
-      },
-
-      // Catch 404 errors
-      responseError: function(response) {
-        if (response.status === 404) {
-          $location.path('/');
-          return $q.reject(response);
-        } else {
-          return $q.reject(response);
-        }
-      }
-    };
   }
 
 

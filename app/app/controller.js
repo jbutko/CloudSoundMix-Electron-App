@@ -35,15 +35,15 @@
 
     ////////////  function definitions
 
-    playlist.addTrack('dodod', {
-      test: 'fdgdg'
-    }).then(function (results, err) {
-      console.log(results);
-    });
+    // playlist.addTrack('dodod', {
+    //   test: 'fdgdg'
+    // }).then(function (results, err) {
+    //   console.log(results);
+    // });
 
     // console.log(playlist.getAllTracks('playlists'));
-    console.log(playlist.getPlaylistTracks('dodod'));
-    console.log(playlist.removeTrack(1445188623096));
+    // console.log(playlist.getPlaylistTracks('dodod'));
+    // console.log(playlist.removeTrack(1445188623096));
     // console.log(playlist.getPlaylistNames('playlists'));
 
     // get scCodeToken on page load from config file if exists
@@ -194,57 +194,73 @@
     /**
      * Fetch user's feed or latests tracks
      */
-    var counter = 0,
-        offsetVal = 0;
     self.mainFeed = [];
-    self.fetchUserDashboard = function(loadMore, limit, offset) {
+    self.fetchUserDashboard = function(limit) {
 
-      if (loadMore === true) {
-        ++counter;
-        offset = counter * offset;
-      }
+      // default limit
+      limit = limit || 5;
 
       var promises = {
-        scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
-        scReposted: fetchAPI.query('GET', 'https://api-v2.soundcloud.com/profile/soundcloud:users:41691970', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        // scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: limit, linked_partitioning: 1}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        // scReposted: fetchAPI.query('GET', 'https://api-v2.soundcloud.com/profile/soundcloud:users:41691970', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         // scReposted1: fetchAPI.query('GET', 'https://api-v2.soundcloud.com', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         mcMe: fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {}),
-        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: 3, offset: offset || offsetVal}, {}, {})
+        // mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: 3, offset: offset || offsetVal}, {}, {})
+        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: limit}, {}, {})
         //sc: $http.get('http://api.soundcloud.com/me/activities/tracks/affiliated?client_id=aade84c56054d6945c32b616bb7bce0b')
       };
 
-      if (typeof loadMore === 'undefined') {
-        $q.all(promises).then(function(data) {
-          var scUserDashboard = data.scDashboard.data.collection;
-          var mcFeed = data.mcFeed.data.data;
-          scUserDashboard.platform = 'sc';
+      $q.all(promises).then(function(data) {
+        var scUserDashboard = data.scDashboard.data.collection;
+        var mcFeed = data.mcFeed.data.data;
 
-          self.mainFeed = scUserDashboard.concat(mcFeed);
-          self.mcUser = data.mcMe.data;
-        });
-      } else {
-        console.log(offset);
-        $q.all(promises).then(function(data) {
-          var scUserDashboard = data.scDashboard.data.collection;
-          var mcFeed = data.mcFeed.data.data;
-          var mixedFeed = scUserDashboard.concat(mcFeed);
+        // label SC data
+        scUserDashboard.platform = 'sc';
 
-          scUserDashboard.platform = 'sc';
+        // main view data
+        self.mainFeed = scUserDashboard.concat(mcFeed);
+        self.mcUser = data.mcMe.data;
 
-          // push newly loaded data into main tracks array
-          mixedFeed.map(function (array) {
-            self.mainFeed.push(array);
-          });
-
-          console.log(self.mainFeed);
-
-        });
-      }
-
-
+        // pagination
+        self.scNextPage = data.scDashboard.data.next_href;
+        self.mcNextPage = data.mcFeed.data.paging.next;
+      });
     };
 
-    self.fetchUserDashboard();
+    // load tracks on app load
+    self.fetchUserDashboard(3);
+
+    /**
+     * Load more tracks
+     * @param  {string} scNextPage SoundCloud future pagination link
+     * @param  {string} mcNextPage MixCloud future pagination link
+     */
+    self.loadMoreTracks = function (scNextPage, mcNextPage) {
+      var promises = {
+        scDashboard: fetchAPI.query('GET', scNextPage, {}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        mcFeed: fetchAPI.query('GET', mcNextPage, {}, {}, {})
+      };
+
+      $q.all(promises).then(function(data) {
+        var scUserDashboard = data.scDashboard.data.collection;
+        var mcFeed = data.mcFeed.data.data;
+
+        // label SC data
+        scUserDashboard.platform = 'sc';
+
+        var newTracks = scUserDashboard.concat(mcFeed);
+
+        // append new tracks to self.mainFeed array
+        newTracks.map(function (value) {
+          self.mainFeed.push(value);
+        });
+
+        // store new pagination links
+        self.scNextPage = data.scDashboard.data.next_href;
+        self.mcNextPage = data.mcFeed.data.paging.next;
+      });
+    };
 
 
     /**
@@ -267,7 +283,6 @@
 
     /**
      * Open audio file
-     *
      * @desc Open and play local audio file
      */
     self.loadLocalAudioFile = function() {
@@ -294,7 +309,6 @@
 
     /**
      * Stream network audio file
-     *
      * @desc Open and play local audio file
      */
     self.streamAudioFile = function(url) {

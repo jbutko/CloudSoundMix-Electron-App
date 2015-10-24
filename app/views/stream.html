@@ -21,7 +21,7 @@
 <!-- main stream -->
 <playlist playlist-source="main.mainFeed" track-searched="main.trackSearched"></playlist>
 
-<button data-ng-click="main.fetchUserDashboard(true, 5, 6)">Load more tracks...</button>
+<button data-ng-click="main.loadMoreTracks(main.scNextPage, main.mcNextPage)">Load more tracks...</button>
 <button data-ng-click="main.loadLocalAudioFile()">Add audio file</button>
 <button data-ng-click="main.streamAudioInput = !main.streamAudioInput">Add audio file</button>
 
