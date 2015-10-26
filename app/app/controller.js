@@ -15,11 +15,11 @@
     .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService', 'CONSTANTS', 'electron',
-  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location', '$scope', 'playlist'];
+  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location', '$scope'];
 
 
   function MainController(LocalStorage, QueryService, CONSTANTS, electron,
-    $window, $http, fetchAPI, $q, $sce, $location, $scope, playlist) {
+    $window, $http, fetchAPI, $q, $sce, $location, $scope) {
 
     // 'controller as' syntax
     var self = this;
@@ -53,6 +53,7 @@
 
     self.scAccessToken = config.readSettings('scAccessToken');
     self.mcAccessToken = config.readSettings('mcAccessToken');
+    console.log(self.mcAccessToken);
 
     if (self.scAccessToken) {
       self.scUserAuthorized = true;
@@ -195,10 +196,11 @@
      * Fetch user's feed or latests tracks
      */
     self.mainFeed = [];
+    var defaultLimit = 3;
     self.fetchUserDashboard = function(limit) {
 
       // default limit
-      limit = limit || 5;
+      limit = limit || defaultLimit;
 
       var promises = {
         // scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
@@ -207,7 +209,7 @@
         // scReposted1: fetchAPI.query('GET', 'https://api-v2.soundcloud.com', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         mcMe: fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {}),
         // mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: 3, offset: offset || offsetVal}, {}, {})
-        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: limit}, {}, {})
+        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/me/listens', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: limit}, {}, {})
         //sc: $http.get('http://api.soundcloud.com/me/activities/tracks/affiliated?client_id=aade84c56054d6945c32b616bb7bce0b')
       };
 
@@ -222,19 +224,23 @@
         self.mainFeed = scUserDashboard.concat(mcFeed);
         self.mcUser = data.mcMe.data;
 
-        // pagination
+        // pagination for next results
         self.scNextPage = data.scDashboard.data.next_href;
         self.mcNextPage = data.mcFeed.data.paging.next;
+
+        // pagination for future results === polling
+        self.scFuturePage = data.scDashboard.data.future_href;
+        self.mcFuturePage = data.mcFeed.data.paging.next;
       });
     };
 
     // load tracks on app load
-    self.fetchUserDashboard(3);
+    self.fetchUserDashboard(defaultLimit);
 
     /**
      * Load more tracks
-     * @param  {string} scNextPage SoundCloud future pagination link
-     * @param  {string} mcNextPage MixCloud future pagination link
+     * @param  {string} scNextPage SoundCloud next pagination link
+     * @param  {string} mcNextPage MixCloud next pagination link
      */
     self.loadMoreTracks = function (scNextPage, mcNextPage) {
       var promises = {
@@ -264,6 +270,38 @@
 
 
     /**
+     * Load new tracks === polling
+     * @param  {string} scFuturePage SoundCloud future pagination link
+     * @param  {string} mcFuturePage MixCloud future pagination link
+     */
+    self.fetchNewTracks = function (scFuturePage, mcFuturePage) {
+      var promises = {
+        scDashboard: fetchAPI.query('GET', scFuturePage, {}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        mcFeed: fetchAPI.query('GET', mcFuturePage, {}, {}, {})
+      };
+
+      $q.all(promises).then(function(data) {
+        var scUserDashboard = data.scDashboard.data.collection;
+        var mcFeed = data.mcFeed.data.data;
+
+        // label SC data
+        scUserDashboard.platform = 'sc';
+
+        var newTracks = scUserDashboard.concat(mcFeed);
+
+        // append new tracks to self.mainFeed array
+        newTracks.map(function (value) {
+          self.mainFeed.unshift(value);
+        });
+
+        // store new pagination links
+        self.scNextPage = data.scDashboard.data.next_href;
+        self.mcNextPage = data.mcFeed.data.paging.next;
+      });
+    };
+
+
+    /**
      * Search tracks
      */
     self.trackSearched = false;
@@ -271,49 +309,17 @@
 
       fetchAPI.searchTracks(keyword, searchType, platform, params, duration, limit).then(function(results) {
         var mcSearchResults = results.mcSearch.data.data;
-        var scSearchResults = results.scSearch.data;
+        var scSearchResults = results.scSearch.data.collection;
         self.trackSearched = true;
 
         self.mainFeed = scSearchResults.concat(mcSearchResults);
+
+        self.scNextPage = results.scSearch.data.next_href;
+        console.log(self.scNextPage);
+        self.mcNextPage = results.mcSearch.data.paging.next;
       }).catch(function (err) {
         console.log(err);
       });
-    };
-
-
-    /**
-     * Open audio file
-     * @desc Open and play local audio file
-     */
-    self.loadLocalAudioFile = function() {
-      var remote = require('remote'),
-          dialog = remote.require('dialog');
-
-      // 'Open file' system dialog
-      dialog.showOpenDialog(function(fileNames) {
-        if (fileNames === undefined) {
-          return false;
-        }
-
-        self.audioFileName = fileNames[0];
-        console.log(_readAudioMetadata(self.audioFileName));
-        $scope.$apply();
-        // _readAudioMetadata(self.audioFileName).then(function(data) {
-        //     console.log(data);
-        //     // self.audioTitle =
-        //     console.log(self.audioTitle);
-        // });
-      });
-    };
-
-
-    /**
-     * Stream network audio file
-     * @desc Open and play local audio file
-     */
-    self.streamAudioFile = function(url) {
-      self.audioFileName = url;
-      self.streamAudioInput = false;
     };
 
     function _readAudioMetadata(filename) {

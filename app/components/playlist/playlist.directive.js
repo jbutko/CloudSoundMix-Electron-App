@@ -11,23 +11,31 @@
    *
    */
   angular.module('boilerplate')
-    .directive('playlist', playlist);
+    .directive('playlist', playlistDirective);
 
-  playlist.$inject = [];
+  playlistDirective.$inject = ['playlist'];
 
 
-  function playlist() {
+  function playlistDirective(playlist) {
 
     // Definition of directive
     var directiveDefinitionObject = {
       restrict: 'E',
-      templateUrl: 'components/playlist/playlist.html',
+      templateUrl: 'components/playlist/playlist-template.html',
       controller: 'PlaylistController',
       scope: {
         playlistSource: '=',
         trackSearched: '='
       },
-      link: function() {
+      link: function(scope, elem, attrs) {
+
+        var tracks = scope.playlistSource,
+            playlistNames = scope.getPlaylistTracks;
+
+        if (!tracks) {
+          scope.playlistSource = playlist.getPlaylistTracks(playlistNames[0] || null);
+          scope.playlist = true;
+        }
       }
     };
 

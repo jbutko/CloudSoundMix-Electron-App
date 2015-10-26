@@ -91,12 +91,13 @@
 
 
     function searchTracks(keyword, searchType, platform, params, duration, limit) {
+      console.log(params);
       var searchKeyword = keyword.replace(' ', '+'),
           scSearchType = searchType || 'tracks',
           mcSearchType = searchType || 'cloudcast',
           limitVal = limit || 3,
-          scSearchParams = angular.extend({q: searchKeyword, client_id: CONSTANTS.SC.clientID, limit: limitVal}, params),
-          mcSearchParams = angular.extend({q: searchKeyword, type: mcSearchType, limit: limitVal}, params),
+          scSearchParams = {q: searchKeyword, client_id: CONSTANTS.SC.clientID, limit: limitVal, linked_partitioning: 1},
+          mcSearchParams = {q: searchKeyword, type: mcSearchType, limit: limitVal},
           promises;
 
       // search both soundcloud and mixcloud
@@ -107,6 +108,7 @@
         };
 
         return $q.all(promises).then(function(data) {
+          console.log(data);
           return data;
         });
       } else if (typeof duration !== 'undefined') {

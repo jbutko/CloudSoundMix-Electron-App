@@ -70,6 +70,10 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .when('/playlist', {
+        templateUrl: 'components/playlist/playlist.html',
+        controller: 'PlaylistController'
+      })
       .otherwise({
         redirectTo: '/'
       });

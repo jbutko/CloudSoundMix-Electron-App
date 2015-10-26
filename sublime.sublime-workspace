@@ -452,14 +452,6 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/user.html",
-			"settings":
-			{
-				"buffer_size": 179,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/views/search.html",
 			"settings":
 			{
@@ -471,7 +463,47 @@
 			"file": "app/views/home.html",
 			"settings":
 			{
-				"buffer_size": 830,
+				"buffer_size": 159,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/playlist/playlist.controller.js",
+			"settings":
+			{
+				"buffer_size": 4233,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/stream.html",
+			"settings":
+			{
+				"buffer_size": 393,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/services/playlist.service.js",
+			"settings":
+			{
+				"buffer_size": 2948,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 5957,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/directives/main-nav.html",
+			"settings":
+			{
+				"buffer_size": 862,
 				"line_ending": "Windows"
 			}
 		},
@@ -479,7 +511,23 @@
 			"file": "app/components/playlist/playlist.html",
 			"settings":
 			{
-				"buffer_size": 1516,
+				"buffer_size": 504,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/playlist/playlist.directive.js",
+			"settings":
+			{
+				"buffer_size": 949,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/playlist/playlist-template.html",
+			"settings":
+			{
+				"buffer_size": 3721,
 				"line_ending": "Windows"
 			}
 		},
@@ -495,7 +543,39 @@
 			"file": "app/app/app.js",
 			"settings":
 			{
-				"buffer_size": 2794,
+				"buffer_size": 2070,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app/controller.js",
+			"settings":
+			{
+				"buffer_size": 11160,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/services/httpInterceptor.factory.js",
+			"settings":
+			{
+				"buffer_size": 3852,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/services/fetchAPI.service.js",
+			"settings":
+			{
+				"buffer_size": 3472,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app/config.js",
+			"settings":
+			{
+				"buffer_size": 991,
 				"line_ending": "Windows"
 			}
 		}
@@ -673,7 +753,6 @@
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/playlist",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/views",
-		"/C/dodo/projects/development/casino",
 		"/C/dodo/projects/development/casino/client",
 		"/C/dodo/projects/development/casino/client/components",
 		"/C/dodo/projects/development/casino/client/components/user",
@@ -685,7 +764,6 @@
 		"/C/dodo/projects/development/casino/client/templates/galaxy/components/signup",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/styles",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials",
-		"/C/dodo/projects/development/web",
 		"/C/dodo/projects/development/web/client",
 		"/C/dodo/projects/development/web/client/app",
 		"/C/dodo/projects/development/web/client/app/account",
@@ -696,24 +774,32 @@
 		"/C/dodo/projects/development/web/client/components/betslip",
 		"/C/dodo/projects/development/web/client/components/betslip/betslip-service",
 		"/C/dodo/projects/development/web/client/components/betslip/play-bet",
-		"/C/dodo/projects/development/web/client/components/offer"
+		"/C/dodo/projects/development/web/client/components/offer",
+		"/C/dodo/projects/- pers/stickyNavbar"
 	],
 	"file_history":
 	[
-		"/C/dodo/projects/- pers/cloudsoundmix/app/views/stream.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/httpInterceptor.factory.js",
+		"/C/dodo/projects/- pers/stickyNavbar/jquery.stickyNavbar.js",
+		"/C/dodo/projects/- pers/stickyNavbar/script.js",
+		"/C/dodo/projects/- pers/stickyNavbar/index.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/app/config.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/app/controller.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/directives/player.directive.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/views/user.html",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/playlist.service.js",
+		"/C/dodo/projects/- pers/cloudsoundmix/.jshintrc",
+		"/C/dodo/projects/- pers/cloudsoundmix/.gitignore",
+		"/C/dodo/projects/- pers/cloudsoundmix/app/views/stream.html",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/playlist/playlist.controller.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/playlist/playlist.directive.js",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/components/directives/player.directive.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/playlist/search-results.html",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/playlist.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/index.html",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/app/app.js",
 		"/C/dodo/projects/development/web/client/app/account/signup/signup.html",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/bower.json",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/bower_components/angular-indexedDB/angular-indexed-db.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/package.json",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/httpInterceptor.factory.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/package.json",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/bower_components/angular-db/angular-db.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/assets/playlists.json",
@@ -731,12 +817,10 @@
 		"/C/dodo/projects/- pers/cloudsoundmix/app/styles/modules/_forms.scss",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/styles/partials/_grid.scss",
 		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/styles/modules/_forms.scss",
-		"/C/dodo/projects/- pers/cloudsoundmix/app/app/config.js",
 		"/C/dodo/projects/development/web/client/components/betslip/betslip-service/betslip.service.js",
 		"/C/dodo/projects/development/casino/client/services/authInterceptor.js",
 		"/C/dodo/projects/development/casino/client/app.js",
 		"/C/dodo/projects/development/web/client/app/app.js",
-		"/C/dodo/projects/- pers/stickyNavbar/jquery.stickyNavbar.js",
 		"/C/dodo/projects/- pers/stickyNavbar/jquery.stickyNavbar.min.js",
 		"/C/dodo/projects/- pers/stickyNavbar/package.json",
 		"/C/dodo/projects/- pers/stickyNavbar/README.md",
@@ -811,7 +895,6 @@
 		"/C/dodo/projects/- pers/cloudsoundmix/main.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/AngularJS-Boilerplate/components/services/queryService.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/soundCloud.service.js",
-		"/C/dodo/projects/- pers/cloudsoundmix/.gitignore",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/app/soundCloud.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/components/services/queryService.service.js",
 		"/C/dodo/projects/- pers/cloudsoundmix/app/js/index.js",
@@ -823,11 +906,7 @@
 		"/C/dodo/projects/development/casino/client/components/user/balance/balance.controller.js",
 		"/C/dodo/projects/development/web/client/app/user/deposit/deposit.controller.spec.js",
 		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/alert-notification.html",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/history/bonus/bonus-history.scss",
-		"/C/dodo/projects/development/casino/client/components/user/deposit/deposit.redirect.controller.js",
-		"/C/dodo/projects/development/casino/client/components/user/profile/profile.controller.js",
-		"/C/dodo/projects/development/casino/client/templates/galaxy/directives/alert-notification.scss",
-		"/C/Users/Jozef.Butko/AppData/Local/Google/Chrome/User Data/Default/Extensions/jabopobgcpjmedljpbcaablpmlmfcogm/2.0.4_0/wf_chrome.js"
+		"/C/dodo/projects/development/casino/client/templates/galaxy/components/user/history/bonus/bonus-history.scss"
 	],
 	"find":
 	{
@@ -973,6 +1052,35 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"platfo",
+			"linked",
+			"$scope.audioFileName",
+			"audioFileName",
+			"main.",
+			"streamAudioInput",
+			"self",
+			"1445778529743",
+			"1445778507981",
+			"createdAt",
+			"1445778507479",
+			"createdAt",
+			"1445778507016",
+			"'two'",
+			"previous",
+			"https://api.mixcloud.com/me",
+			"Next",
+			"accesstoken",
+			"stream_url",
+			".map(",
+			".map",
+			"fetchUserDashboard",
+			"self.",
+			"loadMore",
+			"playlistSource",
+			"offset",
+			"offsetVal",
+			"headers",
+			"intercept",
 			"trackSearched",
 			"$watch",
 			"$location",
@@ -1071,36 +1179,7 @@
 			"mc",
 			"directive",
 			"responsiveNav",
-			"339",
-			"width",
-			"'dev-assets'",
-			"sitemap",
-			"copy",
-			"0.5",
-			"1",
-			"0.5",
-			"                    lastmod:    '2012-03-06'  // (optional)",
-			"url: '/",
-			"Url: '",
-			"url: '",
-			"h3",
-			"top: 84px;",
-			"84",
-			"< HEAD",
-			"transactions/transactiondetai",
-			"transactions/transactionhi",
-			"games/gameshistory.c",
-			"bonus/bonus.controller",
-			"user.bonusHistory",
-			"user.limits",
-			".static-navigation",
-			"< HEAD",
-			".bonus-page",
-			"index.html",
-			"_blank",
-			"target",
-			"support",
-			"authenticate: false"
+			"339"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1141,113 +1220,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/user.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 179,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								166,
-								166
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
-							"history_list_is_closing": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tabs_extra_is_closed": true,
-							"tabs_extra_last_activated": 1445236501.84,
-							"tabs_extra_last_activated_sheet_index": 0,
-							"tabs_extra_spawned": true,
-							"tabs_extra_view_info":
-							[
-								1,
-								-1
-							],
-							"tabs_extra_window_info": 2
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/search.html",
 					"semi_transient": false,
 					"settings":
@@ -1331,7 +1308,7 @@
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
-							"tabs_extra_last_activated": 1444513779.77,
+							"tabs_extra_last_activated": 1445678030.3,
 							"tabs_extra_last_activated_sheet_index": 1,
 							"tabs_extra_spawned": true,
 							"translate_tabs_to_spaces": false
@@ -1340,24 +1317,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "app/views/home.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 830,
+						"buffer_size": 159,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								164,
-								164
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1426,38 +1403,525 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tabs_extra_last_activated": 1445236581.93,
-							"tabs_extra_last_activated_sheet_index": 2,
+							"tabs_extra_last_activated": 1445691734.95,
+							"tabs_extra_last_activated_sheet_index": 1,
 							"tabs_extra_spawned": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 14,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "app/components/playlist/playlist.html",
+					"buffer": 2,
+					"file": "app/components/playlist/playlist.controller.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1516,
+						"buffer_size": 4233,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1073,
-								1073
+								2002,
+								2004
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445800685.64,
+							"tabs_extra_last_activated_sheet_index": 2,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/stream.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445800738.72,
+							"tabs_extra_last_activated_sheet_index": 3,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/components/services/playlist.service.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2840,
+								2840
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445800668.56,
+							"tabs_extra_last_activated_sheet_index": 4,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1632.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2831,
+								2831
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"history_list_is_closing": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tabs_extra_is_closed": true,
+							"tabs_extra_last_activated": 1445781785.31,
+							"tabs_extra_last_activated_sheet_index": 5,
+							"tabs_extra_spawned": true,
+							"tabs_extra_view_info":
+							[
+								1,
+								-1
+							],
+							"tabs_extra_window_info": 5,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1217.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/components/directives/main-nav.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								360,
+								360
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"tabs_extra_last_activated": 1445778675.4,
+							"tabs_extra_last_activated_sheet_index": 7,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "app/components/playlist/playlist.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
 							]
 						],
 						"settings":
@@ -1529,7 +1993,7 @@
 							"synced": false,
 							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
 							"tab_size": 4,
-							"tabs_extra_last_activated": 1445237477.03,
+							"tabs_extra_last_activated": 1445780690.05,
 							"tabs_extra_last_activated_sheet_index": 0,
 							"tabs_extra_spawned": true,
 							"translate_tabs_to_spaces": true
@@ -1538,11 +2002,204 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 8,
+					"file": "app/components/playlist/playlist.directive.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								588,
+								588
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445780561.42,
+							"tabs_extra_last_activated_sheet_index": 1,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/components/playlist/playlist-template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3440,
+								3440
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"tabs_extra_last_activated": 1445780839.95,
+							"tabs_extra_last_activated_sheet_index": 2,
+							"tabs_extra_spawned": true,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1071.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "main.js",
 					"semi_transient": false,
 					"settings":
@@ -1554,8 +2211,8 @@
 						"selection":
 						[
 							[
-								1542,
-								1542
+								1374,
+								1374
 							]
 						],
 						"settings":
@@ -1626,8 +2283,8 @@
 							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
-							"tabs_extra_last_activated": 1445237582.15,
-							"tabs_extra_last_activated_sheet_index": 1,
+							"tabs_extra_last_activated": 1445777612.33,
+							"tabs_extra_last_activated_sheet_index": 3,
 							"tabs_extra_spawned": true,
 							"translate_tabs_to_spaces": true
 						},
@@ -1635,24 +2292,24 @@
 						"translation.y": 612.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 11,
 					"file": "app/app/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2794,
+						"buffer_size": 2070,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1492,
-								1492
+								1541,
+								1541
 							]
 						],
 						"settings":
@@ -1716,20 +2373,403 @@
 								"bh_default_close",
 								"bh_default_content"
 							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"expand_region_settings": "{\"stack\": [{\"start\": 1753, \"end\": 1761}, {\"start\": 1747, \"end\": 1766}], \"hash\": \"c7f663a5f73ee3cb166d0c9f18fbfd3d\"}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
-							"tabs_extra_last_activated": 1445236873.48,
-							"tabs_extra_last_activated_sheet_index": 2,
+							"tabs_extra_last_activated": 1445777611.0,
+							"tabs_extra_last_activated_sheet_index": 4,
+							"tabs_extra_spawned": true,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 561.0,
+						"translation.y": 946.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/app/controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10643,
+								10643
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445802508.53,
+							"tabs_extra_last_activated_sheet_index": 5,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4788.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/components/services/httpInterceptor.factory.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3004,
+								3004
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445802361.53,
+							"tabs_extra_last_activated_sheet_index": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1292.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/components/services/fetchAPI.service.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3001,
+								3001
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445802035.43,
+							"tabs_extra_last_activated_sheet_index": 7,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1326.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/app/config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								331
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"tabs_extra_last_activated": 1445781968.55,
+							"tabs_extra_last_activated_sheet_index": 7,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1763,7 +2803,7 @@
 		"cols":
 		[
 			0.0,
-			0.518333100443,
+			0.21003959796,
 			1.0
 		],
 		"rows":
@@ -1798,6 +2838,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"httpin",
+				"cloudsoundmix\\app\\components\\services\\httpInterceptor.factory.js"
+			],
+			[
+				"inte",
+				"cloudsoundmix\\app\\components\\services\\httpInterceptor.factory.js"
+			],
+			[
+				"fetchap",
+				"cloudsoundmix\\app\\components\\services\\fetchAPI.service.js"
+			],
+			[
+				"cloudconf",
+				"cloudsoundmix\\app\\app\\config.js"
+			],
+			[
+				"cloudcontr",
+				"cloudsoundmix\\app\\app\\controller.js"
+			],
+			[
+				"httop",
+				"cloudsoundmix\\app\\components\\services\\httpInterceptor.factory.js"
+			],
+			[
+				"cloudconfi",
+				"cloudsoundmix\\app\\app\\config.js"
+			],
+			[
+				"plae",
+				"cloudsoundmix\\app\\components\\directives\\player.directive.js"
+			],
 			[
 				"appapp",
 				"cloudsoundmix\\app\\app\\app.js"
@@ -2277,38 +3349,6 @@
 			[
 				"balanccon",
 				"casino\\client\\components\\user\\balance\\balance.controller.js"
-			],
-			[
-				"balancehtm",
-				"casino\\client\\templates\\galaxy\\components\\user\\balance\\balance.html"
-			],
-			[
-				"bonuscont",
-				"casino\\client\\components\\user\\history\\bonus\\bonus.controller.js"
-			],
-			[
-				"collapse",
-				"casino\\client\\templates\\galaxy\\directives\\collapse.scss"
-			],
-			[
-				"collaps",
-				"casino\\client\\directives\\collapse.directive.js"
-			],
-			[
-				"stylescss",
-				"casino\\client\\templates\\galaxy\\styles\\style.scss"
-			],
-			[
-				"style",
-				"casino\\client\\styles\\style.css"
-			],
-			[
-				"staticscss",
-				"casino\\client\\templates\\galaxy\\components\\static-pages\\static.scss"
-			],
-			[
-				"routing",
-				"casino\\client\\core\\routing.js"
 			]
 		],
 		"width": 0.0
@@ -2339,7 +3379,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 283.0,
+	"side_bar_width": 205.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

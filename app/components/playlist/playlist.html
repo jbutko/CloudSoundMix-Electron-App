@@ -1,42 +1,13 @@
 <!-- playlist -->
-<div class="player-container" ng-repeat="sound in playlistSource" data-ng-if="!trackSearched">
-    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
-        <div class="col-sm-1">
-            {{$index + 1 }}
-        </div>
-        <div class="col-sm-23">
-            <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.origin.user.username}}: {{sound.origin.title}}</a>
-        </div>
-    </div>
+<playlist playlist-source="playlistSource" track-searched=""></playlist>
 
-    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
-        <div class="col-sm-1">
-            {{$index + 1 }}
-        </div>
-        <div class="col-sm-23">
-            <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.from.username}} - {{sound.cloudcasts[0].name}}</a>
-        </div>
-    </div>
-</div>
-
-<!-- search results -->
-<div class="player-container" ng-repeat="sound in playlistSource | orderBy:'created_time':true" data-ng-if="trackSearched">
-
-    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
-        <div class="col-sm-1">
-            {{$index + 1 }}
-        </div>
-        <div class="col-sm-23">
-            <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.user.username}}: {{sound.title}}</a>
-        </div>
-    </div>
-
-    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
-        <div class="col-sm-1">
-            {{$index + 1 }}
-        </div>
-        <div class="col-sm-23">
-            <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.user.username}} - {{sound.name}}</a>
-        </div>
-    </div>
-</div>
+<button data-ng-click="loadLocalAudioFile()">Add audio file</button>
+<button data-ng-click="streamAudioInput = !streamAudioInput">Add audio file</button>
+<!-- stream audio form -->
+<form name="streamAudioForm"
+      novalidate
+      data-ng-submit="streamAudioFile(streamAudioUrl)"
+      data-ng-if="streamAudioInput">
+      <input type="text" data-ng-model="streamAudioUrl">
+      <input type="submit">
+</form>

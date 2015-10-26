@@ -29,7 +29,6 @@
 
       // set authorization header for every SC API call
       var scAuthorized = LocalStorage.get('scAccessToken');
-      console.log(scAuthorized);
       if (scAuthorized) {
         config.headers['Authorization'] = scAuthorized;
       }
@@ -44,12 +43,12 @@
      * @return {object}        Response object
      */
     function response(config) {
-      var isSCsearch = config && config.config && config.config.params && config.config.params.q && config.config.url.indexOf('soundcloud') > -1;
+      // var isSCsearch = config && config.config && config.config.params && config.config.params.q && config.config.url.indexOf('soundcloud') > -1;
 
-      if (isSCsearch) {
-        _addProperty(config.data, 'platform', 'sc');
-        _changePropertyName(config.data, 'created_at', 'created_time');
-      }
+      // if (isSCsearch) {
+      //   _addProperty(config.data, 'platform', 'sc');
+      //   _changePropertyName(config.data, 'created_at', 'created_time');
+      // }
 
       // change SC's created_at to created_time to make it same as mixcloud response
       // if (config && config.data && config.data.collection && config.data.collection[0] && config.data.collection[0].created_at) {

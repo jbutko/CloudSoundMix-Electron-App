@@ -31,7 +31,7 @@
 
 	</head>
 
-	<body class="main-wrapper">
+	<body class="main-wrapper" data-ng-controller="MainController as main">
 
 		<!--[if lt IE 8]>
 		    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -39,6 +39,42 @@
 
 		<!-- Navigation -->
 		<main-nav></main-nav>
+
+		<section ng-class="header">
+		    <h2 class="text-center">CloudSoundMix</h2>
+		</section>
+
+		<!-- soundcloud authoirization -->
+		<button data-ng-click="main.connect('sc')" data-ng-if="!main.scUserAuthorized">SoundCloud Authorize</button>
+
+		<!-- soundcloud authoirization logout -->
+		<button data-ng-click="main.logoutUser('sc')" data-ng-if="main.scUserAuthorized">SoundCloud Logout</button>
+
+		<!-- mixcloud authoirization -->
+		<button data-ng-click="main.connect('mc')" data-ng-if="!main.mcUserAuthorized">Mixcloud Authorize</button>
+
+		<!-- mixcloud authoirization logout -->
+		<button data-ng-click="main.logoutUser('mc')" data-ng-if="main.mcUserAuthorized">Mixcloud Logout</button>
+
+		<!-- soundcloud mixes -->
+		<player player-source="$root.playSCurl" data-ng-if="$root.playSC"></player>
+
+		<!-- mixcloud mixes -->
+		<div data-ng-if="$root.playMC">
+		    <iframe id="mc-widget"
+		            width="100%"
+		            height="133"
+		            frameborder="0"
+		            ng-src="{{$root.playMCurl}}">
+		    </iframe>
+		</div>
+
+		<!-- local files audio player -->
+		<audio ng-src="{{$root.audioPath | trustThisUrl}}"
+		       audioplayer
+		       controls
+		       autoplay
+		       data-ng-if="$root.audioPath"></audio>
 
 		<!-- Main view for templates -->
 		<div data-ng-view="" class="container"></div>

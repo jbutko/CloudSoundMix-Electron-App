@@ -57,13 +57,14 @@
      * @param {string} playlistTitle Playlist name
      * @param {object} soundObj      Promise
      */
-    function addTrack(playlistTitle, soundObj) {
+    function addTrack(playlistTitle, soundObj, type) {
       var deferred = $q.defer();
 
       storedb('playlists').insert({
         'playlistName': playlistTitle,
         'createdAt': Date.now(),
-        'trackData': soundObj
+        'trackData': soundObj,
+        'type': type
       }, function(err, result) {
         if (!err) {
           return deferred.resolve(result);
@@ -104,13 +105,17 @@
       var allTracks = storedb(dbName).find();
       var playlistNames = [];
 
-      allTracks.map(function (value) {
-        if (playlistNames.indexOf(value.playlistName) === -1) {
-          playlistNames.push(value.playlistName);
-        }
-      });
+      if (typeof allTracks !== 'undefined') {
+        allTracks.map(function (value) {
+          if (playlistNames.indexOf(value.playlistName) === -1) {
+            playlistNames.push(value.playlistName);
+          }
+        });
 
-      return playlistNames.sort();
+        return playlistNames.sort();
+      } else {
+        return false;
+      }
     }
 
     /**

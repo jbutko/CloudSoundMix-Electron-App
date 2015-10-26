@@ -1,35 +1,6 @@
-<!-- soundcloud mixes -->
-<player player-source="$root.playSCurl" data-ng-if="$root.playSC"></player>
-
-<!-- mixcloud mixes -->
-<div data-ng-if="$root.playMC">
-    <iframe id="mc-widget"
-            width="100%"
-            height="133"
-            frameborder="0"
-            ng-src="{{$root.playMCurl}}">
-    </iframe>
-</div>
-
-<!-- local files audio player -->
-<audio ng-src="{{main.audioFileName | trustThisUrl}}"
-       audioplayer
-       controls
-       autoplay
-       data-ng-if="main.audioFileName"></audio>
-
 <!-- main stream -->
 <playlist playlist-source="main.mainFeed" track-searched="main.trackSearched"></playlist>
 
 <button data-ng-click="main.loadMoreTracks(main.scNextPage, main.mcNextPage)">Load more tracks...</button>
-<button data-ng-click="main.loadLocalAudioFile()">Add audio file</button>
-<button data-ng-click="main.streamAudioInput = !main.streamAudioInput">Add audio file</button>
-
-<!-- stream audio form -->
-<form name="main.streamAudioForm"
-      novalidate
-      data-ng-submit="main.streamAudioFile(main.streamAudioUrl)"
-      data-ng-if="main.streamAudioInput">
-      <input type="text" data-ng-model="main.streamAudioUrl">
-      <input type="submit">
-</form>
+<button data-ng-click="main.fetchUserDashboard()">Refresh</button>
+<button data-ng-click="main.fetchNewTracks(main.scFuturePage, main.mcFuturePage)">Fetch New tracks</button>

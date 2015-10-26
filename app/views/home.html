@@ -1,19 +1,3 @@
-<section ng-class="header">
-    <h2 class="text-center">CloudSoundMix</h2>
-</section>
-
-<!-- soundcloud authoirization -->
-<button data-ng-click="main.connect('sc')" data-ng-if="!main.scUserAuthorized">SoundCloud Authorize</button>
-
-<!-- soundcloud authoirization logout -->
-<button data-ng-click="main.logoutUser('sc')" data-ng-if="main.scUserAuthorized">SoundCloud Logout</button>
-
-<!-- mixcloud authoirization -->
-<button data-ng-click="main.connect('mc')" data-ng-if="!main.mcUserAuthorized">Mixcloud Authorize</button>
-
-<!-- mixcloud authoirization logout -->
-<button data-ng-click="main.logoutUser('mc')" data-ng-if="main.mcUserAuthorized">Mixcloud Logout</button>
-
 <ng-include src="'views/search.html'"></ng-include>
 
 <ng-include src="'views/user.html'"></ng-include>

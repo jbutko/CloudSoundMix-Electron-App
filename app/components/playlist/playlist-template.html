@@ -1,0 +1,94 @@
+<!-- home playlist -->
+<div class="player-container" ng-repeat="sound in playlistSource" data-ng-if="!trackSearched && !playlist">
+    <!-- soundcloud -->
+    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.origin.user.username}}: {{sound.origin.title}}</a>
+        </div>
+        <button data-ng-click="addTrackToPlaylist('one', sound, 'sc')">Add to playlist</button>
+    </div>
+
+    <!-- mixcloud -->
+    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.user.name}} - {{sound.name}}</a>
+        </div>
+        <button data-ng-click="addTrackToPlaylist('one', sound, 'mc')">Add to playlist</button>
+    </div>
+</div>
+
+<!-- search results -->
+<div class="player-container" ng-repeat="sound in playlistSource | orderBy:'created_time':true" data-ng-if="trackSearched && !playlist">
+
+    <!-- soundcloud -->
+    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.user.username}}: {{sound.title}}</a>
+        </div>
+        <button data-ng-click="addTrackToPlaylist('one', sound, 'sc')">Add to playlist</button>
+    </div>
+
+    <!-- mixcloud -->
+    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.user.username}} - {{sound.name}}</a>
+        </div>
+        <button data-ng-click="addTrackToPlaylist('one', sound, 'mc')">Add to playlist</button>
+    </div>
+</div>
+
+<!-- playlist -->
+<div data-ng-if="!trackSearched && playlist">
+    <h3>Playlists:</h3>
+    <ul data-ng-repeat="playlist in playlistNames">
+        <li><a href="" data-ng-click="getPlaylistTracks(playlist)">{{playlist}}</a></li>
+    </ul>
+</div>
+
+<div class="player-container" ng-repeat="sound in playlistSource" data-ng-if="!trackSearched && playlist">
+    <!-- soundcloud -->
+    <div class="row" data-ng-if="sound.type === 'sc'">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="playSound(sound.trackData, 'sc')">{{sound.trackData.origin.user.username}}: {{sound.trackData.origin.title}}</a>
+        </div>
+        <button data-ng-click="removeTrackFromPlaylist(sound.createdAt, sound.playlistName)">Remove</button>
+    </div>
+
+    <!-- mixcloud -->
+    <div class="row" data-ng-if="sound.type === 'mc'">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="playSound(sound.trackData, 'mc')">{{sound.trackData.user.name}} - {{sound.trackData.name}}</a>
+        </div>
+        <button data-ng-click="removeTrackFromPlaylist(sound.createdAt, sound.playlistName)">Remove</button>
+    </div>
+
+    <!-- local file -->
+    <div class="row" data-ng-if="sound.type === 'local'">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="playSound(sound.trackData, 'local')">{{sound.trackData.title}}</a>
+        </div>
+        <button data-ng-click="removeTrackFromPlaylist(sound.createdAt, sound.playlistName)">Remove</button>
+    </div>
+</div>
+
