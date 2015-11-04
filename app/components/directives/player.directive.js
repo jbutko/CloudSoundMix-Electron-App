@@ -35,7 +35,6 @@
 
 
         scope.playSound = function(sound) {
-          console.log(sound);
           var trackUrl = sound && sound.origin ? sound.origin.permalink_url : sound.permalink_url;
 
           SC.oEmbed(trackUrl, {

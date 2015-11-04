@@ -7,7 +7,6 @@
   // var globalShortcut = require('global-shortcut');
   var configuration = require('./configuration');
   var ipc = require('ipc');
-  var angular = require('./app/bower_components/ng-electron/ng-bridge.js');
 
   // Report crashes to our server.
   require('crash-reporter').start();
@@ -86,11 +85,17 @@
 
     authWindow.webContents.on('did-get-redirect-request', function(event, oldUrl, newUrl) {
 
-      // extract authToken
+      // extract accessToken
       var tokenCode = serviceType === 'sc' ? newUrl.substring(0, newUrl.length - 1).split('code=')[1] : newUrl.substring(0, newUrl.length).split('code=')[1];
-
+      console.log(tokenCode);
+      
       // store code to get access token
       configuration.saveSettings(serviceType + 'TokenCode', tokenCode);
+
+      mainWindow.webContents.send('user-authenticated', {
+        type: serviceType,
+        token: tokenCode
+      });
 
       authWindow.close();
       mainWindow.focus();

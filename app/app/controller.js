@@ -15,11 +15,11 @@
     .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService', 'CONSTANTS', 'electron',
-  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location', '$scope'];
+  '$window', '$http', 'fetchAPI', '$q', '$sce', '$location', '$scope', '$rootScope'];
 
 
   function MainController(LocalStorage, QueryService, CONSTANTS, electron,
-    $window, $http, fetchAPI, $q, $sce, $location, $scope) {
+    $window, $http, fetchAPI, $q, $sce, $location, $scope, $rootScope) {
 
     // 'controller as' syntax
     var self = this;
@@ -31,7 +31,6 @@
 
     // package to communicate with main window
     var ipc = require('ipc');
-
 
     ////////////  function definitions
 
@@ -49,11 +48,11 @@
     // get scCodeToken on page load from config file if exists
     var config = require('./../configuration.js'),
         scCodeToken = config.readSettings('scTokenCode'),
-        mcCodeToken = config.readSettings('mcTokenCode');
+        mcCodeToken = config.readSettings('mcTokenCode'),
+        defaultLimit = 3;
 
     self.scAccessToken = config.readSettings('scAccessToken');
     self.mcAccessToken = config.readSettings('mcAccessToken');
-    console.log(self.mcAccessToken);
 
     if (self.scAccessToken) {
       self.scUserAuthorized = true;
@@ -95,11 +94,15 @@
      */
     self.scAuthorize = function authorize() {
       SC.authorize(scCodeToken, function(err, scAccessToken) {
+        console.log(scAccessToken);
         if ( err ) {
           throw err;
         } else {
           self.scUserAuthorized = true;
           config.saveSettings('scAccessToken', scAccessToken);
+
+          // load tracks
+          self.fetchUserDashboard(defaultLimit);
         }
       });
     };
@@ -112,7 +115,7 @@
         client_id: CONSTANTS.MC.clientID,
         redirect_uri: CONSTANTS.MC.redirectUri,
         client_secret: CONSTANTS.MC.clientSecret,
-        code: mcCodeToken
+        code: config.readSettings('mcTokenCode')
       };
 
       $http({
@@ -123,6 +126,9 @@
         var mcAccessToken = data.data.access_token;
         self.mcUserAuthorized = true;
         config.saveSettings('mcAccessToken', mcAccessToken);
+
+        // load tracks
+        self.fetchUserDashboard(defaultLimit);
       });
     };
 
@@ -196,41 +202,56 @@
      * Fetch user's feed or latests tracks
      */
     self.mainFeed = [];
-    var defaultLimit = 3;
     self.fetchUserDashboard = function(limit) {
+
+      console.log(self.scUserAuthorized);
+      console.log(self.mcUserAuthorized);
 
       // default limit
       limit = limit || defaultLimit;
+      var scDashboardQuery = self.scUserAuthorized ? fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: limit, linked_partitioning: 1}, {}, {Authorization: 'Oauth ' + self.scAccessToken}) : undefined,
+          mcMeQuery = self.mcUserAuthorized ? fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: config.readSettings('mcAccessToken')}, {}, {}) : undefined,
+          mcFeed = self.mcUserAuthorized ? fetchAPI.query('GET', 'https://api.mixcloud.com/me/listens', {client_id: CONSTANTS.MC.clientID, access_token: config.readSettings('mcAccessToken'), limit: limit}, {}, {}) : undefined;
 
       var promises = {
         // scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
-        scDashboard: fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: limit, linked_partitioning: 1}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
+        scDashboard: scDashboardQuery,
         // scReposted: fetchAPI.query('GET', 'https://api-v2.soundcloud.com/profile/soundcloud:users:41691970', {client_id: CONSTANTS.SC.clientID, limit: 3, offset: offset || offsetVal}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
         // scReposted1: fetchAPI.query('GET', 'https://api-v2.soundcloud.com', {client_id: CONSTANTS.SC.clientID, limit: 3}, {}, {Authorization: 'Oauth ' + self.scAccessToken}),
-        mcMe: fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken}, {}, {}),
+        mcMe: mcMeQuery,
         // mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/doddiblog/feed', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: 3, offset: offset || offsetVal}, {}, {})
-        mcFeed: fetchAPI.query('GET', 'https://api.mixcloud.com/me/listens', {client_id: CONSTANTS.MC.clientID, access_token: self.mcAccessToken, limit: limit}, {}, {})
+        mcFeed: mcFeed
         //sc: $http.get('http://api.soundcloud.com/me/activities/tracks/affiliated?client_id=aade84c56054d6945c32b616bb7bce0b')
       };
 
+
       $q.all(promises).then(function(data) {
-        var scUserDashboard = data.scDashboard.data.collection;
-        var mcFeed = data.mcFeed.data.data;
+        console.log(promises);
+        var scUserDashboard = data && data.scDashboard && data.scDashboard.data && data.scDashboard.data.collection;
+        var mcFeed = data && data.mcFeed && data.mcFeed.data && data.mcFeed.data.data;
 
-        // label SC data
-        scUserDashboard.platform = 'sc';
+        // SC data
+        if (scUserDashboard) {
+          scUserDashboard.platform = 'sc';
+          // main view data
+          self.mainFeed = scUserDashboard.concat(mcFeed);
+          // pagination for next results
+          self.scNextPage = data.scDashboard.data.next_href;
+          // pagination for future results === polling
+          self.scFuturePage = data.scDashboard.data.future_href;
+        }
 
-        // main view data
-        self.mainFeed = scUserDashboard.concat(mcFeed);
-        self.mcUser = data.mcMe.data;
+        // MC data
+        if (mcFeed) {
+          // main view data
+          self.mcUser = data.mcMe.data;
 
-        // pagination for next results
-        self.scNextPage = data.scDashboard.data.next_href;
-        self.mcNextPage = data.mcFeed.data.paging.next;
+          // pagination for next results
+          self.mcNextPage = data.mcFeed.data.paging.next;
 
-        // pagination for future results === polling
-        self.scFuturePage = data.scDashboard.data.future_href;
-        self.mcFuturePage = data.mcFeed.data.paging.next;
+          // pagination for future results === polling
+          self.mcFuturePage = data.mcFeed.data.paging.next;
+        }
       });
     };
 
@@ -315,7 +336,6 @@
         self.mainFeed = scSearchResults.concat(mcSearchResults);
 
         self.scNextPage = results.scSearch.data.next_href;
-        console.log(self.scNextPage);
         self.mcNextPage = results.mcSearch.data.paging.next;
       }).catch(function (err) {
         console.log(err);
@@ -335,6 +355,19 @@
         }
       });
     }
+
+    /**
+     * Events
+     */
+    ipc.on('user-authenticated', function (response) {
+      if (response.type === 'sc') {
+        self.scAuthorize();
+      }
+
+      if (response.type === 'mc') {
+        self.mcAuthorize();
+      }
+    });
 
   }
 

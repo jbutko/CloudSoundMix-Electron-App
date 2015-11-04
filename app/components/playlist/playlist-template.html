@@ -1,7 +1,9 @@
 <!-- home playlist -->
-<div class="player-container" ng-repeat="sound in playlistSource" data-ng-if="!trackSearched && !playlist">
+<div class="player-container" ng-repeat="sound in playlistSource"
+     data-ng-if="!trackSearched && !playlist">
+
     <!-- soundcloud -->
-    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
+    <div class="row" data-ng-if="!sound.hasOwnProperty('key') || main.scUserAuthorized">
         <div class="col-sm-1">
             {{$index + 1 }}
         </div>
@@ -12,7 +14,7 @@
     </div>
 
     <!-- mixcloud -->
-    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
+    <div class="row" data-ng-if="sound.hasOwnProperty('key') || main.mcUserAuthorized">
         <div class="col-sm-1">
             {{$index + 1 }}
         </div>
