@@ -1,0 +1,10 @@
+<div class="modal-wrapper" data-ng-click="closeThisDialog()">
+    <div id="modal">
+        <h2>Add to playlist:</h2>
+<!--         <span class="closebtn" data-ng-click="closeThisDialog()">&times;</span> -->
+				{{playlistNames}}
+        <ul>
+        	<li data-ng-repeat="playlistName in playlistNames">{{playlistName}}</li>
+        </ul>
+    </div>
+</div>

@@ -8,6 +8,12 @@
   var configuration = require('./configuration');
   var ipc = require('ipc');
 
+  console.log(configuration);
+
+  function getUserHome() {
+    return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
+  }
+
   // Report crashes to our server.
   require('crash-reporter').start();
 
@@ -50,7 +56,6 @@
       }
     });
 
-
     mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
 
     // Open the devtool
@@ -87,8 +92,7 @@
 
       // extract accessToken
       var tokenCode = serviceType === 'sc' ? newUrl.substring(0, newUrl.length - 1).split('code=')[1] : newUrl.substring(0, newUrl.length).split('code=')[1];
-      console.log(tokenCode);
-      
+
       // store code to get access token
       configuration.saveSettings(serviceType + 'TokenCode', tokenCode);
 
@@ -97,8 +101,12 @@
         token: tokenCode
       });
 
-      authWindow.close();
-      mainWindow.focus();
+      console.log('tokenCode ', tokenCode);
+
+      if (typeof tokenCode !== 'undefined') {
+        authWindow.close();
+        mainWindow.focus();
+      };
 
     });
   });

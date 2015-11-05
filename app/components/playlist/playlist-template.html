@@ -3,23 +3,25 @@
      data-ng-if="!trackSearched && !playlist">
 
     <!-- soundcloud -->
-    <div class="row" data-ng-if="!sound.hasOwnProperty('key') || main.scUserAuthorized">
+    <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
         <div class="col-sm-1">
             {{$index + 1 }}
         </div>
         <div class="col-sm-23">
             <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.origin.user.username}}: {{sound.origin.title}}</a>
+            <img src="assets/icons/soundcloud32.png" alt="Soundcloud Icon" class="icon">
         </div>
         <button data-ng-click="addTrackToPlaylist('one', sound, 'sc')">Add to playlist</button>
     </div>
 
     <!-- mixcloud -->
-    <div class="row" data-ng-if="sound.hasOwnProperty('key') || main.mcUserAuthorized">
+    <div class="row" data-ng-if="sound.hasOwnProperty('key')">
         <div class="col-sm-1">
             {{$index + 1 }}
         </div>
         <div class="col-sm-23">
             <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.user.name}} - {{sound.name}}</a>
+            <img src="assets/icons/mixcloud32.png" alt="Mixcloud Icon" class="icon">
         </div>
         <button data-ng-click="addTrackToPlaylist('one', sound, 'mc')">Add to playlist</button>
     </div>
@@ -35,6 +37,7 @@
         </div>
         <div class="col-sm-23">
             <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.user.username}}: {{sound.title}}</a>
+            <img src="assets/icons/soundcloud32.png" alt="Soundcloud Icon" class="icon">
         </div>
         <button data-ng-click="addTrackToPlaylist('one', sound, 'sc')">Add to playlist</button>
     </div>
@@ -46,6 +49,7 @@
         </div>
         <div class="col-sm-23">
             <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.user.username}} - {{sound.name}}</a>
+            <img src="assets/icons/mixcloud32.png" alt="Mixcloud Icon" class="icon">
         </div>
         <button data-ng-click="addTrackToPlaylist('one', sound, 'mc')">Add to playlist</button>
     </div>
@@ -67,6 +71,7 @@
         </div>
         <div class="col-sm-23">
             <a href="" data-ng-click="playSound(sound.trackData, 'sc')">{{sound.trackData.origin.user.username}}: {{sound.trackData.origin.title}}</a>
+            <img src="assets/icons/soundcloud32.png" alt="Soundcloud Icon" class="icon">
         </div>
         <button data-ng-click="removeTrackFromPlaylist(sound.createdAt, sound.playlistName)">Remove</button>
     </div>
@@ -78,6 +83,7 @@
         </div>
         <div class="col-sm-23">
             <a href="" data-ng-click="playSound(sound.trackData, 'mc')">{{sound.trackData.user.name}} - {{sound.trackData.name}}</a>
+            <img src="assets/icons/mixcloud32.png" alt="Mixcloud Icon" class="icon">
         </div>
         <button data-ng-click="removeTrackFromPlaylist(sound.createdAt, sound.playlistName)">Remove</button>
     </div>

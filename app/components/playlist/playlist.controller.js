@@ -11,10 +11,10 @@
     .module('boilerplate')
     .controller('PlaylistController', PlaylistController);
 
-  PlaylistController.$inject = ['$scope', '$rootScope', '$sce', 'playlist'];
+  PlaylistController.$inject = ['$scope', '$rootScope', '$sce', 'playlist', 'ngDialog'];
 
 
-  function PlaylistController($scope, $rootScope, $sce, playlist) {
+  function PlaylistController($scope, $rootScope, $sce, playlist, ngDialog) {
 
     /**
      * Generate safe URL for iframe's src attribute
@@ -58,12 +58,44 @@
     };
 
     /**
+     * Get all playlists names
+     * @param  {string} dbName DB Name
+     * @return {object}        Tracks
+     */
+    $scope.getPlaylistNames = function (dbName) {
+      $scope.playlistNames = playlist.getPlaylistNames(dbName);
+    };
+
+    $scope.getPlaylistNames('playlists');
+
+
+    /**
      * Add track to playlist
      * @param {string} playlistTitle Playlist name
      * @param {object} soundObj      Sound object
      */
     $scope.addTrackToPlaylist = function (playlistTitle, soundObj, type) {
+
       playlist.addTrack(playlistTitle, soundObj, type);
+
+      var ngDialogOpts = {
+        template: 'components/playlist/playlist-modal.html',
+        showclose: true,
+        closeByDocument: true,
+        closeByEscape: true,
+        controller: ['$scope', function ($scope) {
+
+          $scope.text = 'text';
+          console.log($scope);
+        }]
+      };
+
+      var dialog = ngDialog.open(ngDialogOpts);
+
+      dialog.closePromise.then(function(data) {
+        // playlist.addTrack(playlistTitle, soundObj, type);
+        console.log(data.id + ' has been dismissed.');
+      });
     };
 
     /**
@@ -88,17 +120,6 @@
     $scope.getPlaylistTracks = function (playlistName) {
       $scope.playlistSource = playlist.getPlaylistTracks(playlistName);
     };
-
-    /**
-     * Get all playlists names
-     * @param  {string} dbName DB Name
-     * @return {object}        Tracks
-     */
-    $scope.getPlaylistNames = function (dbName) {
-      $scope.playlistNames = playlist.getPlaylistNames(dbName);
-    };
-
-    $scope.getPlaylistNames('playlists');
 
     /**
      * Open audio file

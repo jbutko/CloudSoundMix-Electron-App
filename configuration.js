@@ -1,32 +1,34 @@
-'use strict';
+;(function() {
 
-var nconf = require('nconf').file({file: getUserHome() + '\\settings.json'});
-console.log(nconf);
+  'use strict';
 
-function saveSettings(settingKey, settingValue) {
-    nconf.set(settingKey, settingValue);
-    nconf.save();
-    console.log(settingKey);
-    console.log(settingValue);
-    console.log(nconf.get(settingKey));
-}
+  var Configstore = require('configstore');
+  var pkg = require('./package.json');
 
-function readSettings(settingKey) {
-    nconf.load();
-    return nconf.get(settingKey);
-}
+  // Init a Configstore instance with an unique ID e.g.
+  // package name and optionally some default values
+  var conf = new Configstore(pkg.name);
 
-function removeSettings(settingKey) {
-    nconf.set(settingKey, undefined);
-    nconf.save();
-}
+  function saveSettings(settingKey, settingValue) {
+      conf.set(settingKey, settingValue);
+  }
 
-function getUserHome() {
-    return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
-}
+  function readSettings(settingKey) {
+      return conf.get(settingKey);
+  }
 
-module.exports = {
-    saveSettings: saveSettings,
-    readSettings: readSettings,
-    removeSettings: removeSettings
-};
+  function removeSettings(settingKey) {
+      conf.del(settingKey);
+  }
+
+  function getUserHome() {
+      return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
+  }
+
+  module.exports = {
+      saveSettings: saveSettings,
+      readSettings: readSettings,
+      removeSettings: removeSettings
+  };
+
+})();

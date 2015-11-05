@@ -24,6 +24,7 @@
     "angular-route": "~1.3.13",
     "angular-sanitize": "~1.3.13",
     "storedb": "~0.1.2",
-    "ng-electron": "develephant/ng-electron#~0.4.0"
+    "ng-electron": "develephant/ng-electron#~0.4.0",
+    "ng-dialog": "ngDialog#~0.5.5"
   }
 }

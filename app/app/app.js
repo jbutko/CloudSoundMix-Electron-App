@@ -21,6 +21,7 @@
     .module('boilerplate', [
       'ngRoute',
       'ngElectron',
+      'ngDialog'
     ])
     .config(config);
 

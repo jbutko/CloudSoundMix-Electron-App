@@ -41,14 +41,9 @@
             auto_play: true,
             format: 'json',
             client_id: CONSTANTS.SC.clientID,
-            // iframe: true,
             maxheight: 166
           }).then(function(oEmbed){
             elem.html(oEmbed.html);
-            SC.stream(trackUrl, function(sound) {
-              console.log(sound);
-              sound.play();
-            });
           });
         };
 
