@@ -1,10 +1,16 @@
-<div class="modal-wrapper" data-ng-click="closeThisDialog()">
+<!-- add to playlist modal window -->
+<div class="modal-wrapper">
     <div id="modal">
-        <h2>Add to playlist:</h2>
-<!--         <span class="closebtn" data-ng-click="closeThisDialog()">&times;</span> -->
-				{{playlistNames}}
+        <h2>Add track to playlist:</h2>
         <ul>
-        	<li data-ng-repeat="playlistName in playlistNames">{{playlistName}}</li>
+            <li data-ng-repeat="playlistName in playlistNames">{{playlistName}}
+                <button data-ng-click="addTrackToPlaylist(playlistName, addTrackScope.sound, addTrackScope.type); closeThisDialog()">Save</button>
+            </li>
         </ul>
+
+        <section>Or create a new playlist:
+        		<input type="text" data-ng-model="newPlaylistName">
+            <button data-ng-click="addTrackToPlaylist(newPlaylistName, addTrackScope.sound, addTrackScope.type); closeThisDialog()">Save</button>
+        </section>
     </div>
 </div>

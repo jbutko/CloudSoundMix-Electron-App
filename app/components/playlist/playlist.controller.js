@@ -70,32 +70,43 @@
 
 
     /**
-     * Add track to playlist
-     * @param {string} playlistTitle Playlist name
-     * @param {object} soundObj      Sound object
+     * Open Add track to playlist modal window
      */
-    $scope.addTrackToPlaylist = function (playlistTitle, soundObj, type) {
+    $scope.addToPlaylistModal = function(sound, type) {
 
-      playlist.addTrack(playlistTitle, soundObj, type);
+      // pass added track data to ngDialog modal
+      $scope.addTrackScope = {
+        sound: sound,
+        type: type
+      }
 
       var ngDialogOpts = {
         template: 'components/playlist/playlist-modal.html',
         showclose: true,
         closeByDocument: true,
         closeByEscape: true,
-        controller: ['$scope', function ($scope) {
-
-          $scope.text = 'text';
-          console.log($scope);
-        }]
+        scope: $scope,
+        controller: 'PlaylistController'
       };
+
+      console.log($scope.addTrackScope);
 
       var dialog = ngDialog.open(ngDialogOpts);
 
       dialog.closePromise.then(function(data) {
-        // playlist.addTrack(playlistTitle, soundObj, type);
-        console.log(data.id + ' has been dismissed.');
+        console.log(data);
       });
+    };
+
+
+    /**
+     * Add track to playlist
+     * @param {string} playlistTitle Playlist name
+     * @param {object} soundObj      Sound object
+     */
+    $scope.addTrackToPlaylist = function (playlistTitle, soundObj, type) {
+      console.log($scope.parent);
+      playlist.addTrack(playlistTitle, soundObj, type);
     };
 
     /**
@@ -110,6 +121,15 @@
 
       // update available playlists
       $scope.getPlaylistNames('playlists');
+    };
+
+    /**
+     * Remove all tracks from playlist
+     * @param {string} playlistName Playlist name
+     */
+    $scope.removeAllTracksFromPlaylist = function (playlistName, dbName) {
+      playlist.removeAllTracks(playlistName, dbName);
+      $scope.playlistSource = playlist.getPlaylistTracks(playlistName);
     };
 
     /**

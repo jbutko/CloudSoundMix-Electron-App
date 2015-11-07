@@ -41,6 +41,7 @@
     var service = {
       addTrack: addTrack,
       removeTrack: removeTrack,
+      removeAllTracks: removeAllTracks,
       getAllTracks: getAllTracks,
       getPlaylistTracks: getPlaylistTracks,
       getPlaylistNames: getPlaylistNames
@@ -85,6 +86,25 @@
       return storedb('playlists').remove({
         'createdAt': createdAt
       });
+    }
+
+    /**
+     * Remove all tracks from playlist
+     * @param  {number} createdAt Date of track creation in epoch date format
+     * @return {boolean}          True/false
+     */
+    function removeAllTracks(playlistName, dbName) {
+      var allTracks = storedb(dbName).find();
+
+      if (typeof allTracks !== 'undefined') {
+        allTracks.map(function (value) {
+          if (value.playlistName === playlistName) {
+            removeTrack(value.createdAt)
+          }
+        });
+
+        return getPlaylistTracks(playlistName);
+      }
     }
 
     /**

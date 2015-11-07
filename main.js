@@ -46,7 +46,7 @@
 
     mainWindow = new BrowserWindow({
       frame: true,
-      width: 700,
+      width: 500,
       height: 700,
       resizable: true,
       'node-integration': true,

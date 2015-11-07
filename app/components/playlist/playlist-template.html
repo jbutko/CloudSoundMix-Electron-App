@@ -11,7 +11,7 @@
             <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.origin.user.username}}: {{sound.origin.title}}</a>
             <img src="assets/icons/soundcloud32.png" alt="Soundcloud Icon" class="icon">
         </div>
-        <button data-ng-click="addTrackToPlaylist('one', sound, 'sc')">Add to playlist</button>
+        <button data-ng-click="addToPlaylistModal(sound, 'sc')">Add to playlist</button>
     </div>
 
     <!-- mixcloud -->
@@ -23,7 +23,7 @@
             <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.user.name}} - {{sound.name}}</a>
             <img src="assets/icons/mixcloud32.png" alt="Mixcloud Icon" class="icon">
         </div>
-        <button data-ng-click="addTrackToPlaylist('one', sound, 'mc')">Add to playlist</button>
+        <button data-ng-click="addToPlaylistModal(sound, 'mc')">Add to playlist</button>
     </div>
 </div>
 
@@ -39,7 +39,7 @@
             <a href="" data-ng-click="playSound(sound, 'sc')">{{sound.user.username}}: {{sound.title}}</a>
             <img src="assets/icons/soundcloud32.png" alt="Soundcloud Icon" class="icon">
         </div>
-        <button data-ng-click="addTrackToPlaylist('one', sound, 'sc')">Add to playlist</button>
+        <button data-ng-click="addToPlaylistModal(sound, 'sc')">Add to playlist</button>
     </div>
 
     <!-- mixcloud -->
@@ -51,7 +51,7 @@
             <a href="" data-ng-click="playSound(sound, 'mc')">{{sound.user.username}} - {{sound.name}}</a>
             <img src="assets/icons/mixcloud32.png" alt="Mixcloud Icon" class="icon">
         </div>
-        <button data-ng-click="addTrackToPlaylist('one', sound, 'mc')">Add to playlist</button>
+        <button data-ng-click="addToPlaylistModal(sound, 'mc')">Add to playlist</button>
     </div>
 </div>
 
@@ -59,7 +59,7 @@
 <div data-ng-if="!trackSearched && playlist">
     <h3>Playlists:</h3>
     <ul data-ng-repeat="playlist in playlistNames">
-        <li><a href="" data-ng-click="getPlaylistTracks(playlist)">{{playlist}}</a></li>
+        <li><a href="" data-ng-click="getPlaylistTracks(playlist)">{{playlist}}</a> <button data-ng-click="removeAllTracksFromPlaylist(playlist, 'playlists')">Remove all tracks</button></li>
     </ul>
 </div>
 
