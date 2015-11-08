@@ -11,10 +11,22 @@
     .module('boilerplate')
     .controller('PlaylistController', PlaylistController);
 
-  PlaylistController.$inject = ['$scope', '$rootScope', '$sce', 'playlist', 'ngDialog'];
+  PlaylistController.$inject = ['$scope', '$rootScope', '$sce', 'playlist',
+  'ngDialog', '$location'];
 
 
-  function PlaylistController($scope, $rootScope, $sce, playlist, ngDialog) {
+  ////////////////
+
+
+  function PlaylistController($scope, $rootScope, $sce, playlist,
+    ngDialog, $location) {
+
+
+    /**
+     * Default values
+     */
+    var path = $location.path();
+
 
     /**
      * Generate safe URL for iframe's src attribute
@@ -39,34 +51,23 @@
      * Play mixcloud/soundcloud track
      */
     $scope.playSound = function (sound, type) {
-      // stop any playing track
+      // stop playing current track
       $rootScope.audioPath = false;
       $rootScope.playSC = false;
       $rootScope.playMC = false;
 
       if (type === 'sc') {
         $rootScope.playSC = true;
-        $rootScope.playMC = false;
         $rootScope.playSCurl = sound;
       } else if (type === 'mc') {
-        $rootScope.playSC = false;
         $rootScope.playMC = true;
         $rootScope.playMCurl = $scope.generateIframeUrl(sound, type);
       } else if (type === 'local') {
         $rootScope.audioPath = sound.path;
+      } else if (type === 'stream') {
+        $rootScope.audioPath = sound.trackData.url;
       }
     };
-
-    /**
-     * Get all playlists names
-     * @param  {string} dbName DB Name
-     * @return {object}        Tracks
-     */
-    $scope.getPlaylistNames = function (dbName) {
-      $scope.playlistNames = playlist.getPlaylistNames(dbName);
-    };
-
-    $scope.getPlaylistNames('playlists');
 
 
     /**
@@ -80,6 +81,9 @@
         type: type
       }
 
+      // update available playlists
+      $scope.getPlaylistNames('playlists');
+
       var ngDialogOpts = {
         template: 'components/playlist/playlist-modal.html',
         showclose: true,
@@ -89,13 +93,7 @@
         controller: 'PlaylistController'
       };
 
-      console.log($scope.addTrackScope);
-
       var dialog = ngDialog.open(ngDialogOpts);
-
-      dialog.closePromise.then(function(data) {
-        console.log(data);
-      });
     };
 
 
@@ -105,9 +103,9 @@
      * @param {object} soundObj      Sound object
      */
     $scope.addTrackToPlaylist = function (playlistTitle, soundObj, type) {
-      console.log($scope.parent);
       playlist.addTrack(playlistTitle, soundObj, type);
     };
+
 
     /**
      * Remove track from playlist
@@ -123,14 +121,31 @@
       $scope.getPlaylistNames('playlists');
     };
 
+
     /**
      * Remove all tracks from playlist
      * @param {string} playlistName Playlist name
      */
-    $scope.removeAllTracksFromPlaylist = function (playlistName, dbName) {
+    // $scope.removeAllTracksFromPlaylist = function (playlistName, dbName) {
+    //   playlist.removeAllTracks(playlistName, dbName);
+    //   $scope.playlistSource = playlist.getPlaylistTracks(playlistName);
+    // };
+
+
+    /**
+     * Remove all tracks from playlist
+     * @param {string} playlistName Playlist name
+     */
+    $scope.removePlaylist = function (playlistName, dbName) {
       playlist.removeAllTracks(playlistName, dbName);
+
+      // update available playlists
+      $scope.getPlaylistNames('playlists');
+
+      // update playlist tracks
       $scope.playlistSource = playlist.getPlaylistTracks(playlistName);
     };
+
 
     /**
      * Get all tracks of the playlist
@@ -139,7 +154,29 @@
      */
     $scope.getPlaylistTracks = function (playlistName) {
       $scope.playlistSource = playlist.getPlaylistTracks(playlistName);
+      $scope.currentPlaylist = playlistName;
     };
+
+
+    /**
+     * Get all playlists names
+     * @param  {string} dbName DB Name
+     * @return {object}        Tracks
+     */
+    $scope.getPlaylistNames = function (dbName) {
+      $scope.playlistNames = playlist.getPlaylistNames(dbName);
+
+      // if there is at least one playlist load tracks from the first one
+      if ($scope.playlistNames.length && path === '/playlist') {
+        $scope.playlist = true;
+        $scope.getPlaylistTracks($scope.playlistNames[0]);
+      }
+    };
+
+    if (path === '/playlist') {
+      $scope.getPlaylistNames('playlists');
+    }
+
 
     /**
      * Open audio file
@@ -151,18 +188,17 @@
 
       // 'Open file' system dialog
       dialog.showOpenDialog(function(fileNames) {
-        console.log(fileNames);
         if (fileNames === undefined) {
           return false;
         }
 
         var trackName = fileNames[0].split('\\').pop().split('.')[0];
-        playlist.addTrack('one', {
-          path: $rootScope.audioPath,
+        playlist.addTrack($scope.currentPlaylist, {
+          path: fileNames[0],
           title: trackName
         }, 'local');
 
-        console.log(playlist.getPlaylistTracks('one'));
+        $scope.playlistSource = playlist.getPlaylistTracks($scope.currentPlaylist);
         $scope.$apply();
       });
     };
@@ -170,15 +206,43 @@
 
     /**
      * Stream network audio file
+     * @param {string} url Network audio url
      * @desc Open and play local audio file
      */
     $scope.streamAudioFile = function(url) {
-      $rootScope.audioPath = url;
-      console.log(url);
-      playlist.addTrack('one', {'url': $rootScope.audioPath}, 'stream');
+
+      var title = url.split('/').pop() || url;
+
+      playlist.addTrack($scope.currentPlaylist, {
+        url: url,
+        title: title
+      }, 'stream');
+
+      $scope.playlistSource = playlist.getPlaylistTracks($scope.currentPlaylist);
       $scope.streamAudioInput = false;
     };
 
+
+    /**
+     * Check stream network audio file type
+     * @param {string} url Network audio url
+     * @return {boolean} True/false
+     */
+    $scope.checkStreamAudioFileType = function(url) {
+
+      var fileType = url.split('.').pop(),
+          protocol = url.split('://')[0],
+          isLink = (protocol === 'http' || protocol === 'https'),
+          isAudioFile = fileType === 'mp3' || fileType === 'ogg' || fileType === 'wav';
+
+      if (!isAudioFile || !isLink) {
+        $scope.streamAudioError = 'Error loading file, unsupported audio format. Only mp3, ogg and wav are supported.'
+      } else {
+        $scope.streamAudioError = null;
+      }
+
+      return isAudioFile;
+    };
   }
 
 

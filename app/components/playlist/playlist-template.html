@@ -1,5 +1,5 @@
 <!-- home playlist -->
-<div class="player-container" ng-repeat="sound in playlistSource"
+<div class="playlist-container" ng-repeat="sound in playlistSource"
      data-ng-if="!trackSearched && !playlist">
 
     <!-- soundcloud -->
@@ -28,7 +28,7 @@
 </div>
 
 <!-- search results -->
-<div class="player-container" ng-repeat="sound in playlistSource | orderBy:'created_time':true" data-ng-if="trackSearched && !playlist">
+<div class="playlist-container" ng-repeat="sound in playlistSource" data-ng-if="trackSearched && !playlist">
 
     <!-- soundcloud -->
     <div class="row" data-ng-if="!sound.hasOwnProperty('key')">
@@ -59,11 +59,11 @@
 <div data-ng-if="!trackSearched && playlist">
     <h3>Playlists:</h3>
     <ul data-ng-repeat="playlist in playlistNames">
-        <li><a href="" data-ng-click="getPlaylistTracks(playlist)">{{playlist}}</a> <button data-ng-click="removeAllTracksFromPlaylist(playlist, 'playlists')">Remove all tracks</button></li>
+        <li><a href="" data-ng-click="getPlaylistTracks(playlist)">{{playlist}}</a> <!-- <button data-ng-click="removeAllTracksFromPlaylist(playlist, 'playlists')">Remove all tracks</button>  --><button data-ng-click="removePlaylist(playlist, 'playlists')">Delete playlist</button></li>
     </ul>
 </div>
 
-<div class="player-container" ng-repeat="sound in playlistSource" data-ng-if="!trackSearched && playlist">
+<div class="playlist-container" ng-repeat="sound in playlistSource" data-ng-if="!trackSearched && playlist">
     <!-- soundcloud -->
     <div class="row" data-ng-if="sound.type === 'sc'">
         <div class="col-sm-1">
@@ -98,5 +98,34 @@
         </div>
         <button data-ng-click="removeTrackFromPlaylist(sound.createdAt, sound.playlistName)">Remove</button>
     </div>
+
+    <!-- stream file -->
+    <div class="row" data-ng-if="sound.type === 'stream'">
+        <div class="col-sm-1">
+            {{$index + 1 }}
+        </div>
+        <div class="col-sm-23">
+            <a href="" data-ng-click="playSound(sound, 'stream')">{{sound.trackData.title}}</a>
+        </div>
+        <button data-ng-click="removeTrackFromPlaylist(sound.createdAt, sound.playlistName)">Remove</button>
+    </div>
+</div>
+
+<!-- add local/network audio file -->
+<div data-ng-if="!trackSearched && playlist">
+    <button data-ng-click="loadLocalAudioFile()">Add audio file</button>
+    <button data-ng-click="streamAudioInput = !streamAudioInput">Add network audio url</button>
+    <!-- stream audio form -->
+    <form name="streamAudioForm"
+          novalidate
+          data-ng-submit="streamAudioFile(streamAudioUrl)"
+          data-ng-if="streamAudioInput">
+          <input type="text"
+                 data-ng-model="streamAudioUrl"
+                 data-ng-change="checkStreamAudioFileType(streamAudioUrl)"
+                 ng-model-options="{ debounce: 250 }">
+          <input type="submit" value="Add" data-ng-disabled="streamAudioError">
+          <span data-ng-if="streamAudioError">{{streamAudioError}}</span>
+    </form>
 </div>
 

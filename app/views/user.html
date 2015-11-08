@@ -1,5 +1,8 @@
 <!-- profile section -->
 <section class="user">
-	<p>Hi, mixcloud user {{main.mcUser.username}}!</p>
-	<img ng-src="{{main.mcUser.pictures['320wx320h']}}" class="avatar">
+    <div data-ng-if="main.mcUserAuthorized">
+        <p>Hi, mixcloud user {{main.mcUser.username}}!</p>
+        <img ng-src="{{main.mcUser.pictures['320wx320h']}}"
+        		 class="avatar">
+    </div>
 </section>

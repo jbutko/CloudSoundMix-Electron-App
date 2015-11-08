@@ -1,13 +1,2 @@
 <!-- playlist -->
 <playlist playlist-source="playlistSource" track-searched=""></playlist>
-
-<button data-ng-click="loadLocalAudioFile()">Add audio file</button>
-<button data-ng-click="streamAudioInput = !streamAudioInput">Add audio file</button>
-<!-- stream audio form -->
-<form name="streamAudioForm"
-      novalidate
-      data-ng-submit="streamAudioFile(streamAudioUrl)"
-      data-ng-if="streamAudioInput">
-      <input type="text" data-ng-model="streamAudioUrl">
-      <input type="submit">
-</form>

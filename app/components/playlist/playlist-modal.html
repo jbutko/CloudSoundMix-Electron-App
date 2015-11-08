@@ -4,13 +4,14 @@
         <h2>Add track to playlist:</h2>
         <ul>
             <li data-ng-repeat="playlistName in playlistNames">{{playlistName}}
-                <button data-ng-click="addTrackToPlaylist(playlistName, addTrackScope.sound, addTrackScope.type); closeThisDialog()">Save</button>
+                <button data-ng-click="addTrackToPlaylist(playlistName, addTrackScope.sound, addTrackScope.type); closeThisDialog()">Add</button>
             </li>
         </ul>
 
         <section>Or create a new playlist:
-        		<input type="text" data-ng-model="newPlaylistName">
-            <button data-ng-click="addTrackToPlaylist(newPlaylistName, addTrackScope.sound, addTrackScope.type); closeThisDialog()">Save</button>
+            <input type="text" data-ng-model="newPlaylistName">
+            <button data-ng-click="addTrackToPlaylist(newPlaylistName, addTrackScope.sound, addTrackScope.type); closeThisDialog()"
+            			  data-ng-disabled="!newPlaylistName">Add</button>
         </section>
     </div>
 </div>

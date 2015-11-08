@@ -33,6 +33,7 @@
 
     self.scUserAuthorized = false;
     self.mcUserAuthorized = false;
+    self.mainFeed = [];
     self.scAccessToken = config.readSettings('scAccessToken');
     self.mcAccessToken = config.readSettings('mcAccessToken');
 
@@ -171,7 +172,6 @@
     /**
      * Fetch user's feed or latests tracks
      */
-    self.mainFeed = [];
     function fetchUserDashboard(limit) {
 
       if (!self.scUserAuthorized && !self.mcUserAuthorized) {
@@ -180,6 +180,7 @@
 
       // default limit
       limit = limit || defaultLimit;
+
       var scDashboardQuery = self.scUserAuthorized ? fetchAPI.query('GET', 'https://api.soundcloud.com/me/activities/tracks/affiliated', {client_id: CONSTANTS.SC.clientID, limit: limit, linked_partitioning: 1}, {}, {Authorization: 'Oauth ' + self.scAccessToken}) : undefined,
           mcMeQuery = self.mcUserAuthorized ? fetchAPI.query('GET', 'https://api.mixcloud.com/me', {client_id: CONSTANTS.MC.clientID, access_token: config.readSettings('mcAccessToken')}, {}, {}) : undefined,
           mcFeed = self.mcUserAuthorized ? fetchAPI.query('GET', 'https://api.mixcloud.com/me/listens', {client_id: CONSTANTS.MC.clientID, access_token: config.readSettings('mcAccessToken'), limit: limit}, {}, {}) : undefined;
@@ -197,6 +198,8 @@
 
 
       $q.all(promises).then(function(data) {
+        self.mainFeed = [];
+
         var scUserDashboard = data && data.scDashboard && data.scDashboard.data && data.scDashboard.data.collection;
         var mcFeed = data && data.mcFeed && data.mcFeed.data && data.mcFeed.data.data;
 
@@ -204,7 +207,6 @@
         if (scUserDashboard) {
           scUserDashboard.platform = 'sc';
 
-          // main view data
           scUserDashboard.map(function (value) {
             self.mainFeed.push(value);
           });
@@ -218,10 +220,8 @@
 
         // MC data
         if (mcFeed) {
-          // main view data
           self.mcUser = data.mcMe.data;
 
-          // main view data
           mcFeed.map(function (value) {
             self.mainFeed.push(value);
           });
@@ -295,20 +295,14 @@
             self.mainFeed.push(value);
           });
 
-          // pagination for next SC results
-          self.scNextPage = data.scDashboard.data.next_href;
-
-          // pagination for future SC results
-          self.scFuturePage = data.scDashboard.data.future_href;
-
           mcFeed.map(function (value) {
             self.mainFeed.push(value);
           });
 
-          // pagination for next MC results
+          // pagination for next results
+          self.scNextPage = data.scDashboard.data.next_href;
+          self.scFuturePage = data.scDashboard.data.future_href;
           self.mcNextPage = data.mcFeed.data.paging.next;
-
-          // pagination for future MC results
           self.mcFuturePage = data.mcFeed.data.paging.next;
         }
       });
@@ -316,7 +310,7 @@
 
 
     /**
-     * Load new tracks
+     * Load new/future tracks
      * @param  {string} scFuturePage SoundCloud future pagination link
      * @param  {string} mcFuturePage MixCloud future pagination link
      */
@@ -354,7 +348,6 @@
     function searchTracks(keyword, searchType, platform, params, duration, limit) {
 
       self.mainFeed = [];
-      console.log(self.mainFeed);
 
       fetchAPI.searchTracks(keyword, searchType, platform, params, duration, limit)
       .then(function(results) {

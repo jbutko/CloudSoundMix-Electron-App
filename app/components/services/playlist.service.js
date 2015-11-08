@@ -77,6 +77,7 @@
       return deferred.promise;
     }
 
+
     /**
      * Remove track from playlist
      * @param  {number} createdAt Date of track creation in epoch date format
@@ -87,6 +88,7 @@
         'createdAt': createdAt
       });
     }
+
 
     /**
      * Remove all tracks from playlist
@@ -107,6 +109,7 @@
       }
     }
 
+
     /**
      * Get all saved tracks
      * @param  {string} dbName DB name
@@ -115,6 +118,7 @@
     function getAllTracks(dbName) {
       return storedb(dbName).find();
     }
+
 
     /**
      * Get playlists name
@@ -138,6 +142,7 @@
       }
     }
 
+
     /**
      * Get all track of playlist
      * @param  {string} playlistName Playlist name
@@ -148,7 +153,6 @@
         'playlistName': playlistName
       });
     }
-
   }
 
 

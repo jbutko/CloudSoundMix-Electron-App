@@ -32,14 +32,13 @@
 
   angular
     .module('boilerplate')
-    .factory('fetchAPI', [
-      '$http', '$q', 'CONSTANTS', fetchAPI
-    ]);
+    .factory('fetchAPI', fetchAPI);
 
 
+  fetchAPI.$inject = ['$http', '$q', 'CONSTANTS'];
 
-  //////////////// factory
 
+  ////////////////
 
 
   function fetchAPI($http, $q, CONSTANTS) {
@@ -91,7 +90,6 @@
 
 
     function searchTracks(keyword, searchType, platform, params, duration, limit) {
-      console.log(params);
       var searchKeyword = keyword.replace(' ', '+'),
           scSearchType = searchType || 'tracks',
           mcSearchType = searchType || 'cloudcast',
@@ -108,7 +106,6 @@
         };
 
         return $q.all(promises).then(function(data) {
-          console.log(data);
           return data;
         });
       } else if (typeof duration !== 'undefined') {
